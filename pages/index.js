@@ -12,7 +12,6 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className=" text-red-300 mb-[20px]">initiative-process</h1>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>

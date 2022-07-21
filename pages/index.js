@@ -12,7 +12,7 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-        <h1 className=" text-red-300 mb-[20px]">initiative-process</h1>
+        <h8 className="  mb-[20px]">initiative-process</h8>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
@@ -54,8 +54,8 @@ export default function Home() {
           rel="noopener noreferrer"
         >
           Powered by{" "}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
+          <span style={{ position: "relative", width: "100px", height: "20px" }}>
+            <Image src="/vercel.svg" alt="Vercel Logo" layout="fill" objectFit="contain" />
           </span>
         </a>
       </footer>

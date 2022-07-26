@@ -35,104 +35,103 @@
 
 @import "tailwindcss/base";
 
-h1,
-h2,
-h3 {
+.h1,
+.h2,
+.h3 {
   line-height: 125%;
   font-family: "Kondolar";
 }
-h4,
-h5,
-h6,
-h7,
-h8,
-h9,
-h10,
-h11 {
+.h4,
+.h5,
+.h6,
+.h7,
+.h8,
+.h9,
+.h10,
+.h11 {
   line-height: 140%;
   font-family: "Kondolar";
 }
-h1 {
-  font-family: "Anuphan";
+.h1 {
   @apply md:text-[100px] text-[60px];
 }
-h2 {
+.h2 {
   @apply md:text-[72px] text-[48px];
 }
-h3 {
+.h3 {
   @apply md:text-[60px] text-[36px];
 }
-h4 {
+.h4 {
   @apply md:text-[48px] text-[32px];
 }
-h5 {
+.h5 {
   @apply md:text-[36px] text-[28px];
 }
-h6 {
+.h6 {
   @apply md:text-[32px] text-[24px];
 }
-h7 {
+.h7 {
   @apply md:text-[28px] text-[21px];
 }
-h8 {
+.h8 {
   @apply md:text-[24px] text-[18px];
 }
-h9 {
+.h9 {
   @apply md:text-[21px] text-[16px];
 }
-h10 {
+.h10 {
   @apply md:text-[18px] text-[15px];
 }
-h11 {
+.h11 {
   @apply md:text-[16px] text-[14px];
 }
 
-b1 {
+.b1 {
   line-height: 150%;
   @apply md:text-[32px] text-[24px];
 }
-b2 {
+.b2 {
   line-height: 150%;
   @apply md:text-[24px] text-[21px];
 }
-b3 {
+.b3 {
   line-height: 150%;
   @apply md:text-[21px] text-[18px];
 }
-b4 {
+.b4 {
   line-height: 150%;
   @apply md:text-[18px] text-[16px];
 }
-b5 {
+.b5 {
   line-height: 150%;
   @apply md:text-[16px] text-[14px];
 }
-b6 {
+.b6 {
   line-height: 150%;
   @apply md:text-[14px] text-[13px];
 }
-b7 {
+.b7 {
   line-height: 150%;
   @apply text-[12px];
 }
 
-u1 {
+.u1 {
   line-height: 125%;
   @apply text-[20px];
 }
-u2 {
+.u2 {
   line-height: 125%;
   @apply text-[18px];
 }
-u3 {
+.u3 {
   line-height: 125%;
   @apply text-[20px];
 }
-u4 {
+.u4 {
   line-height: 125%;
   @apply text-[20px];
 }
-u5 {
+.u5 {
   line-height: 125%;
   @apply text-[20px];
 }

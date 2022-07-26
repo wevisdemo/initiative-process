@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   mode: "jit",
-  content: ["./pages/*.{html,js,jsx}"],
+  content: ["./pages/*.{html,js,jsx}", "./components/**/*.{jsx,js}"],
   theme: {
     screens: {
       sm: "640px",
@@ -15,7 +15,7 @@ module.exports = {
       blue: "#0038FF",
       purple: "#AD98F3",
       lime: "#EFFF8B",
-      green: "#AD98F3",
+      green: "#49AB93",
       gray: "#373746",
       scarlet: "#FF8058",
     },

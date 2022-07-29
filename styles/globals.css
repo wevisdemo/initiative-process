@@ -8,4 +8,7 @@ html {
 }
 
 @import "tailwindcss/components";
+.circle_ratio {
+  @apply w-[24px] h-[24px] rounded-full;
+}
 @import "tailwindcss/utilities";

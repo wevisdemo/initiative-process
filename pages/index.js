@@ -17,11 +17,7 @@ const Home = () => {
         <Intro />
         <WrapperExpand />
 
-        <div className="relative -top-[100vh]  ">
-          <div className="absolute w-2 h-screen bg-purple" />
-        </div>
-
-        <div className="w-full h-screen bg-white" />
+        {/* <div className="w-full h-screen bg-white" /> */}
       </main>
 
       {/* <footer className={styles.footer}>

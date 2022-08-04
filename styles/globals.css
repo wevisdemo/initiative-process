@@ -5,6 +5,7 @@
 html {
   scroll-behavior: smooth;
   outline: none;
+  overflow-x: hidden;
 }
 
 @import "tailwindcss/components";

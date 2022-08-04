@@ -53,7 +53,7 @@ export const ExpandYear = () => {
               <div
                 key={index}
                 id="balls"
-                className={`w-[24px] h-[24px] relative m-[5px]  ${d["รธน."]}_${d["ลำดับ"]} balls_2040`}
+                className={`w-[24px] h-[24px] relative m-[5px]  ${d["รธน."]}_${d["ลำดับ"]} balls_${d["รธน."]}`}
               >
                 <Image src={circle_type(d["ประเภท"], d["รธน."])} layout="fill" objectFit="contain" />
               </div>
@@ -87,9 +87,9 @@ export const ExpandYear = () => {
       <div className="flex space-x-[47px] mt-3 h-full">
         {/* year 2540 */}
         <YearDetail data={y_2540} year="2540" image="/images/circle_white_type_1.svg" />
-        {/* year 2540 */}
+        {/* year 2550 */}
         <YearDetail data={y_2550} year="2550" image="/images/circle_white_type_2.svg" />
-        {/* year 2540 */}
+        {/* year 2560 */}
         <YearDetail data={y_2560} year="2560" image="/images/circle_white_type_3.svg" />
       </div>
     </div>

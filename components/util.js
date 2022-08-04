@@ -49,3 +49,21 @@ export const circle_type = (type, year) => {
     }
   }
 };
+
+export const vhToPixels = (vh) => {
+  return Math.round(window.innerHeight / (100 / vh));
+};
+
+export const vwToPixels = (vw) => {
+  const wrapper = document.getElementById("canvas_past_1");
+  return Math.round(wrapper.getBoundingClientRect().width / (100 / vw));
+};
+
+export const label_filter = (label) => {
+  if (label === "a") {
+    return 21;
+  } else if (label === "b") {
+    return 22;
+  }
+  return label;
+};

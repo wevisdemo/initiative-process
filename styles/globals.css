@@ -6,6 +6,7 @@ html {
   scroll-behavior: smooth;
   outline: none;
   overflow-x: hidden;
+  @apply text-white bg-black;
 }
 
 @import "tailwindcss/components";

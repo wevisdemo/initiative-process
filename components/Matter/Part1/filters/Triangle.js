@@ -24,7 +24,7 @@ export const Triangle = (world, x, y, angle, category, s) => {
           mask: 0,
         },
         render: {
-          fillStyle: "red",
+          fillStyle: "transparent",
           strokeStyle: "transparent",
           lineWidth: 1,
         },

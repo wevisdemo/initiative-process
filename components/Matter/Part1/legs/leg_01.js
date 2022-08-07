@@ -10,14 +10,14 @@ export const leg_01 = (world) => {
     isStatic: true,
     angle: Math.PI - Math.PI / 5.2,
     render: {
-      // fillStyle: "white",
+      fillStyle: "transparent",
     },
   });
   const rect_right = Bodies.rectangle(vwToPixels(50) + w / 2, y, w, 20, {
     isStatic: true,
     angle: -Math.PI + Math.PI / 5.2,
     render: {
-      // fillStyle: "white",
+      fillStyle: "transparent",
     },
   });
   const rect_center = Bodies.rectangle(vwToPixels(100) / 2, y + 10, 200, 45, {
@@ -25,13 +25,13 @@ export const leg_01 = (world) => {
     angle: Math.PI / 2,
     chamfer: 1,
     render: {
-      // fillStyle: "white",
+      fillStyle: "transparent",
     },
   });
   Composite.add(world, [rect_left, rect_right, rect_center]);
 
-  Triangle(world, vwToPixels(100) / 2, y - w / 2.5, Math.PI - Math.PI / 5, 21, 2);
-  Triangle(world, vwToPixels(100) / 2, y - w / 2.5, Math.PI - Math.PI / 5, 22, 2);
+  Triangle(world, vwToPixels(100) / 2 + 20, y - w / 2.5, Math.PI - Math.PI / 5, 21, 2);
+  Triangle(world, vwToPixels(100) / 2 + 20, y - w / 2.5, Math.PI - Math.PI / 5, 22, 2);
   Triangle(world, vwToPixels(100) / 2 - 20, y - w / 2.5, -Math.PI + Math.PI / 4, 1, 2);
   Triangle(world, vwToPixels(100) / 2 - 20, y - w / 2.5, -Math.PI + Math.PI / 4, 2, 2);
   Triangle(world, vwToPixels(100) / 2 - 20, y - w / 2.5, -Math.PI + Math.PI / 4, 3, 2);

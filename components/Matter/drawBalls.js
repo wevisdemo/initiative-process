@@ -25,7 +25,7 @@ export const drawBalls = (world, data) => {
       isStatic: false,
       friction: 0,
       frictionAir: 0.04,
-      restitution: 0.09,
+      restitution: 0.05,
       collisionFilter: {
         group: label_filter(d["ลำดับกระบวนการ"]),
       },

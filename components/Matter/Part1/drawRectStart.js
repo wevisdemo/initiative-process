@@ -1,7 +1,7 @@
 import { Bodies, Composite } from "matter-js";
 import { vhToPixels, vwToPixels } from "../../util";
 export const drawRectStart = (world) => {
-  const elem_leg = document.getElementById("leg_start");
+  const elem_leg = document.getElementById("leg_startsection_1");
   const y = elem_leg.offsetTop + vhToPixels(100) + elem_leg.getBoundingClientRect().height / 2;
 
   const rect_left = Bodies.rectangle(vwToPixels(0) + vwToPixels(45) / 2, y, vwToPixels(48), 20, {

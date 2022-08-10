@@ -1,6 +1,6 @@
 import { Bodies, Composite } from "matter-js";
 import { vhToPixels, vwToPixels } from "../../../util";
-import { Triangle } from "../filters/Triangle";
+import { Triangle } from "../../filters/Triangle";
 export const leg_01 = (world) => {
   const elem_leg = document.getElementById("leg_01");
   const y = elem_leg.offsetTop + vhToPixels(100) + elem_leg.getBoundingClientRect().height / 2;

@@ -1,6 +1,6 @@
 import { Bodies, Composite } from "matter-js";
 import { vhToPixels, vwToPixels } from "../../../util";
-import { Triangle } from "../filters/Triangle";
+import { Triangle } from "../../filters/Triangle";
 
 export const leg_08 = (world) => {
   const w = 250;

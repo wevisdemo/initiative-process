@@ -1,4 +1,4 @@
-import { Bodies, Composite, Body } from "matter-js";
+import { Bodies, Composite } from "matter-js";
 export const drawStartBtn = (world) => {
   const elem = document.getElementById(`start_btn`);
   const page_start = document.getElementById(`page_start`);

@@ -1,7 +1,7 @@
 import Image from "next/image";
 
-import { drawBalls } from "../drawBalls";
-import { y_2540, y_2550_1, y_2550_2, y_2560_1, y_2560_2 } from "../../../public/data/constitution";
+import { drawBalls } from "./drawBalls";
+import { y_2540, y_2550_1, y_2550_2, y_2560_1, y_2560_2 } from "../../../public/data/part_1/constitution";
 import { vwToPixels } from "../../util";
 export const Section_1 = ({ current }) => {
   // let isDrawed = false;
@@ -45,7 +45,7 @@ export const Section_1 = ({ current }) => {
         </div>
       </div>
       <div className="h-full" id="leg_section_1_wrapper">
-        <div className={` opacity-0 relative w-[500px] h-[197px] mx-auto top-[400px]`} id="leg_start">
+        <div className={` opacity-0 relative w-[500px] h-[197px] mx-auto top-[400px]`} id="leg_startsection_1">
           .
         </div>
         <div className={` relative w-[500px] h-[197px] mx-auto top-[600px]`} id="leg_01">
@@ -60,7 +60,7 @@ export const Section_1 = ({ current }) => {
         <div className={` relative w-[600px] h-[197px] mx-[36%] top-[780px]`} id="leg_04">
           <Image src="/images/leg_04.svg" layout="fill" objectFit="contain" />
         </div>
-        <div className={` relative w-[600px] h-[197px] mx-[12%] top-[880px]`} id="leg_05">
+        <div className={` relative w-[700px] h-[197px] mx-[12%] top-[880px]`} id="leg_05">
           <Image src="/images/leg_05.svg" layout="fill" objectFit="contain" />
         </div>
         <div className={` relative w-[250px] h-[433px] mx-[2%] top-[750px]`} id="leg_07">

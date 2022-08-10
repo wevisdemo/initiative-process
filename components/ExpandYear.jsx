@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import { y_2540, y_2550, y_2560 } from "../public/data/constitution";
+import { y_2540, y_2550, y_2560 } from "../public/data/part_1/constitution";
 import { color_circle, circle_type } from "./util";
 
 export const ExpandYear = () => {

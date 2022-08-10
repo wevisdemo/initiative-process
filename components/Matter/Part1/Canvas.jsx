@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { Engine, Render, Bodies, World, Composite } from "matter-js";
 
-import { drawStartBtn } from "../drawStartBtn";
+import { drawStartBtn } from "./drawStartBtn";
 import { drawRectStart } from "./drawRectStart";
 import { leg_01 } from "./legs/leg_01";
 import { leg_02 } from "./legs/leg_02";
@@ -78,10 +78,8 @@ export const Canvas_1 = ({ current }) => {
   }, []);
 
   return (
-    <div suppressHydrationWarning>
-      <div className={`relative -top-[100vh] h-[5000px] max-w-6xl mx-auto`} id="canvas_past_1">
-        <div ref={scene} style={{ width: "100%", height: "100%" }} />
-      </div>
+    <div className={`relative -top-[100vh] h-[5000px] max-w-6xl mx-auto`} id="canvas_past_1">
+      <div ref={scene} style={{ width: "100%", height: "100%" }} />
     </div>
   );
 };

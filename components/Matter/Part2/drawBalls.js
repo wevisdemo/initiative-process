@@ -1,10 +1,10 @@
 import { Bodies, Composite, Body } from "matter-js";
-import { color_circle } from "../util";
-import { label_filter } from "../util";
+import { color_circle } from "../../util";
+import { label_filter } from "../../util";
 export const drawBalls = (world, data) => {
   data.map((d) => {
-    const elem = document.getElementsByClassName(`${d["รธน."]}_${d["ลำดับ"]}`);
-    const wrapper = document.getElementById("canvas_past_1");
+    const elem = document.getElementsByClassName(`${d["รธน."]}_${d["ลำดับ"]}_2`);
+    const wrapper = document.getElementById("canvas_past_2");
     const margin = wrapper.getBoundingClientRect().x - 12.5;
 
     const circle = Bodies.circle(elem[0].getBoundingClientRect().x - margin, elem[0].offsetTop + 12.5, 13, {
@@ -30,6 +30,7 @@ export const drawBalls = (world, data) => {
         group: label_filter(d["ลำดับกระบวนการ"]),
       },
     });
+
     Composite.add(world, [compoundCircle]);
   });
 };

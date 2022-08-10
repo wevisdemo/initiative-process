@@ -1,6 +1,6 @@
 import { Bodies, Composite } from "matter-js";
 import { vhToPixels, vwToPixels } from "../../../util";
-import { Triangle } from "../filters/Triangle";
+import { Triangle } from "../../filters/Triangle";
 
 export const leg_05 = (world) => {
   const w = 250;
@@ -10,28 +10,21 @@ export const leg_05 = (world) => {
   const wrapper = document.getElementById("canvas_past_1");
   const margin = wrapper.getBoundingClientRect().x;
 
-  const rect_1 = Bodies.rectangle(vwToPixels(21.5), y - 1, w, 20, {
+  const rect_1 = Bodies.rectangle(vwToPixels(22), y - 5, w, 20, {
     isStatic: true,
     angle: Math.PI / 2 + Math.PI / 3.2,
     // render: {
     //   fillStyle: "transparent",
     // },
   });
-  const rect_2 = Bodies.rectangle(vwToPixels(36), y + 35, w, 20, {
+  const rect_2 = Bodies.rectangle(vwToPixels(40), y - 14, w + 10, 20, {
     isStatic: true,
-    angle: -(Math.PI / 2 + Math.PI / 5),
+    angle: -(Math.PI / 2 + Math.PI / 3),
     // render: {
     //   fillStyle: "transparent",
     // },
   });
-  const rect_3 = Bodies.rectangle(vwToPixels(46), y + 125, 100, 20, {
-    isStatic: true,
-    angle: Math.PI,
-    // render: {
-    //   fillStyle: "transparent",
-    // },
-  });
-  const rect_4 = Bodies.rectangle(vwToPixels(58), y + 65, w, 20, {
+  const rect_3 = Bodies.rectangle(vwToPixels(58), y - 9.5, w, 20, {
     isStatic: true,
     angle: Math.PI / 2 + Math.PI / 3,
     // render: {
@@ -39,24 +32,25 @@ export const leg_05 = (world) => {
     // },
   });
 
-  Composite.add(world, [rect_1, rect_2, rect_3, rect_4]);
+  Composite.add(world, [rect_1, rect_2, rect_3]);
 
-  Triangle(world, elem_leg_left - margin - 15, y - w / 3.3, -Math.PI + Math.PI / 3.5, 3, 3);
-  Triangle(world, elem_leg_left - margin + 20, y - w / 3.4, Math.PI - Math.PI / 5, 4, 2);
-  Triangle(world, elem_leg_left - margin + 20, y - w / 3.4, Math.PI - Math.PI / 5, 5, 2);
-  Triangle(world, elem_leg_left - margin + 20, y - w / 3.4, Math.PI - Math.PI / 5, 6, 2);
-  Triangle(world, elem_leg_left - margin + 20, y - w / 3.4, Math.PI - Math.PI / 5, 7, 2);
-  Triangle(world, elem_leg_left - margin + 20, y - w / 3.4, Math.PI - Math.PI / 5, 8, 2);
-  Triangle(world, elem_leg_left - margin + 20, y - w / 3.4, Math.PI - Math.PI / 5, 9, 2);
-  Triangle(world, elem_leg_left - margin + 20, y - w / 3.4, Math.PI - Math.PI / 5, 10, 2);
-  Triangle(world, elem_leg_left - margin + 20, y - w / 3.4, Math.PI - Math.PI / 5, 11, 2);
-  Triangle(world, elem_leg_left - margin + 20, y - w / 3.4, Math.PI - Math.PI / 5, 12, 2);
-  Triangle(world, elem_leg_left - margin + 20, y - w / 3.4, Math.PI - Math.PI / 5, 13, 2);
-  Triangle(world, elem_leg_left - margin + 20, y - w / 3.4, Math.PI - Math.PI / 5, 14, 2);
-  Triangle(world, elem_leg_left - margin + 20, y - w / 3.4, Math.PI - Math.PI / 5, 15, 2);
-  Triangle(world, elem_leg_left - margin + 20, y - w / 3.4, Math.PI - Math.PI / 5, 16, 2);
-  Triangle(world, elem_leg_left - margin + 20, y - w / 3.4, Math.PI - Math.PI / 5, 17, 2);
-  Triangle(world, elem_leg_left - margin + 20, y - w / 3.4, Math.PI - Math.PI / 5, 18, 2);
-  Triangle(world, elem_leg_left - margin + 20, y - w / 3.4, Math.PI - Math.PI / 5, 19, 2);
-  Triangle(world, elem_leg_left - margin + 20, y - w / 3.4, Math.PI - Math.PI / 5, 20, 2);
+  Triangle(world, elem_leg_left - margin - 10, y - w / 1.5, -Math.PI + Math.PI / 10, 3, 3);
+
+  Triangle(world, elem_leg_left - margin + 20, y - w / 3, Math.PI - Math.PI / 5, 4, 2.5);
+  Triangle(world, elem_leg_left - margin + 20, y - w / 3, Math.PI - Math.PI / 5, 5, 2.5);
+  Triangle(world, elem_leg_left - margin + 20, y - w / 3, Math.PI - Math.PI / 5, 6, 2.5);
+  Triangle(world, elem_leg_left - margin + 20, y - w / 3, Math.PI - Math.PI / 5, 7, 2.5);
+  Triangle(world, elem_leg_left - margin + 20, y - w / 3, Math.PI - Math.PI / 5, 8, 2.5);
+  Triangle(world, elem_leg_left - margin + 20, y - w / 3, Math.PI - Math.PI / 5, 9, 2.5);
+  Triangle(world, elem_leg_left - margin + 20, y - w / 3, Math.PI - Math.PI / 5, 10, 2.5);
+  Triangle(world, elem_leg_left - margin + 20, y - w / 3, Math.PI - Math.PI / 5, 11, 2.5);
+  Triangle(world, elem_leg_left - margin + 20, y - w / 3, Math.PI - Math.PI / 5, 12, 2.5);
+  Triangle(world, elem_leg_left - margin + 20, y - w / 3, Math.PI - Math.PI / 5, 13, 2.5);
+  Triangle(world, elem_leg_left - margin + 20, y - w / 3, Math.PI - Math.PI / 5, 14, 2.5);
+  Triangle(world, elem_leg_left - margin + 20, y - w / 3, Math.PI - Math.PI / 5, 15, 2.5);
+  Triangle(world, elem_leg_left - margin + 20, y - w / 3, Math.PI - Math.PI / 5, 16, 2.5);
+  Triangle(world, elem_leg_left - margin + 20, y - w / 3, Math.PI - Math.PI / 5, 17, 2.5);
+  Triangle(world, elem_leg_left - margin + 20, y - w / 3, Math.PI - Math.PI / 5, 18, 2.5);
+  Triangle(world, elem_leg_left - margin + 20, y - w / 3, Math.PI - Math.PI / 5, 19, 2.5);
+  Triangle(world, elem_leg_left - margin + 20, y - w / 3, Math.PI - Math.PI / 5, 20, 2.5);
 };

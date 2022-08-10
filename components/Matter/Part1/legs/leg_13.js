@@ -1,6 +1,6 @@
 import { Bodies, Composite } from "matter-js";
 import { vhToPixels, vwToPixels } from "../../../util";
-import { Triangle } from "../filters/Triangle";
+import { Triangle } from "../../filters/Triangle";
 
 export const leg_13 = (world) => {
   const w = 250;
@@ -18,16 +18,16 @@ export const leg_13 = (world) => {
     isStatic: true,
     angle: Math.PI / 2 + Math.PI / 3,
   });
-  const rect_3 = Bodies.rectangle(vwToPixels(86), y + 25, w, 20, {
+  const rect_3 = Bodies.rectangle(vwToPixels(89), y - 13, w, 20, {
     isStatic: true,
-    angle: -(Math.PI / 2 + Math.PI / 5),
+    angle: -(Math.PI / 2 + Math.PI / 3),
   });
-  const rect_4 = Bodies.rectangle(vwToPixels(95.5), y + 80, w, 20, {
+  const rect_4 = Bodies.rectangle(vwToPixels(103.5), y - 10, w, 20, {
     isStatic: true,
-    angle: Math.PI,
+    angle: Math.PI / 2 + Math.PI / 3,
   });
 
   Composite.add(world, [rect_1, rect_2, rect_3, rect_4]);
 
-  Triangle(world, elem_leg_left - margin + w / 2 + 65, y - w / 2.4, -Math.PI + Math.PI / 5, 9, 2);
+  Triangle(world, elem_leg_left - margin + w / 2 + 65, y - w / 1.55, -Math.PI + Math.PI / 8, 9, 2.5);
 };

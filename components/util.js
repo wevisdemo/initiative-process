@@ -55,7 +55,7 @@ export const vhToPixels = (vh) => {
 };
 
 export const vwToPixels = (vw) => {
-  const wrapper = document.getElementById("canvas_past_1");
+  const wrapper = document.getElementById("canvas_past_2");
   return Math.round(wrapper.getBoundingClientRect().width / (100 / vw));
 };
 

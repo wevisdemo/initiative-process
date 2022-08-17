@@ -18,6 +18,7 @@ module.exports = {
       green: "#49AB93",
       gray: "#373746",
       scarlet: "#FF8058",
+      mint: "#A5EBD7",
     },
     extend: {},
   },

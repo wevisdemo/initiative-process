@@ -1,7 +1,7 @@
 import { Bodies, Composite, Body } from "matter-js";
 import { color_circle } from "../../util";
 import { label_filter } from "../../util";
-export const drawBalls = (world, data) => {
+export const drawBalls2050 = (world, data) => {
   data.map((d) => {
     const elem = document.getElementsByClassName(`${d["รธน."]}_${d["ลำดับ"]}`);
     const wrapper = document.getElementById("canvas_past_1");
@@ -13,15 +13,21 @@ export const drawBalls = (world, data) => {
       },
     });
 
-    const line = Bodies.rectangle(elem[0].getBoundingClientRect().x - margin, elem[0].offsetTop + 12.5, 24, 1, {
+    const line1 = Bodies.rectangle(elem[0].getBoundingClientRect().x - margin, elem[0].offsetTop + 12.5, 24, 1, {
       render: {
-        fillStyle: d["ประเภท"] != "การเมือง " ? "black" : "white",
+        fillStyle: d["ประเภท"] != "การเมือง" ? "black" : "white",
       },
       angle: Math.PI - Math.PI / 4,
     });
+    const line2 = Bodies.rectangle(elem[0].getBoundingClientRect().x - margin, elem[0].offsetTop + 12.5, 24, 1, {
+      render: {
+        fillStyle: d["ประเภท"] != "การเมือง" ? "black" : "white",
+      },
+      angle: -Math.PI + Math.PI / 4,
+    });
     var compoundCircle = Body.create({
-      id: "2540",
-      parts: [circle, line],
+      id: "2550",
+      parts: [circle, line1, line2],
       isStatic: false,
       friction: 0,
       frictionAir: 0.04,

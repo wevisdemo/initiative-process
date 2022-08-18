@@ -1,6 +1,8 @@
 import Image from "next/image";
 
-import { drawBalls } from "./drawBalls";
+import { drawBalls2040 } from "./drawBalls2040";
+import { drawBalls2050 } from "./drawBalls2050";
+import { drawBalls2060 } from "./drawBalls2060";
 import { y_2540, y_2550, y_2560 } from "../../../public/data/part_2/constitution";
 
 export const Section_2 = ({ current }) => {
@@ -8,9 +10,9 @@ export const Section_2 = ({ current }) => {
 
   const start = () => {
     // if (!isDrawed)
-    drawBalls(current.world, y_2540);
-    drawBalls(current.world, y_2550);
-    drawBalls(current.world, y_2560);
+    drawBalls2040(current.world, y_2540);
+    drawBalls2050(current.world, y_2550);
+    drawBalls2060(current.world, y_2560);
 
     // const balls_2040 = document.getElementsByClassName("balls_2040");
     // Object.values(balls_2040).map((a) => (a.style.display = "none"));

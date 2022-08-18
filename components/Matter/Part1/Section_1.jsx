@@ -1,6 +1,8 @@
 import Image from "next/image";
 
-import { drawBalls } from "./drawBalls";
+import { drawBalls2040 } from "./drawBalls2040";
+import { drawBalls2050 } from "./drawBalls2050";
+import { drawBalls2060 } from "./drawBalls2060";
 import { y_2540, y_2550_1, y_2550_2, y_2560_1, y_2560_2 } from "../../../public/data/part_1/constitution";
 import { vwToPixels } from "../../util";
 export const Section_1 = ({ current }) => {
@@ -10,16 +12,16 @@ export const Section_1 = ({ current }) => {
     // if (!isDrawed)
     drawBalls(current.world, y_2540);
     setTimeout(() => {
-      drawBalls(current.world, y_2550_2);
+      drawBalls2050(current.world, y_2550_2);
     }, 5000);
     setTimeout(() => {
-      drawBalls(current.world, y_2550_1);
+      drawBalls2050(current.world, y_2550_1);
     }, 10000);
     setTimeout(() => {
-      drawBalls(current.world, y_2560_1);
+      drawBalls2060(current.world, y_2560_1);
     }, 15000);
     setTimeout(() => {
-      drawBalls(current.world, y_2560_2);
+      drawBalls2060(current.world, y_2560_2);
     }, 20000);
 
     // const balls_2040 = document.getElementsByClassName("balls_2040");

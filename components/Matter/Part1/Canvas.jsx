@@ -43,10 +43,30 @@ export const Canvas_1 = ({ current }) => {
 
     Composite.add(current.world, [
       //walls
-      Bodies.rectangle(cw / 2, -5, cw, 20, { isStatic: true }),
-      Bodies.rectangle(-10, ch / 2, 20, ch, { isStatic: true }),
-      Bodies.rectangle(cw / 2, ch + 10, cw, 20, { isStatic: true }),
-      Bodies.rectangle(cw + 10, ch / 2, 20, ch, { isStatic: true }),
+      Bodies.rectangle(cw / 2, -5, cw, 20, {
+        isStatic: true,
+        render: {
+          fillStyle: "transparent",
+        },
+      }),
+      Bodies.rectangle(-10, ch / 2, 20, ch, {
+        isStatic: true,
+        render: {
+          fillStyle: "transparent",
+        },
+      }),
+      Bodies.rectangle(cw / 2, ch + 10, cw, 20, {
+        isStatic: true,
+        render: {
+          fillStyle: "transparent",
+        },
+      }),
+      Bodies.rectangle(cw + 10, ch / 2, 20, ch, {
+        isStatic: true,
+        render: {
+          fillStyle: "transparent",
+        },
+      }),
     ]);
 
     drawStartBtn(current.world);
@@ -78,7 +98,7 @@ export const Canvas_1 = ({ current }) => {
   }, []);
 
   return (
-    <div className={`relative -top-[100vh] h-[5000px] max-w-6xl mx-auto`} id="canvas_past_1">
+    <div className={`relative -top-[100vh] h-[5000px] w-[1152px] mx-auto`} id="canvas_past_1">
       <div ref={scene} style={{ width: "100%", height: "100%" }} />
     </div>
   );

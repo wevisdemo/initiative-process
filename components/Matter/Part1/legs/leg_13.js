@@ -13,18 +13,30 @@ export const leg_13 = (world) => {
   const rect_1 = Bodies.rectangle(vwToPixels(53), y + 47, w, 20, {
     isStatic: true,
     angle: Math.PI - Math.PI / 45,
+    render: {
+      fillStyle: "transparent",
+    },
   });
   const rect_2 = Bodies.rectangle(vwToPixels(71), y - 10, w, 20, {
     isStatic: true,
     angle: Math.PI / 2 + Math.PI / 3,
+    render: {
+      fillStyle: "transparent",
+    },
   });
   const rect_3 = Bodies.rectangle(vwToPixels(89), y - 13, w, 20, {
     isStatic: true,
     angle: -(Math.PI / 2 + Math.PI / 3),
+    render: {
+      fillStyle: "transparent",
+    },
   });
   const rect_4 = Bodies.rectangle(vwToPixels(103.5), y - 10, w, 20, {
     isStatic: true,
     angle: Math.PI / 2 + Math.PI / 3,
+    render: {
+      fillStyle: "transparent",
+    },
   });
 
   Composite.add(world, [rect_1, rect_2, rect_3, rect_4]);

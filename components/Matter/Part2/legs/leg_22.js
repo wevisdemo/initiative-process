@@ -12,18 +12,24 @@ export const leg_22 = (world) => {
   const rect_left = Bodies.rectangle(vwToPixels(25), y, w, 20, {
     isStatic: true,
     angle: Math.PI - Math.PI / 5.2,
-    render: {},
+    render: {
+      fillStyle: "transparent",
+    },
   });
   const rect_right = Bodies.rectangle(vwToPixels(43), y - 3, w, 20, {
     isStatic: true,
     angle: -Math.PI + Math.PI / 5.2,
-    render: {},
+    render: {
+      fillStyle: "transparent",
+    },
   });
   const rect_center = Bodies.rectangle(vwToPixels(35), y + 20, 200, 35, {
     isStatic: true,
     angle: Math.PI / 2,
     chamfer: 1,
-    render: {},
+    render: {
+      fillStyle: "transparent",
+    },
   });
   Composite.add(world, [rect_left, rect_right, rect_center]);
   Triangle(world, elem_leg_left - margin + 300, y - 90, -Math.PI + Math.PI / 8, 17, 2);

@@ -37,10 +37,30 @@ export const Canvas_2 = ({ current }) => {
 
     Composite.add(current.world, [
       //walls
-      Bodies.rectangle(cw / 2, -5, cw, 20, { isStatic: true }),
-      Bodies.rectangle(-10, ch / 2, 20, ch, { isStatic: true }),
-      Bodies.rectangle(cw / 2, ch + 10, cw, 20, { isStatic: true }),
-      Bodies.rectangle(cw + 10, ch / 2, 20, ch, { isStatic: true }),
+      Bodies.rectangle(cw / 2, -5, cw, 20, {
+        isStatic: true,
+        render: {
+          fillStyle: "transparent",
+        },
+      }),
+      Bodies.rectangle(-10, ch / 2, 20, ch, {
+        isStatic: true,
+        render: {
+          fillStyle: "transparent",
+        },
+      }),
+      Bodies.rectangle(cw / 2, ch + 10, cw, 20, {
+        isStatic: true,
+        render: {
+          fillStyle: "transparent",
+        },
+      }),
+      Bodies.rectangle(cw + 10, ch / 2, 20, ch, {
+        isStatic: true,
+        render: {
+          fillStyle: "transparent",
+        },
+      }),
     ]);
 
     drawRectStart(current.world);

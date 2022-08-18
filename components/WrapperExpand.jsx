@@ -23,11 +23,12 @@ export const WrapperExpand = () => {
   const [step_2, setStep_2] = useState(true);
   const [step_3, setStep_3] = useState(true);
   const [firstStep_3, setFirstStep_3] = useState(false);
+  const [drawBalls, setDrawBalls] = useState(false);
 
   const current_01 = engine_01.current;
   const current_02 = engine_02.current;
 
-  GetPosition(setStep_1, setStep_2, setStep_3, firstStep_3, setFirstStep_3);
+  GetPosition(setStep_1, setStep_2, setStep_3, firstStep_3, setFirstStep_3, drawBalls, setDrawBalls);
   return (
     <div suppressHydrationWarning>
       <div className="relative h-[605vh]  ">
@@ -81,7 +82,7 @@ export const WrapperExpand = () => {
         <Canvas_1 current={current_01} />
       </div>
       <div className="h-screen "> ... </div>
-      <div className="relative ">
+      <div className="relative " id="section_2">
         <Section_2 current={current_02} />
         <Canvas_2 current={current_02} />
       </div>

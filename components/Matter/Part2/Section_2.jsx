@@ -19,7 +19,11 @@ export const Section_2 = ({ current }) => {
 
   return (
     <div className="absolute z-20 w-full pt-16 text-center ">
-      <div className="relative flex flex-col items-center " onClick={() => start()}>
+      <div
+        className="relative flex flex-col items-center pointer-events-none "
+        onClick={() => start()}
+        id="click_start_draw_section_2"
+      >
         <p className="b4">
           จาก 33 ฉบับ <br />
           ที่ผ่านเข้าสู่วาระการประชุม <br />

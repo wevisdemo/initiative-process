@@ -1,6 +1,6 @@
 import { useScrollPosition } from "@n8tb1t/use-scroll-position";
 
-const GetPosition = (setStep_1, setStep_2, setStep_3, firstStep_3, setFirstStep_3) => {
+const GetPosition = (setStep_1, setStep_2, setStep_3, firstStep_3, setFirstStep_3, drawBalls, setDrawBalls) => {
   const getElem = (id) => {
     return document.getElementById(id);
   };
@@ -14,6 +14,8 @@ const GetPosition = (setStep_1, setStep_2, setStep_3, firstStep_3, setFirstStep_
     const expand_step_0 = get_position("expand_step_0");
     const expand_step_1 = get_position("expand_step_1");
     const expand_step_3 = get_position("expand_step_3");
+    const section_2 = get_position("click_start_draw_section_2");
+    const section_2_btn = getElem("click_start_draw_section_2");
 
     if (expand_step_0.y > expand_step_0.height / 2) {
       getElem("step_0").style.display = "flex";
@@ -35,6 +37,12 @@ const GetPosition = (setStep_1, setStep_2, setStep_3, firstStep_3, setFirstStep_
       setStep_2(false);
       setStep_3(true);
       setFirstStep_3(true);
+    }
+
+    if (section_2.y < section_2.height && !drawBalls) {
+      section_2_btn.click();
+      console.log("click");
+      setDrawBalls(true);
     }
   });
 };

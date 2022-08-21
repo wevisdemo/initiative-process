@@ -13,7 +13,7 @@ export const ExpandStep = ({ step, isStep_1, setStep_1, isStep_2, setStep_2, isS
         <div key={s.name}>
           {s.step === "1" && (
             <div
-              className={`bg-black bg-opacity-75 border-[1px] border-white relative   rounded-lg p-4 max-w-6xl ${
+              className={`bg-black bg-opacity-75 border-[1px] border-white relative mx-auto   rounded-lg p-4 max-w-6xl ${
                 step === s.step ? "opacity-100" : "opacity-0"
               }`}
             >
@@ -56,7 +56,7 @@ export const ExpandStep = ({ step, isStep_1, setStep_1, isStep_2, setStep_2, isS
           )}
           {s.step === "2" && (
             <div
-              className={`bg-black  border-[1px] border-white relative    rounded-lg p-4 max-w-6xl ${
+              className={`bg-black  border-[1px] border-white relative  mx-auto  rounded-lg p-4 max-w-6xl ${
                 step === s.step ? "opacity-100" : "opacity-0"
               }`}
             >
@@ -99,7 +99,7 @@ export const ExpandStep = ({ step, isStep_1, setStep_1, isStep_2, setStep_2, isS
           )}
           {s.step === "3" && (
             <div
-              className={`bg-black border-[1px] border-white relative    rounded-lg p-4 max-w-6xl ${
+              className={`bg-black border-[1px] border-white relative  mx-auto  rounded-lg p-4 max-w-6xl ${
                 step === s.step ? "opacity-100" : "opacity-0"
               }`}
             >

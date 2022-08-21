@@ -4,29 +4,39 @@ import { drawBalls2040 } from "./drawBalls2040";
 import { drawBalls2050 } from "./drawBalls2050";
 import { drawBalls2060 } from "./drawBalls2060";
 import { y_2540, y_2550_1, y_2550_2, y_2560_1, y_2560_2 } from "../../../public/data/part_1/constitution";
-import { vwToPixels } from "../../util";
+
 export const Section_1 = ({ current }) => {
-  // let isDrawed = false;
+  let isDrawed = false;
 
   const start = () => {
-    // if (!isDrawed)
-    drawBalls(current.world, y_2540);
-    setTimeout(() => {
-      drawBalls2050(current.world, y_2550_2);
-    }, 5000);
-    setTimeout(() => {
-      drawBalls2050(current.world, y_2550_1);
-    }, 10000);
-    setTimeout(() => {
-      drawBalls2060(current.world, y_2560_1);
-    }, 15000);
-    setTimeout(() => {
-      drawBalls2060(current.world, y_2560_2);
-    }, 20000);
+    // const balls_2540 = document.querySelectorAll(".balls_2540");
+    // const balls_2550_1 = document.querySelectorAll(".balls_2550_1");
+    // const balls_2550_2 = document.querySelectorAll(".balls_2550_2");
+    // const balls_2560_1 = document.querySelectorAll(".balls_2560_1");
+    // const balls_2560_2 = document.querySelectorAll(".balls_2560_2");
 
-    // const balls_2040 = document.getElementsByClassName("balls_2040");
-    // Object.values(balls_2040).map((a) => (a.style.display = "none"));
-    // isDrawed = true;
+    if (!isDrawed) {
+      drawBalls2040(current.world, y_2540);
+      // Object.values(balls_2540).map((a) => (a.style.display = "none"));
+      setTimeout(() => {
+        drawBalls2050(current.world, y_2550_2);
+        // Object.values(balls_2550_1).map((a) => (a.style.display = "none"));
+      }, 5000);
+      setTimeout(() => {
+        drawBalls2050(current.world, y_2550_1);
+        // Object.values(balls_2550_2).map((a) => (a.style.display = "none"));
+      }, 10000);
+      setTimeout(() => {
+        drawBalls2060(current.world, y_2560_1);
+        // Object.values(balls_2560_1).map((a) => (a.style.display = "none"));
+      }, 15000);
+      setTimeout(() => {
+        drawBalls2060(current.world, y_2560_2);
+        // Object.values(balls_2560_2).map((a) => (a.style.display = "none"));
+      }, 20000);
+    }
+
+    isDrawed = true;
   };
 
   return (
@@ -46,7 +56,7 @@ export const Section_1 = ({ current }) => {
           <Image src="/images/start.svg" layout="fill" objectFit="contain" />
         </div>
       </div>
-      <div className="h-full" id="leg_section_1_wrapper">
+      <div className="h-full  w-[1152px] mx-auto" id="leg_section_1_wrapper">
         <div className={`  relative w-[1000px] h-[197px] mx-auto top-[400px]`} id="leg_startsection_1">
           <div className="absolute top-0 w-full ">
             <p className=" text-center relative -top-[15vh] font-black h4"> ขั้นตอนการเสนอกฎหมาย</p>

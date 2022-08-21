@@ -14,7 +14,7 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        {/* <Intro /> */}
+        <Intro />
         <WrapperExpand />
 
         {/* <div className="w-full h-screen bg-white" /> */}

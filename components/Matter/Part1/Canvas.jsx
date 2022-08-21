@@ -55,10 +55,10 @@ export const Canvas_1 = ({ current }) => {
           fillStyle: "transparent",
         },
       }),
-      Bodies.rectangle(cw / 2, ch + 10, cw, 20, {
+      Bodies.rectangle(cw / 2, ch + 5, cw, 20, {
         isStatic: true,
         render: {
-          fillStyle: "transparent",
+          fillStyle: "white",
         },
       }),
       Bodies.rectangle(cw + 10, ch / 2, 20, ch, {

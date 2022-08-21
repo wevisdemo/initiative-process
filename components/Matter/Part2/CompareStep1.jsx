@@ -1,0 +1,77 @@
+import Image from "next/image";
+
+export const CompareStep1 = () => {
+  return (
+    <div className="w-[430px] mx-auto">
+      <div className="flex items-center b6 ">
+        กระบวนการขั้นที่
+        <div className={` relative w-[30px] h-[30px] ml-2 `}>
+          <Image src="/images/bullet_1_white.svg" layout="fill" objectFit="contain" />
+        </div>
+      </div>
+      <p className="font-bold b2">รวบรวมเอกสารเพื่อริเริ่ม</p>
+      <div className="flex mt-6 ">
+        <div className="flex-1">
+          <div className="p-3 text-black w-[94px] b4 font-bold flex items-center bg-white rounded-lg">
+            <div className={` relative w-[24px] h-[36px]  mr-2`}>
+              <Image src="/images/thai.svg" layout="fill" objectFit="contain" />
+            </div>
+            ไทย
+          </div>
+          <div className="flex items-center mt-4 ">
+            <div className={` relative w-[20px] h-[20px] mr-2 `}>
+              <Image src="/images/Exclude.svg" layout="fill" objectFit="contain" />
+            </div>
+            <p className="b5">ส่งออนไลน์ได้</p>
+          </div>
+          <div className="flex items-center mt-2">
+            <div className={` relative w-[24px] h-[24px] mr-2 `}>
+              <Image src="/images/Union.svg" layout="fill" objectFit="contain" />
+            </div>
+            <p className="b5">แก้ไขร่วมกันได้</p>
+          </div>
+          <div className="flex items-center mt-2">
+            <div className={` relative w-[24px] h-[24px] mr-2 `}>
+              <Image src="/images/Union.svg" layout="fill" objectFit="contain" />
+            </div>
+            <p className="b5">ใช้ soft ID</p>
+          </div>
+          <p className="b5 w-[200px] mt-3">
+            ผู้มีสิทธิเลือกตั้งใดๆ ไม่น้อยกว่า 20 คน (ร่างพ.ร.บ) หรือไม่น้อยกว่า 120 คน (ร่างรธน.)
+            ทำการรวบรวมเอกสารเสนอร่างกฎหมาย หรือสำนักงานฯ จัดทำร่างกฎหมายตามที่ร้องขอ แล้วส่งทางออนไลน์ให้กับสภาฯ
+          </p>
+        </div>
+        <div className="flex-1 ml-[32px]">
+          <div className="p-3 text-black w-[139px] b4 font-bold flex items-center bg-white rounded-lg">
+            <div className={` relative w-[24px] h-[36px]  mr-2`}>
+              <Image src="/images/estonia.svg" layout="fill" objectFit="contain" />
+            </div>
+            เอสโตเนีย
+          </div>
+          <div className="flex items-center mt-4 ">
+            <div className={` relative w-[20px] h-[20px] mr-2 `}>
+              <Image src="/images/Exclude.svg" layout="fill" objectFit="contain" />
+            </div>
+            <p className="b5">ส่งออนไลน์ได้</p>
+          </div>
+          <div className="flex items-center mt-2">
+            <div className={` relative w-[20px] h-[20px] mr-2 `}>
+              <Image src="/images/Exclude.svg" layout="fill" objectFit="contain" />
+            </div>
+            <p className="b5">แก้ไขร่วมกันได้</p>
+          </div>
+          <div className="flex items-center mt-2">
+            <div className={` relative w-[20px] h-[20px] mr-2 `}>
+              <Image src="/images/Exclude.svg" layout="fill" objectFit="contain" />
+            </div>
+            <p className="b5">ใช้ soft ID</p>
+          </div>
+          <p className="b5 w-[200px] mt-3">
+            มีระบบออนไลน์ทำเอกสารเสนอร่างกฎหมายสามารถตั้งค่าเป็น open source ให้แก้ไขข้อเสนอร่วมกันได้ ซึ่งสามารถใช้
+            soft ID เช่น google facebook ได้
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};

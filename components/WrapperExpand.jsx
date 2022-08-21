@@ -6,7 +6,11 @@ import { Canvas_1 } from "./Matter/Part1/Canvas";
 import { Canvas_2 } from "./Matter/Part2/Canvas";
 import { Engine } from "matter-js";
 import { ExpandStep } from "./ExpandStep";
+import { Summary_Part1 } from "./Matter/Part1/Summary_Part1";
 import GetPosition from "./GetPosition";
+import { DetailsCanvas_Part1 } from "./Matter/Part1/DetailsCanvas_Part1";
+import { Summary_Part2 } from "./Matter/Part2/Summary_Part2";
+import { DetailsCanvas_Part2 } from "./Matter/Part2/DetailsCanvas_Part2";
 
 export const WrapperExpand = () => {
   const engine_01 = useRef(
@@ -75,16 +79,23 @@ export const WrapperExpand = () => {
             ปรับจำนวนให้ลดลงเพื่อเอื้อต่อการเสนอมากขึ้น
           </div>
         </div>
-        <div className="w-full h-screen "> canvas -100</div>
+        <div className="w-full h-screen opacity-0 ">.</div>
       </div>
       <div className="relative ">
         <Section_1 current={current_01} />
         <Canvas_1 current={current_01} />
       </div>
-      <div className="h-screen "> ... </div>
-      <div className="relative " id="section_2">
+      <div className="mt-10 ">
+        <Summary_Part1 />
+        <DetailsCanvas_Part1 />
+      </div>
+      <div className="relative bg-black " id="section_2">
         <Section_2 current={current_02} />
         <Canvas_2 current={current_02} />
+      </div>
+      <div className="mt-10 ">
+        <Summary_Part2 />
+        <DetailsCanvas_Part2 />
       </div>
     </div>
   );

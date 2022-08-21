@@ -53,7 +53,9 @@ export const ExpandYear = () => {
               <div
                 key={index}
                 id="balls"
-                className={`w-[24px] h-[24px] relative m-[5px]  ${d["รธน."]}_${d["ลำดับ"]} balls_${d["รธน."]}`}
+                className={`w-[24px] h-[24px] relative m-[5px]  ${d["รธน."]}_${d["ลำดับ"]} balls_${
+                  d["locals"] || d["รธน."]
+                }  `}
               >
                 <Image src={circle_type(d["ประเภท"], d["รธน."])} layout="fill" objectFit="contain" />
               </div>

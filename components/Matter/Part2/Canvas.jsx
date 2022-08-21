@@ -49,10 +49,10 @@ export const Canvas_2 = ({ current }) => {
           fillStyle: "transparent",
         },
       }),
-      Bodies.rectangle(cw / 2, ch + 10, cw, 20, {
+      Bodies.rectangle(cw / 2, ch + 5, cw, 20, {
         isStatic: true,
         render: {
-          fillStyle: "transparent",
+          fillStyle: "white",
         },
       }),
       Bodies.rectangle(cw + 10, ch / 2, 20, ch, {
@@ -87,7 +87,7 @@ export const Canvas_2 = ({ current }) => {
   }, []);
 
   return (
-    <div className={`relative top-0 h-[4300px] max-w-6xl mx-auto`} id="canvas_past_2">
+    <div className={`relative top-0 h-[4300px]  w-[1152px] mx-auto`} id="canvas_past_2">
       <div ref={scene} style={{ width: "100%", height: "100%" }} />
     </div>
   );

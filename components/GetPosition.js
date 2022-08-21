@@ -41,7 +41,6 @@ const GetPosition = (setStep_1, setStep_2, setStep_3, firstStep_3, setFirstStep_
 
     if (section_2.y < section_2.height && !drawBalls) {
       section_2_btn.click();
-      console.log("click");
       setDrawBalls(true);
     }
   });

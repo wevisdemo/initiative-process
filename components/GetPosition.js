@@ -16,6 +16,8 @@ const GetPosition = (setStep_1, setStep_2, setStep_3, firstStep_3, setFirstStep_
     const expand_step_3 = get_position("expand_step_3");
     const section_2 = get_position("click_start_draw_section_2");
     const section_2_btn = getElem("click_start_draw_section_2");
+    const detail_step_1 = get_position("detail_step_1");
+    const detail_step_2 = get_position("detail_step_2");
 
     if (expand_step_0.y > expand_step_0.height / 2) {
       getElem("step_0").style.display = "flex";
@@ -42,6 +44,15 @@ const GetPosition = (setStep_1, setStep_2, setStep_3, firstStep_3, setFirstStep_
     if (section_2.y < section_2.height && !drawBalls) {
       section_2_btn.click();
       setDrawBalls(true);
+    }
+    if (detail_step_1.y < detail_step_1.height / 2) {
+      getElem("DiagramPart2").style.opacity = 1;
+      getElem("DiagramPart2Full").style.opacity = 0;
+    }
+
+    if (detail_step_2.y < detail_step_2.height / 2) {
+      getElem("DiagramPart2").style.opacity = 0;
+      getElem("DiagramPart2Full").style.opacity = 1;
     }
   });
 };

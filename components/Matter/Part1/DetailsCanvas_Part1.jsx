@@ -1,13 +1,23 @@
 import Image from "next/image";
+import { DiagramPart2 } from "./DiagramPart2";
+import { DiagramPart2Full } from "./DiagramPart2Full";
+
 export const DetailsCanvas_Part1 = () => {
   return (
     <div id="DetailsCanvas_Part1" className="relative w-full ">
       <div className=" sticky top-0 h-[30vh] w-[50%] ">
-        <div className="h-screen bg-lime">Strick</div>
+        <div className="relative flex items-center h-screen ">
+          <div id="DiagramPart2Full" className="absolute top-[50%] translate-y-[-50%] left-0 opacity-0">
+            <DiagramPart2Full />
+          </div>
+          <div id="DiagramPart2" className="absolute top-[50%] translate-y-[-50%] left-0 ">
+            <DiagramPart2 />
+          </div>
+        </div>
       </div>
       <div className="relative flex h-screen ">
         <div className="flex-1" />
-        <div className="flex flex-col justify-center flex-1 ">
+        <div className="flex flex-col justify-center flex-1 " id="detail_step_1">
           <div className="max-w-[470px] mx-auto">
             <p className="b3">จากขั้นตอนการเสนอกฎหมายแสนวกวนนี้</p>
             <p className="mt-2 font-bold b2">เป็นเพียงขั้นแรกเท่านั้น</p>
@@ -24,7 +34,7 @@ export const DetailsCanvas_Part1 = () => {
       </div>
       <div className="relative flex h-screen ">
         <div className="flex-1" />
-        <div className="flex flex-col items-center justify-center flex-1 text-center b2 ">
+        <div className="flex flex-col items-center justify-center flex-1 text-center b2 " id="detail_step_2">
           <div className={` relative w-[305px] h-[356px] mr-4 `}>
             <Image src="/images/rank01.svg" layout="fill" objectFit="contain" />
           </div>
@@ -42,7 +52,7 @@ export const DetailsCanvas_Part1 = () => {
       </div>
       <div className="relative flex h-screen ">
         <div className="flex-1" />
-        <div className="flex flex-col justify-center flex-1 ">
+        <div className="flex flex-col justify-center flex-1 " id="detail_step_3">
           <div className=" max-w-[400px] mx-auto b4">
             <p>
               สิ่งที่น่าสนใจ คือ
@@ -73,7 +83,7 @@ export const DetailsCanvas_Part1 = () => {
       </div>
       <div className="relative flex h-screen ">
         <div className="flex-1" />
-        <div className="flex flex-col items-center justify-center flex-1 text-center b2 ">
+        <div className="flex flex-col items-center justify-center flex-1 text-center b2 " id="detail_step_4">
           <div className={` relative w-[305px] h-[356px] mr-4 `}>
             <Image src="/images/rank02.svg" layout="fill" objectFit="contain" />
           </div>
@@ -92,7 +102,7 @@ export const DetailsCanvas_Part1 = () => {
       </div>
       <div className="relative flex h-screen ">
         <div className="flex-1" />
-        <div className="flex flex-col items-center justify-center flex-1 text-center b2 ">
+        <div className="flex flex-col items-center justify-center flex-1 text-center b2 " id="detail_step_5">
           <div className={` relative w-[305px] h-[356px] mr-4 `}>
             <Image src="/images/rank02.svg" layout="fill" objectFit="contain" />
           </div>

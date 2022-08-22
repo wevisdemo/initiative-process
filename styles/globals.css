@@ -16,4 +16,5 @@ html {
 .red {
   @apply font-bold text-scarlet;
 }
+
 @import "tailwindcss/utilities";

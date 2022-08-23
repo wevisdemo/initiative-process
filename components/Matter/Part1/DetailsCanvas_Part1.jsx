@@ -1,17 +1,14 @@
 import Image from "next/image";
-import { DiagramPart2 } from "./DiagramPart2";
-import { DiagramPart2Full } from "./DiagramPart2Full";
+
+import { DiagramPart1 } from "../../DiagramPart1";
 
 export const DetailsCanvas_Part1 = () => {
   return (
     <div id="DetailsCanvas_Part1" className="relative w-full ">
       <div className=" sticky top-0 h-[30vh] w-[50%] ">
         <div className="relative flex items-center h-screen ">
-          <div id="DiagramPart2Full" className="absolute top-[50%] translate-y-[-50%] left-0 opacity-0">
-            <DiagramPart2Full />
-          </div>
-          <div id="DiagramPart2" className="absolute top-[50%] translate-y-[-50%] left-0 ">
-            <DiagramPart2 />
+          <div id="DiagramPart1" className="absolute top-[50%] translate-y-[-50%] left-0 ">
+            <DiagramPart1 />
           </div>
         </div>
       </div>

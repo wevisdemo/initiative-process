@@ -2451,7 +2451,7 @@ export const DiagramPart2Full = () => {
             <path id="Line 54_125" d="M60.0977 719.743L61.9905 721.636" stroke="black" strokeWidth="0.111538" />
           </g>
         </g>
-        <g id="compare45">
+        <g id="compare45" className="diagram_part_2 part_2_compare">
           <g id="Group 83">
             <g id="Ellipse 197">
               <circle cx="235" cy="192" r="30" stroke="#F5F0EB" strokeWidth="2" />
@@ -2480,7 +2480,7 @@ export const DiagramPart2Full = () => {
             </g>
           </g>
         </g>
-        <g id="compare3">
+        <g id="compare3" className="diagram_part_2 part_2_compare">
           <g id="Group 82">
             <g id="Ellipse 197_2">
               <circle cx="248" cy="140" r="30" stroke="#F5F0EB" strokeWidth="2" />
@@ -2497,7 +2497,7 @@ export const DiagramPart2Full = () => {
             </g>
           </g>
         </g>
-        <g id="compare7">
+        <g id="compare7" className="diagram_part_2 part_2_compare">
           <g id="Group 85">
             <g id="Ellipse 197_3">
               <circle cx="204" cy="262" r="30" stroke="#F5F0EB" strokeWidth="2" />
@@ -2514,7 +2514,7 @@ export const DiagramPart2Full = () => {
             </g>
           </g>
         </g>
-        <g id="compare6">
+        <g id="compare6" className="diagram_part_2 part_2_compare">
           <g id="Group 84">
             <g id="Ellipse 197_4">
               <circle cx="178" cy="224" r="30" stroke="#F5F0EB" strokeWidth="2" />
@@ -2531,7 +2531,7 @@ export const DiagramPart2Full = () => {
             </g>
           </g>
         </g>
-        <g id="compare1">
+        <g id="compare1" className="diagram_part_2 part_2_compare">
           <g id="Group 81">
             <g id="Ellipse 197_5">
               <circle cx="300" cy="69" r="30" stroke="#F5F0EB" strokeWidth="2" />
@@ -2548,21 +2548,21 @@ export const DiagramPart2Full = () => {
             </g>
           </g>
         </g>
-        <g id="john11">
+        <g id="john11" className="diagram_part_2 part_2_circle">
           <g id="Group 81_2">
             <g id="Ellipse 197_6">
               <circle cx="181" cy="393" r="30" stroke="white" strokeWidth="2" />
             </g>
           </g>
         </g>
-        <g id="parit14">
+        <g id="parit14" className="diagram_part_2 part_2_circle">
           <g id="Group 81_3">
             <g id="Ellipse 197_7">
               <circle cx="144" cy="497" r="30" stroke="#F5F0EB" strokeWidth="2" />
             </g>
           </g>
         </g>
-        <g id="rank01">
+        <g id="rank01" className="diagram_part_2 part_2_rank">
           <g id="Group 91">
             <g id="Group 81_4">
               <g id="Ellipse 197_8">
@@ -2583,7 +2583,7 @@ export const DiagramPart2Full = () => {
             />
           </g>
         </g>
-        <g id="rank02">
+        <g id="rank02" className="diagram_part_2 part_2_rank">
           <g id="Group 92">
             <g id="Group 81_5">
               <g id="Ellipse 197_9">
@@ -2604,7 +2604,7 @@ export const DiagramPart2Full = () => {
             />
           </g>
         </g>
-        <g id="rank03">
+        <g id="rank03" className="diagram_part_2 part_2_rank">
           <g id="Group 93">
             <g id="Group 81_6">
               <g id="Ellipse 197_10">

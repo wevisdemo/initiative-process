@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useRef, useState, useEffect } from "react";
 import { ExpandYear } from "./ExpandYear";
 import { Section_1 } from "./Matter/Part1/Section_1";
 import { Section_2 } from "./Matter/Part2/Section_2";
@@ -11,6 +11,7 @@ import GetPosition from "./GetPosition";
 import { DetailsCanvas_Part1 } from "./Matter/Part1/DetailsCanvas_Part1";
 import { Summary_Part2 } from "./Matter/Part2/Summary_Part2";
 import { DetailsCanvas_Part2 } from "./Matter/Part2/DetailsCanvas_Part2";
+import { animateZoom } from "./animateZoom";
 
 export const WrapperExpand = () => {
   const engine_01 = useRef(
@@ -28,13 +29,25 @@ export const WrapperExpand = () => {
   const [step_3, setStep_3] = useState(true);
   const [firstStep_3, setFirstStep_3] = useState(false);
   const [drawBalls, setDrawBalls] = useState(false);
+  const [state, setState] = useState({ x: 0, y: 0 });
 
   const current_01 = engine_01.current;
   const current_02 = engine_02.current;
 
   GetPosition(setStep_1, setStep_2, setStep_3, firstStep_3, setFirstStep_3, drawBalls, setDrawBalls);
+
+  const handleMouseMove = (e) => {
+    e.persist();
+    setState((state) => ({ ...state, x: e.clientX, y: e.clientY }));
+  };
+
+  useEffect(() => {
+    animateZoom(state.x, state.y);
+    // window.requestAnimationFrame();
+  });
+
   return (
-    <div suppressHydrationWarning>
+    <div suppressHydrationWarning onMouseMove={handleMouseMove}>
       <div className="relative h-[605vh]  ">
         <ExpandYear current={current_01} />
         <div className="sticky top-0 z-10 w-full h-screen " id="expand_step_0" />
@@ -89,7 +102,7 @@ export const WrapperExpand = () => {
         <Summary_Part1 />
         <DetailsCanvas_Part1 />
       </div>
-      <div className="relative bg-black " id="section_2">
+      <div className="relative z-50 bg-black " id="section_2">
         <Section_2 current={current_02} />
         <Canvas_2 current={current_02} />
       </div>

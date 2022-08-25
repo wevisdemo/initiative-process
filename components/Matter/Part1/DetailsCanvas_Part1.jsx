@@ -7,13 +7,13 @@ export const DetailsCanvas_Part1 = () => {
     <div id="DetailsCanvas_Part1" className="relative w-full ">
       <div className=" sticky top-0 h-[30vh] w-[50%] ">
         <div className="relative flex items-center h-screen ">
-          <div id="DiagramPart1" className="absolute top-[50%] translate-y-[-50%] left-0 ">
+          <div id="DiagramPart1" className="absolute top-[50%] translate-y-[-50%] left-0 cursor-pointer ">
             <DiagramPart1 />
           </div>
         </div>
       </div>
-      <div className="relative flex h-screen ">
-        <div className="flex-1" />
+      <div className="relative flex h-screen -z-10 ">
+        <div className="flex-1 " />
         <div className="flex flex-col justify-center flex-1 " id="detail_step_1">
           <div className="max-w-[470px] mx-auto">
             <p className="b3">จากขั้นตอนการเสนอกฎหมายแสนวกวนนี้</p>
@@ -29,7 +29,7 @@ export const DetailsCanvas_Part1 = () => {
           </div>
         </div>
       </div>
-      <div className="relative flex h-screen ">
+      <div className="relative flex h-screen -z-10 ">
         <div className="flex-1" />
         <div className="flex flex-col items-center justify-center flex-1 text-center b2 " id="detail_step_2">
           <div className={` relative w-[305px] h-[356px] mr-4 `}>
@@ -47,7 +47,7 @@ export const DetailsCanvas_Part1 = () => {
           </p>
         </div>
       </div>
-      <div className="relative flex h-screen ">
+      <div className="relative flex h-screen -z-10 ">
         <div className="flex-1" />
         <div className="flex flex-col justify-center flex-1 " id="detail_step_3">
           <div className=" max-w-[400px] mx-auto b4">
@@ -78,7 +78,7 @@ export const DetailsCanvas_Part1 = () => {
           </div>
         </div>
       </div>
-      <div className="relative flex h-screen ">
+      <div className="relative flex h-screen -z-10 ">
         <div className="flex-1" />
         <div className="flex flex-col items-center justify-center flex-1 text-center b2 " id="detail_step_4">
           <div className={` relative w-[305px] h-[356px] mr-4 `}>
@@ -97,7 +97,7 @@ export const DetailsCanvas_Part1 = () => {
           </p>
         </div>
       </div>
-      <div className="relative flex h-screen ">
+      <div className="relative flex h-screen -z-10 ">
         <div className="flex-1" />
         <div className="flex flex-col items-center justify-center flex-1 text-center b2 " id="detail_step_5">
           <div className={` relative w-[305px] h-[356px] mr-4 `}>

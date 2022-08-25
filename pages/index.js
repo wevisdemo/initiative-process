@@ -16,6 +16,16 @@ const Home = () => {
       <main className={styles.main}>
         <Intro />
         <WrapperExpand />
+        <div id="cursor" className="fixed left-[50%] top-[50%] translate-y-[-50%] pointer-events-none ">
+          <div id="cursor-circle">
+            <div className="cursor-circle">
+              <div className="cursor-circle-hover-link"></div>
+            </div>
+          </div>
+          <div id="cursor-small">
+            <div className=" cursor-circle-zoom"></div>
+          </div>
+        </div>
 
         {/* <div className="w-full h-screen bg-white" /> */}
       </main>

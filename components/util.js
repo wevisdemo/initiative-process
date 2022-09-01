@@ -67,3 +67,7 @@ export const label_filter = (label) => {
   }
   return label;
 };
+
+export const device = () => {
+  return document.body.clientWidth < 768 ? "mobile" : "tablet";
+};

@@ -50,7 +50,7 @@ export const Section_2 = ({ current }) => {
           ))}
         </div>
       </div>
-      <div className="h-full w-[1152px] mx-auto" id="leg_section_2_wrapper">
+      <div className=" w-[1152px] h-full mx-auto" id="leg_section_2_wrapper">
         <div className={` opacity-0  relative w-[500px] h-[197px] mx-auto top-[300px]`} id="leg_start_section_2">
           .
         </div>

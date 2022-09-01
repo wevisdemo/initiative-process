@@ -1,71 +1,18 @@
 import Image from "next/image";
 
-import { drawBalls2040 } from "./drawBalls2040";
-import { drawBalls2050 } from "./drawBalls2050";
-import { drawBalls2060 } from "./drawBalls2060";
-import { y_2540, y_2550_1, y_2550_2, y_2560_1, y_2560_2 } from "../../../public/data/part_1/constitution";
-
-export const Section_1 = ({ current }) => {
-  let isDrawed = false;
-
-  const start = () => {
-    // const balls_2540 = document.querySelectorAll(".balls_2540");
-    // const balls_2550_1 = document.querySelectorAll(".balls_2550_1");
-    // const balls_2550_2 = document.querySelectorAll(".balls_2550_2");
-    // const balls_2560_1 = document.querySelectorAll(".balls_2560_1");
-    // const balls_2560_2 = document.querySelectorAll(".balls_2560_2");
-
-    if (!isDrawed) {
-      drawBalls2040(current.world, y_2540);
-      // Object.values(balls_2540).map((a) => (a.style.display = "none"));
-      setTimeout(() => {
-        drawBalls2050(current.world, y_2550_2);
-        // Object.values(balls_2550_1).map((a) => (a.style.display = "none"));
-      }, 5000);
-      setTimeout(() => {
-        drawBalls2050(current.world, y_2550_1);
-        // Object.values(balls_2550_2).map((a) => (a.style.display = "none"));
-      }, 10000);
-      setTimeout(() => {
-        drawBalls2060(current.world, y_2560_1);
-        // Object.values(balls_2560_1).map((a) => (a.style.display = "none"));
-      }, 15000);
-      setTimeout(() => {
-        drawBalls2060(current.world, y_2560_2);
-        // Object.values(balls_2560_2).map((a) => (a.style.display = "none"));
-      }, 20000);
-    }
-
-    isDrawed = true;
-  };
-
+export const Section_Mobile = () => {
   return (
-    <div className="absolute z-20 w-full pt-16 overflow-x-hidden text-center ">
-      <div className="flex flex-col items-center ">
-        <p className="b4">
-          หรืออาจเป็นเพราะกระบวนการ
-          <br />
-          ที่ส่งผลต่อการลงชื่อเสนอกฎหมาย
-        </p>
-        <p className="mt-6 b4">โดยแบ่งเป็น</p>
-        <p className="font-black h6"> ขั้นตอนการเสนอกฎหมาย</p>
-        <p className="mt-6 b4">และ</p>
-        <p className="font-black h6"> ขั้นตอนการพิจารณากฎหมาย</p>
-        <p className="mt-6 b4">มาดูกันว่าขั้นตอนไหนที่ทำให้กฎหมายประชาชนไปไม่ถึงปลายทาง</p>
-        <div className="   relative w-[112px] h-[112px] mt-20 cursor-pointer" id="start_btn" onClick={() => start()}>
-          <Image src="/images/start.svg" layout="fill" objectFit="contain" />
-        </div>
-      </div>
-      <div className="h-[5000px]  w-[1152px] mx-auto" id="leg_section_1_wrapper">
-        <div className={`  relative w-[1000px] h-[197px] mx-auto top-[400px]`} id="leg_startsection_1">
+    <div className="absolute z-20 w-full pt-16 text-center ">
+      <div className=" h-full w-[1152px]  relative left-[50%] -translate-x-[50%]" id="leg_section_1_wrapper_mobile">
+        <div className={`  relative w-[1000px] h-[197px] mx-auto top-[400px]`} id="leg_start_mobile">
           <div className="absolute top-0 w-full ">
             <p className=" text-center relative -top-[15vh] font-black h4"> ขั้นตอนการเสนอกฎหมาย</p>
           </div>
         </div>
         {/*---------*/}
-        <div className={` relative w-[500px] h-[197px] mx-auto top-[600px]`} id="leg_01">
+        <div className={` relative w-[500px] h-[197px] mx-auto top-[340px] md:top-[290px]`} id="leg_01_mobile">
           <Image src="/images/leg_01.svg" layout="fill" objectFit="contain" />
-          <div className="absolute -top-[120px] w-full ">
+          <div className="absolute -top-[80px] w-full ">
             <p className="relative text-center b2">
               ผู้ริเริ่มเสนอร่างกฎหมาย <br />
               และเอกสาร
@@ -73,18 +20,18 @@ export const Section_1 = ({ current }) => {
           </div>
         </div>
         {/*---------*/}
-        <div className={` relative w-[700px] h-[197px] left-[-80px]  top-[700px]`} id="leg_02">
+        <div className={` relative w-[700px] h-[197px] left-[-80px]  top-[380px] md:top-[300px]`} id="leg_02_mobile">
           <Image src="/images/leg_02.svg" layout="fill" objectFit="contain" />
         </div>
         {/*---------*/}
-        <div className={` relative w-[600px] h-[197px] mx-[60%] top-[700px]`} id="leg_03">
+        <div className={` relative w-[600px] h-[197px] mx-[58%] top-[300px] md:top-[300px]`} id="leg_03_mobile">
           <Image src="/images/leg_03.svg" layout="fill" objectFit="contain" />
           <div className="absolute -top-[80px] -left-[90px] w-full ">
             <p className="relative text-center b2">ตรวจสอบเอกสาร</p>
           </div>
         </div>
         {/*---------*/}
-        <div className={` relative w-[600px] h-[197px] mx-[36%] top-[780px]`} id="leg_04">
+        <div className={` relative w-[600px] h-[197px] mx-[36%] top-[380px] md:top-[400px]`} id="leg_04_mobile">
           <Image src="/images/leg_04.svg" layout="fill" objectFit="contain" />
           <div className="absolute -top-[80px] -left-[90px] w-full ">
             <p className="relative text-center b2">
@@ -95,7 +42,7 @@ export const Section_1 = ({ current }) => {
           </div>
         </div>
         {/*---------*/}
-        <div className={` relative w-[700px] h-[197px] mx-[12%] top-[880px]`} id="leg_05">
+        <div className={` relative w-[700px] h-[197px] mx-[15%] top-[480px] md:top-[500px]`} id="leg_05_mobile">
           <Image src="/images/leg_05.svg" layout="fill" objectFit="contain" />
           <div className="absolute -top-[80px] -left-[130px] w-full ">
             <p className="relative text-center b2">
@@ -106,11 +53,11 @@ export const Section_1 = ({ current }) => {
           </div>
         </div>
         {/*---------*/}
-        <div className={` relative w-[250px] h-[433px] mx-[2%] top-[750px]`} id="leg_07">
+        <div className={` relative w-[250px] h-[433px] mx-[2%] top-[410px] md:top-[350px]`} id="leg_07_mobile">
           <Image src="/images/leg_07.svg" layout="fill" objectFit="contain" />
         </div>
         {/*---------*/}
-        <div className={` relative w-[600px] h-[197px] mx-[11%] top-[800px]`} id="leg_06">
+        <div className={` relative w-[600px] h-[197px] mx-[8%] top-[435px] md:top-[400px]`} id="leg_06_mobile">
           <Image src="/images/leg_06.svg" layout="fill" objectFit="contain" />
           <div className="absolute -top-[70px] -left-[100px] w-full ">
             <p className="relative text-center b2">
@@ -120,7 +67,7 @@ export const Section_1 = ({ current }) => {
           </div>
         </div>
         {/*---------*/}
-        <div className={` relative w-[800px] h-[197px] mx-[30%] top-[900px]`} id="leg_08">
+        <div className={` relative w-[800px] h-[197px] mx-[27%] top-[550px] md:top-[550px]`} id="leg_08_mobile">
           <Image src="/images/leg_08.svg" layout="fill" objectFit="contain" />
           <div className="absolute -top-[80px]  w-full ">
             <p className="relative text-center b2">
@@ -131,7 +78,7 @@ export const Section_1 = ({ current }) => {
           </div>
         </div>
         {/*---------*/}
-        <div className={` relative w-[250px] h-[433px] mx-[0] top-[600px]`} id="leg_09">
+        <div className={` relative w-[250px] h-[433px] mx-[0] top-[200px]`} id="leg_09_mobile">
           <Image src="/images/leg_07.svg" layout="fill" objectFit="contain" />
           <div className="absolute top-[15%] left-[25%] w-[400px]">
             <p className="relative text-center b2">
@@ -143,7 +90,7 @@ export const Section_1 = ({ current }) => {
           </div>
         </div>
         {/*---------*/}
-        <div className={` relative w-[800px] h-[300px] mx-[6%] top-[550px]`} id="leg_10">
+        <div className={` relative w-[800px] h-[300px] mx-[4%] top-[200px]`} id="leg_10_mobile">
           <Image src="/images/leg_09.svg" layout="fill" objectFit="contain" />
           <div className="absolute top-[30px] -left-[23%]  w-full ">
             <p className="relative text-center b2">
@@ -153,11 +100,11 @@ export const Section_1 = ({ current }) => {
           </div>
         </div>
         {/*---------*/}
-        <div className={` relative w-[150px] h-[433px] mx-[0%] top-[350px] opacity-0`} id="leg_11">
+        <div className={` relative w-[150px] h-[433px] mx-[0%] top-[200px] opacity-0`} id="leg_11_mobile">
           <Image src="/images/leg_07.svg" layout="fill" objectFit="contain" />
         </div>
         {/*---------*/}
-        <div className={` relative w-[650px] h-[170px] mx-auto top-[450px]`} id="leg_12">
+        <div className={` relative w-[650px] h-[170px] mx-[19%] top-[150px] md:top-[250px]`} id="leg_12_mobile">
           <Image src="/images/leg_10.svg" layout="fill" objectFit="contain" />
           <div className="absolute -top-[100px] -left-[17%]  w-full ">
             <p className="relative text-center b2">
@@ -167,7 +114,7 @@ export const Section_1 = ({ current }) => {
           </div>
         </div>
         {/*---------*/}
-        <div className={` relative w-[850px] h-[190px] mx-[42%] top-[600px]`} id="leg_13">
+        <div className={` relative w-[850px] h-[190px] mx-[39%] md:top-[400px] top-[300px]`} id="leg_13_mobile">
           <Image src="/images/leg_11.svg" layout="fill" objectFit="contain" />
           <div className="absolute -top-[100px]  w-full ">
             <p className="relative text-center b2">
@@ -177,7 +124,7 @@ export const Section_1 = ({ current }) => {
           </div>
         </div>
         {/*---------*/}
-        <div className={` relative w-[280px] h-[350px] mx-[3%] top-[300px]`} id="leg_14">
+        <div className={` relative w-[280px] h-[350px] mx-[3%] top-[100px]`} id="leg_14_mobile">
           <Image src="/images/leg_12.svg" layout="fill" objectFit="contain" />
           <div className="absolute top-[20%]  left-[20%]  w-full ">
             <p className="relative text-center b2">

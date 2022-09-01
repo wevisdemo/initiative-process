@@ -6,26 +6,26 @@ import { color_circle, circle_type } from "./util";
 export const ExpandYear = () => {
   const Ratio = () => {
     return (
-      <div className="flex space-x-[32px] mt-3">
-        <div className="flex">
+      <div className="flex space-y-2 lg:space-x-[32px] flex-col lg:flex-row mt-3">
+        <div className="flex items-center">
           <div className="circle_ratio" style={{ background: color_circle("สังคม") }} />
           <p className="ml-[8px]">
             สังคม <span className="font-bold ">54</span> ฉบับ
           </p>
         </div>
-        <div className="flex">
+        <div className="flex items-center">
           <div className="circle_ratio" style={{ background: color_circle("เศรษฐกิจ") }} />
           <p className="ml-[8px]">
             เศรษฐกิจ <span className="font-bold ">29</span> ฉบับ
           </p>
         </div>
-        <div className="flex">
+        <div className="flex items-center">
           <div className="circle_ratio" style={{ background: color_circle("การเมือง") }} />
           <p className="ml-[8px]">
             การเมือง <span className="font-bold ">36</span> ฉบับ
           </p>
         </div>
-        <div className="flex">
+        <div className="flex items-center">
           <div className="circle_ratio" style={{ background: color_circle("ศาสนาและวัฒนธรรม") }} />
           <p className="ml-[8px]">
             ศาสนาและวัฒนธรรม <span className="font-bold ">8</span> ฉบับ
@@ -68,20 +68,30 @@ export const ExpandYear = () => {
 
   return (
     <div
-      className="sticky top-0 flex flex-col justify-around w-full h-screen max-w-6xl py-10 mx-auto bg-black "
+      className="top-0 flex flex-col justify-around w-full py-10 mx-auto bg-black lg:h-screen lg:sticky lg:max-w-6xl "
       id="page_start"
     >
-      <div className="flex flex-col items-center pt-4 " id="step_0">
-        <p className="b4">เพราะตั้งแต่รัฐธรรมนูญปี 2540 เปิดโอกาสให้ลงชื่อเสนอกฎหมาย</p>
-        <p className="b4">ผ่านมากว่า 20 ปี กฎหมายที่เสนอโดยประชาชน</p>
-        <p className="flex mt-2 mb-4 font-black h7">
+      <div className="flex flex-col items-center pt-4 text-center " id="step_0">
+        <div className="b4">
+          เพราะตั้งแต่รัฐธรรมนูญปี 2540 เปิดโอกาส
+          <br className=" lg:hidden" />
+          ให้ลงชื่อเสนอกฎหมาย <br className="hidden lg:inline" />
+          ผ่านมากว่า 20 ปี <br className=" lg:hidden" />
+          กฎหมายที่เสนอโดยประชาชน
+        </div>
+
+        <p className="flex items-center mt-2 font-black lg:mb-4 h7">
           ผ่านเพียง
-          <span className=" mx-1 flex items-center justify-center w-[36px] h-[36px] border-2 border-white rounded-full ">
+          <span className=" mx-1 flex items-center justify-center lg:w-[36px] w-[28px] h-[28px] lg:h-[36px] border-2 border-white rounded-full ">
             9
           </span>
-          ฉบับ จากที่ยื่นไปทั้งหมด 142 ฉบับ
+          ฉบับ <span className="hidden lg:inline">จากที่ยื่นไปทั้งหมด 142 ฉบับ</span>
         </p>
-        <p className="b4">ซึ่งกฎหมายที่ถูกเสนอโดยประชาชนเข้ามา ตามแต่ละรัฐธรรมนูญ ถูกแบ่งดังนี้ </p>
+        <p className="font-black lg:hidden h7">จากที่ยื่นไปทั้งหมด 142 ฉบับ</p>
+        <p className="b4">
+          ซึ่งกฎหมายที่ถูกเสนอโดยประชาชนเข้ามา
+          <br className=" lg:hidden" /> ตามแต่ละรัฐธรรมนูญ ถูกแบ่งดังนี้{" "}
+        </p>
         <Ratio />
         <p className="mt-4 opacity-75 b5 ">ชี้เพื่อดูรายละเอียดของกฎหมายแต่ละฉบับ</p>
       </div>
@@ -97,7 +107,7 @@ export const ExpandYear = () => {
         <p className="font-bold b4">กฎหมายของรัฐธรรมนูญปี 2540-2560 ที่เปิดช่องทางลงชื่อการเข้าเสนอชื่อ</p>
       </div>
 
-      <div className="flex space-x-[47px] mt-3 h-full">
+      <div className="flex lg:space-x-[47px] mt-3 h-full flex-col lg:flex-row max-w-[280px] mx-auto lg:max-w-none ">
         {/* year 2540 */}
         <YearDetail data={y_2540} year="2540" image="/images/circle_white_type_1.svg" />
         {/* year 2550 */}

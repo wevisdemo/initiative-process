@@ -1,7 +1,7 @@
 import { useEffect, useRef } from "react";
 import { Engine, Render, Bodies, World, Composite } from "matter-js";
+import { y_2540, y_2560, y_2550 } from "../../../public/data/part_1/constitution";
 
-import { drawStartBtn } from "./drawStartBtn";
 import { drawRectStart } from "./drawRectStart";
 import { leg_01 } from "./legs/leg_01";
 import { leg_02 } from "./legs/leg_02";
@@ -18,14 +18,14 @@ import { leg_12 } from "./legs/leg_12";
 import { leg_13 } from "./legs/leg_13";
 import { leg_14 } from "./legs/leg_14";
 
-export const Canvas_1 = ({ current }) => {
+export const Canvas_Mobile = ({ current }) => {
   const scene = useRef();
 
   useEffect(() => {
-    const wrapper = document.getElementById("canvas_past_1");
+    const wrapper = document.getElementById("canvas_mobile");
 
     const cw = wrapper.clientWidth;
-    const ch = wrapper.clientHeight + 1000;
+    const ch = wrapper.clientHeight;
     //1440 document.body.clientWidth
     //4734
     const render = Render.create({
@@ -68,8 +68,6 @@ export const Canvas_1 = ({ current }) => {
         },
       }),
     ]);
-
-    drawStartBtn(current.world);
     drawRectStart(current.world);
     leg_01(current.world);
     leg_02(current.world);
@@ -98,8 +96,32 @@ export const Canvas_1 = ({ current }) => {
   }, []);
 
   return (
-    <div className={`relative -top-[100vh]  h-[5000px] w-[1152px] mx-auto`} id="canvas_past_1">
+    <div className={`relative top-0  h-[4600px] w-[1152px] mx-auto  left-[50%] -translate-x-[50%] `} id="canvas_mobile">
       <div ref={scene} style={{ width: "100%", height: "100%" }} />
+      {/* ball mock start */}
+      <div className="absolute top-0 flex flex-col items-center  left-[50%] -translate-x-[50%] opacity-0 ">
+        <div className="flex ">
+          {y_2540.map((d, index) => (
+            <div key={index} className={`${d["รธน."]}_${d["ลำดับ"]}_mobile `}>
+              .
+            </div>
+          ))}
+        </div>
+        <div className="flex">
+          {y_2550.map((d, index) => (
+            <div key={index} className={`${d["รธน."]}_${d["ลำดับ"]}_mobile `}>
+              .
+            </div>
+          ))}
+        </div>
+        <div className="flex">
+          {y_2560.map((d, index) => (
+            <div key={index} className={`${d["รธน."]}_${d["ลำดับ"]}_mobile`}>
+              .
+            </div>
+          ))}
+        </div>
+      </div>
     </div>
   );
 };

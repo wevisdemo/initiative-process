@@ -53,62 +53,62 @@
   font-family: "Kondolar";
 }
 .h1 {
-  @apply md:text-[100px] text-[60px];
+  @apply lg:text-[100px] text-[60px];
 }
 .h2 {
-  @apply md:text-[72px] text-[48px];
+  @apply lg:text-[72px] text-[48px];
 }
 .h3 {
-  @apply md:text-[60px] text-[36px];
+  @apply lg:text-[60px] text-[36px];
 }
 .h4 {
-  @apply md:text-[48px] text-[32px];
+  @apply lg:text-[48px] text-[32px];
 }
 .h5 {
-  @apply md:text-[36px] text-[28px];
+  @apply lg:text-[36px] text-[28px];
 }
 .h6 {
-  @apply md:text-[32px] text-[24px];
+  @apply lg:text-[32px] text-[24px];
 }
 .h7 {
-  @apply md:text-[28px] text-[21px];
+  @apply lg:text-[28px] text-[21px];
 }
 .h8 {
-  @apply md:text-[24px] text-[18px];
+  @apply lg:text-[24px] text-[18px];
 }
 .h9 {
-  @apply md:text-[21px] text-[16px];
+  @apply lg:text-[21px] text-[16px];
 }
 .h10 {
-  @apply md:text-[18px] text-[15px];
+  @apply lg:text-[18px] text-[15px];
 }
 .h11 {
-  @apply md:text-[16px] text-[14px];
+  @apply lg:text-[16px] text-[14px];
 }
 
 .b1 {
   line-height: 150%;
-  @apply md:text-[32px] text-[24px];
+  @apply lg:text-[32px] text-[24px];
 }
 .b2 {
   line-height: 150%;
-  @apply md:text-[24px] text-[21px];
+  @apply lg:text-[24px] text-[21px];
 }
 .b3 {
   line-height: 150%;
-  @apply md:text-[21px] text-[18px];
+  @apply lg:text-[21px] text-[18px];
 }
 .b4 {
   line-height: 150%;
-  @apply md:text-[18px] text-[16px];
+  @apply lg:text-[18px] text-[16px];
 }
 .b5 {
   line-height: 150%;
-  @apply md:text-[16px] text-[14px];
+  @apply lg:text-[16px] text-[14px];
 }
 .b6 {
   line-height: 150%;
-  @apply md:text-[14px] text-[13px];
+  @apply lg:text-[14px] text-[13px];
 }
 .b7 {
   line-height: 150%;

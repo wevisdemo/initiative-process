@@ -11,7 +11,7 @@ html {
 
 @import "tailwindcss/components";
 .circle_ratio {
-  @apply w-[24px] h-[24px] rounded-full;
+  @apply w-[20px] h-[20px] lg:w-[24px] lg:h-[24px] rounded-full;
 }
 .red {
   @apply font-bold text-scarlet;

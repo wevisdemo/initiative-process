@@ -6,7 +6,7 @@ import { device } from "../../../util";
 export const leg_05 = (world) => {
   const w = 250;
   const elem_leg = document.getElementById("leg_05_mobile");
-  const elem_leg_left = elem_leg.getBoundingClientRect().left + w - 43;
+  const elem_leg_left = elem_leg.offsetLeft;
   const wrapper_section = document.getElementById("leg_section_1_wrapper_mobile");
   const ratio =
     device() === "tablet" ? elem_leg.getBoundingClientRect().height - 45 : elem_leg.getBoundingClientRect().height + 23;
@@ -37,8 +37,8 @@ export const leg_05 = (world) => {
   });
 
   Composite.add(world, [rect_1, rect_2, rect_3]);
-  const tri_1_ratio = device() === "mobile" ? 100 : 20;
-  const tri_2_ratio = device() === "mobile" ? 120 : 75;
+  const tri_1_ratio = device() === "mobile" ? w / 2 : w;
+  const tri_2_ratio = device() === "mobile" ? w / 2 + 60 : w;
   const y_position_1 = device() === "mobile" ? 1.7 : 1.5;
   const y_position_2 = device() === "mobile" ? 3 : 3;
 

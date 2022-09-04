@@ -6,7 +6,7 @@ import { device } from "../../../util";
 export const leg_04 = (world) => {
   const w = 250;
   const elem_leg = document.getElementById("leg_04_mobile");
-  const elem_leg_left = elem_leg.getBoundingClientRect().left + w - 43;
+  const elem_leg_left = elem_leg.offsetLeft;
   const wrapper_section = document.getElementById("leg_section_1_wrapper_mobile");
   const ratio =
     device() === "tablet"
@@ -39,8 +39,8 @@ export const leg_04 = (world) => {
 
   Composite.add(world, [rect_1, rect_2, rect_3]);
 
-  const tri_1_ratio = device() === "mobile" ? 2 * w_mobile - 220 : w_mobile / 2 - 40;
-  const tri_2_ratio = device() === "mobile" ? 2 * w_mobile - 170 : w_mobile / 2 - 35;
+  const tri_1_ratio = device() === "mobile" ? w_mobile - 60 : w_mobile / 2 - 40;
+  const tri_2_ratio = device() === "mobile" ? w_mobile : w_mobile / 2 + 35;
 
   Triangle(world, elem_leg_left + tri_1_ratio, y - w / 2.3, -Math.PI + Math.PI / 8, 2, 3);
   Triangle(world, elem_leg_left + tri_2_ratio, y - w / 2.8, Math.PI - Math.PI / 5, 3, 2.5);

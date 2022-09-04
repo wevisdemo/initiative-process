@@ -34,11 +34,11 @@ export const leg_08 = (world) => {
       fillStyle: "red",
     },
   });
-  const rect_4 = Bodies.rectangle(vwToPixels(87.5), y - 5, w, 20, {
+  const rect_4 = Bodies.rectangle(vwToPixels(87.5), y - 25, w, 20, {
     isStatic: true,
     angle: Math.PI / 2 + Math.PI / 3,
     render: {
-      fillStyle: "transparent",
+      fillStyle: "red",
     },
   });
 

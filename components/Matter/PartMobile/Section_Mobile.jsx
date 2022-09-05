@@ -6,7 +6,7 @@ export const Section_Mobile = () => {
       <div className=" h-full w-[1152px]  relative left-[50%] -translate-x-[50%]" id="leg_section_1_wrapper_mobile">
         <div className={`  relative w-[1000px] h-[197px] mx-auto top-[400px]`} id="leg_start_mobile">
           <div className="absolute top-0 w-full ">
-            <p className=" text-center relative -top-[15vh] font-black h4"> ขั้นตอนการเสนอกฎหมาย</p>
+            <p className=" text-center relative -top-[150px] font-black h4"> ขั้นตอนการเสนอกฎหมาย</p>
           </div>
         </div>
         {/*---------*/}

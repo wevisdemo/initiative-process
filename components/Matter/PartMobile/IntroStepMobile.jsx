@@ -29,7 +29,7 @@ export const IntroStepMobile = ({ current }) => {
   };
 
   return (
-    <div className="relative z-20 flex-col items-center text-center ">
+    <div className="relative z-20 flex-col items-center mb-10 text-center ">
       <p className="mt-8 b4">หรืออาจเป็นเพราะกระบวนการ ที่ส่งผลต่อการลงชื่อเสนอกฎหมาย</p>
       <p className="mt-6 b4">โดยแบ่งเป็น</p>
       <p className="font-black h6">
@@ -50,7 +50,7 @@ export const IntroStepMobile = ({ current }) => {
         ประชาชนไปไม่ถึงปลายทาง
       </p>
       <div
-        className="   relative w-[70px] h-[70px] md:w-[90px] md:h-[90px] lg:w-[112px] lg:h-[112px] mx-auto mt-20 cursor-pointer"
+        className="   relative w-[70px] h-[70px]  lg:w-[112px] lg:h-[112px] mx-auto mt-20 cursor-pointer"
         id="start_btn_mobile"
         onClick={() => start()}
       >

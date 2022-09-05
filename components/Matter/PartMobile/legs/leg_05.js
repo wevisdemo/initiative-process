@@ -37,28 +37,28 @@ export const leg_05 = (world) => {
   });
 
   Composite.add(world, [rect_1, rect_2, rect_3]);
-  const tri_1_ratio = device() === "mobile" ? w / 2 : w;
-  const tri_2_ratio = device() === "mobile" ? w / 2 + 60 : w;
+  const tri_1_ratio = w / 2 + 40;
+  const tri_2_ratio = w / 2 + 100;
   const y_position_1 = device() === "mobile" ? 1.7 : 1.5;
   const y_position_2 = device() === "mobile" ? 3 : 3;
 
-  Triangle(world, elem_leg_left - margin + tri_1_ratio, y - w / y_position_1, -Math.PI + Math.PI / 8, 3, 3);
+  Triangle(world, elem_leg_left + tri_1_ratio, y - w / y_position_1, -Math.PI + Math.PI / 8, 3, 3);
 
-  Triangle(world, elem_leg_left - margin + tri_2_ratio, y - w / y_position_2, Math.PI - Math.PI / 5, 4, 2.5);
-  Triangle(world, elem_leg_left - margin + tri_2_ratio, y - w / y_position_2, Math.PI - Math.PI / 5, 5, 2.5);
-  Triangle(world, elem_leg_left - margin + tri_2_ratio, y - w / y_position_2, Math.PI - Math.PI / 5, 6, 2.5);
-  Triangle(world, elem_leg_left - margin + tri_2_ratio, y - w / y_position_2, Math.PI - Math.PI / 5, 7, 2.5);
-  Triangle(world, elem_leg_left - margin + tri_2_ratio, y - w / y_position_2, Math.PI - Math.PI / 5, 8, 2.5);
-  Triangle(world, elem_leg_left - margin + tri_2_ratio, y - w / y_position_2, Math.PI - Math.PI / 5, 9, 2.5);
-  Triangle(world, elem_leg_left - margin + tri_2_ratio, y - w / y_position_2, Math.PI - Math.PI / 5, 10, 2.5);
-  Triangle(world, elem_leg_left - margin + tri_2_ratio, y - w / y_position_2, Math.PI - Math.PI / 5, 11, 2.5);
-  Triangle(world, elem_leg_left - margin + tri_2_ratio, y - w / y_position_2, Math.PI - Math.PI / 5, 12, 2.5);
-  Triangle(world, elem_leg_left - margin + tri_2_ratio, y - w / y_position_2, Math.PI - Math.PI / 5, 13, 2.5);
-  Triangle(world, elem_leg_left - margin + tri_2_ratio, y - w / y_position_2, Math.PI - Math.PI / 5, 14, 2.5);
-  Triangle(world, elem_leg_left - margin + tri_2_ratio, y - w / y_position_2, Math.PI - Math.PI / 5, 15, 2.5);
-  Triangle(world, elem_leg_left - margin + tri_2_ratio, y - w / y_position_2, Math.PI - Math.PI / 5, 16, 2.5);
-  Triangle(world, elem_leg_left - margin + tri_2_ratio, y - w / y_position_2, Math.PI - Math.PI / 5, 17, 2.5);
-  Triangle(world, elem_leg_left - margin + tri_2_ratio, y - w / y_position_2, Math.PI - Math.PI / 5, 18, 2.5);
-  Triangle(world, elem_leg_left - margin + tri_2_ratio, y - w / y_position_2, Math.PI - Math.PI / 5, 19, 2.5);
-  Triangle(world, elem_leg_left - margin + tri_2_ratio, y - w / y_position_2, Math.PI - Math.PI / 5, 20, 2.5);
+  Triangle(world, elem_leg_left + tri_2_ratio, y - w / y_position_2, Math.PI - Math.PI / 5, 4, 2.5);
+  Triangle(world, elem_leg_left + tri_2_ratio, y - w / y_position_2, Math.PI - Math.PI / 5, 5, 2.5);
+  Triangle(world, elem_leg_left + tri_2_ratio, y - w / y_position_2, Math.PI - Math.PI / 5, 6, 2.5);
+  Triangle(world, elem_leg_left + tri_2_ratio, y - w / y_position_2, Math.PI - Math.PI / 5, 7, 2.5);
+  Triangle(world, elem_leg_left + tri_2_ratio, y - w / y_position_2, Math.PI - Math.PI / 5, 8, 2.5);
+  Triangle(world, elem_leg_left + tri_2_ratio, y - w / y_position_2, Math.PI - Math.PI / 5, 9, 2.5);
+  Triangle(world, elem_leg_left + tri_2_ratio, y - w / y_position_2, Math.PI - Math.PI / 5, 10, 2.5);
+  Triangle(world, elem_leg_left + tri_2_ratio, y - w / y_position_2, Math.PI - Math.PI / 5, 11, 2.5);
+  Triangle(world, elem_leg_left + tri_2_ratio, y - w / y_position_2, Math.PI - Math.PI / 5, 12, 2.5);
+  Triangle(world, elem_leg_left + tri_2_ratio, y - w / y_position_2, Math.PI - Math.PI / 5, 13, 2.5);
+  Triangle(world, elem_leg_left + tri_2_ratio, y - w / y_position_2, Math.PI - Math.PI / 5, 14, 2.5);
+  Triangle(world, elem_leg_left + tri_2_ratio, y - w / y_position_2, Math.PI - Math.PI / 5, 15, 2.5);
+  Triangle(world, elem_leg_left + tri_2_ratio, y - w / y_position_2, Math.PI - Math.PI / 5, 16, 2.5);
+  Triangle(world, elem_leg_left + tri_2_ratio, y - w / y_position_2, Math.PI - Math.PI / 5, 17, 2.5);
+  Triangle(world, elem_leg_left + tri_2_ratio, y - w / y_position_2, Math.PI - Math.PI / 5, 18, 2.5);
+  Triangle(world, elem_leg_left + tri_2_ratio, y - w / y_position_2, Math.PI - Math.PI / 5, 19, 2.5);
+  Triangle(world, elem_leg_left + tri_2_ratio, y - w / y_position_2, Math.PI - Math.PI / 5, 20, 2.5);
 };

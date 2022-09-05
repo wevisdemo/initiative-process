@@ -131,7 +131,7 @@ export const WrapperExpand = () => {
       </div>
       <div className="relative   overflow-x-hidden  max-w-[100vw] lg:hidden  ">
         <IntroStepMobile current={current_03} />
-        <div className=" scale-[0.4] md:scale-[0.7] relative -top-[1500px] md:-top-[900px]">
+        <div className=" scale-[0.4]  relative -top-[1500px] ">
           <Section_Mobile />
           <Canvas_Mobile current={current_03} />
         </div>

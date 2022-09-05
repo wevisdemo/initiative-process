@@ -1,18 +1,14 @@
 import { Bodies, Composite } from "matter-js";
 import { vwToPixels } from "../../../util";
 import { Triangle } from "../../filters/Triangle";
-import { device } from "../../../util";
 
 export const leg_05 = (world) => {
   const w = 250;
   const elem_leg = document.getElementById("leg_05_mobile");
   const elem_leg_left = elem_leg.offsetLeft;
   const wrapper_section = document.getElementById("leg_section_1_wrapper_mobile");
-  const ratio =
-    device() === "tablet" ? elem_leg.getBoundingClientRect().height - 45 : elem_leg.getBoundingClientRect().height + 23;
+  const ratio = elem_leg.getBoundingClientRect().height + 23;
   const y = elem_leg.offsetTop + wrapper_section.offsetTop + ratio;
-  const wrapper = document.getElementById("canvas_mobile");
-  const margin = wrapper.getBoundingClientRect().x;
 
   const rect_1 = Bodies.rectangle(vwToPixels(25), y - 5, w, 20, {
     isStatic: true,
@@ -39,8 +35,8 @@ export const leg_05 = (world) => {
   Composite.add(world, [rect_1, rect_2, rect_3]);
   const tri_1_ratio = w / 2 + 40;
   const tri_2_ratio = w / 2 + 100;
-  const y_position_1 = device() === "mobile" ? 1.7 : 1.5;
-  const y_position_2 = device() === "mobile" ? 3 : 3;
+  const y_position_1 = 1.7;
+  const y_position_2 = 3;
 
   Triangle(world, elem_leg_left + tri_1_ratio, y - w / y_position_1, -Math.PI + Math.PI / 8, 3, 3);
 

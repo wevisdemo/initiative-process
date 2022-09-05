@@ -8,8 +8,7 @@ export const leg_10 = (world) => {
   const elem_leg = document.getElementById("leg_10_mobile");
   const elem_leg_left = elem_leg.offsetLeft;
   const wrapper_section = document.getElementById("leg_section_1_wrapper_mobile");
-  const ratio =
-    device() === "tablet" ? elem_leg.getBoundingClientRect().height - 60 : elem_leg.getBoundingClientRect().height + 30;
+  const ratio = elem_leg.getBoundingClientRect().height + 30;
   const y = elem_leg.offsetTop + wrapper_section.offsetTop + ratio;
 
   const rect_1 = Bodies.rectangle(vwToPixels(14), y + 53, w, 20, {
@@ -36,8 +35,8 @@ export const leg_10 = (world) => {
 
   Composite.add(world, [rect_1, rect_2, rect_3]);
 
-  const tri_1_ratio = device() === "mobile" ? w - 70 : w - 70;
-  const tri_2_ratio = device() === "mobile" ? w - 15 : w - 15;
+  const tri_1_ratio = w - 70;
+  const tri_2_ratio = w - 15;
 
   Triangle(world, elem_leg_left + tri_1_ratio, y - 30, -Math.PI + Math.PI / 8, 7, 2);
   Triangle(world, elem_leg_left + tri_2_ratio, y - 30, Math.PI - Math.PI / 5, 4, 2);

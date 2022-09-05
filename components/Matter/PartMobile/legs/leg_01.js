@@ -1,11 +1,11 @@
 import { Bodies, Composite } from "matter-js";
 import { vwToPixels } from "../../../util";
 import { Triangle } from "../../filters/Triangle";
-import { device } from "../../../util";
+
 export const leg_01 = (world) => {
   const elem_leg = document.getElementById("leg_01_mobile");
   const wrapper_section = document.getElementById("leg_section_1_wrapper_mobile");
-  const ratio = device() === "tablet" ? 40 : -20;
+  const ratio = -20;
   const y = elem_leg.offsetTop + wrapper_section.offsetTop + elem_leg.getBoundingClientRect().height - ratio;
   const w = 250;
   const rect_left = Bodies.rectangle(vwToPixels(50) - w / 2, y, w, 20, {

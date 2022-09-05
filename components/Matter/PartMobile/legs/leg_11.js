@@ -1,5 +1,5 @@
 import { Bodies, Composite } from "matter-js";
-import { vhToPixels, vwToPixels } from "../../../util";
+import { vwToPixels } from "../../../util";
 
 export const leg_11 = (world) => {
   const w = 500;

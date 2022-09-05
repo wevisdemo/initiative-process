@@ -1,13 +1,12 @@
 import { Bodies, Composite } from "matter-js";
 import { vwToPixels } from "../../../util";
 import { Triangle } from "../../filters/Triangle";
-import { device } from "../../../util";
+
 export const leg_07 = (world) => {
   const w = 230;
   const elem_leg = document.getElementById("leg_07_mobile");
   const wrapper_section = document.getElementById("leg_section_1_wrapper_mobile");
-  const ratio =
-    device() === "tablet" ? elem_leg.getBoundingClientRect().height - 85 : elem_leg.getBoundingClientRect().height + 20;
+  const ratio = elem_leg.getBoundingClientRect().height + 20;
   const y = elem_leg.offsetTop + wrapper_section.offsetTop + ratio;
   const elem_leg_left = elem_leg.offsetLeft;
 
@@ -35,8 +34,8 @@ export const leg_07 = (world) => {
 
   Composite.add(world, [rect_1, rect_2, rect_3]);
 
-  const tri_1_ratio = device() === "mobile" ? w + 10 : w + 5;
-  const tri_2_ratio = device() === "mobile" ? w + 60 : w + 60;
+  const tri_1_ratio = w + 10;
+  const tri_2_ratio = w + 60;
 
   Triangle(world, elem_leg_left + tri_1_ratio, y + w + 55, -Math.PI + Math.PI / 8, 4, 2);
   Triangle(world, elem_leg_left + tri_1_ratio, y + w + 55, -Math.PI + Math.PI / 8, 5, 2);

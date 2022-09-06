@@ -16,6 +16,10 @@ import { animateZoom } from "./animateZoom";
 import { Canvas_Mobile } from "./Matter/PartMobile/CanvasMobile";
 import { Section_Mobile } from "./Matter/PartMobile/Section_Mobile";
 import { IntroStepMobile } from "./Matter/PartMobile/IntroStepMobile";
+import { IntroPart2 } from "./Matter/Part2/IntroPart2";
+import { Section_2_Mobile } from "./Matter/Part2Mobile/Section_2_Mobile";
+import { Canvas_2_Mobiles } from "./Matter/Part2Mobile/Canvas_2_Mobile";
+import { IntroPart_2_Mobile } from "./Matter/Part2Mobile/IntroPart_2_Mobile";
 
 export const WrapperExpand = () => {
   const engine_01 = useRef(
@@ -33,6 +37,11 @@ export const WrapperExpand = () => {
       enableSleeping: true,
     })
   );
+  const engine_04 = useRef(
+    Engine.create({
+      enableSleeping: true,
+    })
+  );
   const [step_1, setStep_1] = useState(true);
   const [step_2, setStep_2] = useState(true);
   const [step_3, setStep_3] = useState(true);
@@ -43,6 +52,7 @@ export const WrapperExpand = () => {
   const current_01 = engine_01.current;
   const current_02 = engine_02.current;
   const current_03 = engine_03.current;
+  const current_04 = engine_04.current;
 
   GetPosition(setStep_1, setStep_2, setStep_3, firstStep_3, setFirstStep_3, drawBalls, setDrawBalls);
 
@@ -137,16 +147,32 @@ export const WrapperExpand = () => {
         </div>
       </div>
 
-      <div className="mt-10 relative -top-[2800px] md:-top-[1600px] lg:top-0 ">
+      <div className="mt-10 relative -top-[2800px] lg:top-0 ">
         <Summary_Part1 />
         <DetailsCanvas_Part1 />
       </div>
       <div
-        className="relative z-50 overflow-x-hidden bg-black max-w-[100vw] -top-[2100px] md:-top-[550px] lg:top-0  "
+        className="relative  overflow-x-hidden bg-black max-w-[100vw] -top-[2100px] md:-top-[1800px] lg:top-0  "
         id="section_2"
       >
-        <Section_2 current={current_02} />
-        <Canvas_2 current={current_02} />
+        <div className="hidden lg:block">
+          <div className="relative z-50 pt-16">
+            <IntroPart2 current={current_02} />
+          </div>
+          <div className=" -translate-y-[100px] ">
+            <Section_2 current={current_02} />
+            <Canvas_2 current={current_02} />
+          </div>
+        </div>
+        <div className="lg:hidden">
+          <div className="relative z-50 pt-16">
+            <IntroPart_2_Mobile current={current_04} />
+          </div>
+          <div className=" -translate-y-[1300px] scale-[0.4]  ">
+            <Section_2_Mobile />
+            <Canvas_2_Mobiles current={current_04} />
+          </div>
+        </div>
       </div>
       <div className="mt-10 ">
         {/* <Summary_Part2 />

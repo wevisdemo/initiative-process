@@ -55,8 +55,8 @@ export const vhToPixels = (vh) => {
 };
 
 export const vwToPixels = (vw) => {
-  const wrapper = document.getElementById("canvas_past_2");
-  return Math.round(wrapper.getBoundingClientRect().width / (100 / vw));
+  const wrapper = 1152;
+  return Math.round(wrapper / (100 / vw));
 };
 
 export const label_filter = (label) => {
@@ -69,5 +69,5 @@ export const label_filter = (label) => {
 };
 
 export const device = () => {
-  return "mobile";
+  return document.body.clientWidth < 1025 ? "mobile" : "desktop";
 };

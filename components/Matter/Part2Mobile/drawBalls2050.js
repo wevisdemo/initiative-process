@@ -4,22 +4,20 @@ import { label_filter } from "../../util";
 export const drawBalls2050 = (world, data) => {
   data.map((d) => {
     const elem = document.getElementsByClassName(`${d["รธน."]}_${d["ลำดับ"]}_2_mobile`);
-    const wrapper = document.getElementById("canvas_past_2_mobile");
-    const margin = wrapper.getBoundingClientRect().x - 12.5;
 
-    const circle = Bodies.circle(elem[0].getBoundingClientRect().x, elem[0].offsetTop + 12.5, 13, {
+    const circle = Bodies.circle(elem[0].getBoundingClientRect().left + 100, elem[0].offsetTop + 12.5, 13, {
       render: {
         fillStyle: color_circle(d["ประเภท"]),
       },
     });
 
-    const line1 = Bodies.rectangle(elem[0].getBoundingClientRect().x, elem[0].offsetTop + 12.5, 24, 1, {
+    const line1 = Bodies.rectangle(elem[0].getBoundingClientRect().left + 100, elem[0].offsetTop + 12.5, 24, 1, {
       render: {
         fillStyle: d["ประเภท"] != "การเมือง" ? "black" : "white",
       },
       angle: Math.PI - Math.PI / 4,
     });
-    const line2 = Bodies.rectangle(elem[0].getBoundingClientRect().x, elem[0].offsetTop + 12.5, 24, 1, {
+    const line2 = Bodies.rectangle(elem[0].getBoundingClientRect().left + 100, elem[0].offsetTop + 12.5, 24, 1, {
       render: {
         fillStyle: d["ประเภท"] != "การเมือง" ? "black" : "white",
       },

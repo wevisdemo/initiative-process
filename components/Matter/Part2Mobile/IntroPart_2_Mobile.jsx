@@ -25,22 +25,28 @@ export const IntroPart_2_Mobile = ({ current }) => {
         กระบวนการต่อไป คือ
       </p>
       <p className="font-black h4"> ขั้นตอนการพิจารณากฎหมาย</p>
-      <div className="absolute top-0 flex flex-wrap opacity-0 ">
-        {y_2540.map((d, index) => (
-          <div key={index} className={`${d["รธน."]}_${d["ลำดับ"]}_2_mobile }`}>
-            .
-          </div>
-        ))}
-        {y_2550.map((d, index) => (
-          <div key={index} className={`${d["รธน."]}_${d["ลำดับ"]}_2_mobile }`}>
-            .
-          </div>
-        ))}
-        {y_2560.map((d, index) => (
-          <div key={index} className={`${d["รธน."]}_${d["ลำดับ"]}_2_mobile }`}>
-            .
-          </div>
-        ))}
+      <div className="absolute top-0 flex flex-col opacity-0 ">
+        <div className="flex justify-center">
+          {y_2540.map((d, index) => (
+            <div key={index} className={`${d["รธน."]}_${d["ลำดับ"]}_2_mobile }`}>
+              1
+            </div>
+          ))}
+        </div>
+        <div className="flex">
+          {y_2550.map((d, index) => (
+            <div key={index} className={`${d["รธน."]}_${d["ลำดับ"]}_2_mobile }`}>
+              2
+            </div>
+          ))}
+        </div>
+        <div className="flex">
+          {y_2560.map((d, index) => (
+            <div key={index} className={`${d["รธน."]}_${d["ลำดับ"]}_2_mobile }`}>
+              3
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

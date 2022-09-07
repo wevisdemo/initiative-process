@@ -1,6 +1,11 @@
 export const DiagramPart2 = () => {
   return (
-    <svg width="500" height="720" viewBox="0 0 500 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      className="w-[350px] h-[570px] md:w-[500px] md:h-[720px]"
+      viewBox="0 0 500 720"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <g id="diagram_part2" clipPath="url(#clip0_183_151617)">
         <g id="main_diagram">
           <g id="10">

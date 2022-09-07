@@ -152,10 +152,10 @@ export const WrapperExpand = () => {
         <DetailsCanvas_Part1 />
       </div>
       <div
-        className="relative  overflow-x-hidden bg-black max-w-[100vw] -top-[2100px] md:-top-[1800px] lg:top-0  "
+        className="relative z-20  overflow-x-hidden  max-w-[100vw] -top-[2100px] md:-top-[1800px] lg:top-0  "
         id="section_2"
       >
-        <div className="hidden lg:block">
+        <div className="hidden bg-black lg:block">
           <div className="relative z-50 pt-16">
             <IntroPart2 current={current_02} />
           </div>
@@ -174,10 +174,10 @@ export const WrapperExpand = () => {
           </div>
         </div>
       </div>
-      {/* <div className="mt-10 -top-[4300px] relative lg:top-0 ">
+      <div className="mt-10 -top-[4700px] md:-top-[4300px] relative lg:top-0 ">
         <Summary_Part2 />
         <DetailsCanvas_Part2 />
-      </div> */}
+      </div>
     </div>
   );
 };

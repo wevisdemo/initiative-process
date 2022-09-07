@@ -47,7 +47,7 @@ export const SummaryAll = () => {
       step: "bullet_8",
       img_bullet: "bullet_12_white",
       img: "summary_12",
-      des: "ยกเลิกรัฐธรส.ส.วาระ 2 ตั้งคณะกรรมาธิการรมนูญ",
+      des: "ยกเลิกรัฐธรส.ส.วาระ 2 <br class='md:hidden'/>ตั้งคณะกรรมาธิการรมนูญ",
       qul: "1 ฉบับ",
     },
   ];
@@ -56,16 +56,20 @@ export const SummaryAll = () => {
       <p className="mb-4 font-bold b2">สรุปอันดับทั้งหมด </p>
       {data.map((d, index) => (
         <div className="flex" key={index}>
-          <div className={` relative ${index < 3 ? "w-[40px] h-[40px]" : "w-[32px] h-[40px]"}  mr-4 `}>
+          <div
+            className={` relative ${
+              index < 3 ? "md:w-[40px] w-[24px] h-[24px] md:h-[40px]" : "w-[20px] h-[24px] md:w-[32px] md:h-[40px]"
+            }  mr-4 `}
+          >
             <Image src={`/images/${d.step}.svg`} layout="fill" objectFit="contain" />
           </div>
           <div className="flex flex-col ">
             <div className="flex b5 ">
               ขั้นตอนที่
-              <div className={` relative w-[21px] h-[21px] mx-1 `}>
+              <div className={` relative w-[16px] h-[16px] md:w-[21px] md:h-[21px] mx-1 `}>
                 <Image src={`/images/${d.img_bullet}.svg`} layout="fill" objectFit="contain" />
               </div>
-              <b>{d.des}</b>
+              <b dangerouslySetInnerHTML={{ __html: d.des }} />
             </div>
             <div className="flex">
               {index < 2 && (

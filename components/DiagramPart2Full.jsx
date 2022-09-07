@@ -1,6 +1,11 @@
 export const DiagramPart2Full = () => {
   return (
-    <svg width="447" height="726" viewBox="0 0 447 726" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      className="w-[350px] h-[570px] md:w-[500px] md:h-[720px]"
+      viewBox="0 0 447 726"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <g id="diagram_part2full">
         <g id="main_diagram">
           <path

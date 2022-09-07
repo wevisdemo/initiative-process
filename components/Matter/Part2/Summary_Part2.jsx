@@ -3,33 +3,32 @@ import Image from "next/image";
 export const Summary_Part2 = () => {
   const Ratio = () => {
     return (
-      <div className="flex justify-center space-x-[32px] mt-10">
-        <div className="flex">
+      <div className="flex space-y-2 lg:space-y-0  lg:space-x-[32px] justify-center flex-col lg:flex-row mt-10">
+        <div className="flex items-center lg:items-start">
           <div className="circle_ratio" style={{ background: color_circle("สังคม") }} />
           <div className="ml-[8px]">
-            <p>สังคม</p>
-            <p>54 ฉบับ</p>
+            สังคม <br className="hidden lg:inline" />
+            54 ฉบับ
           </div>
         </div>
-        <div className="flex">
+        <div className="flex items-center lg:items-start">
           <div className="circle_ratio" style={{ background: color_circle("เศรษฐกิจ") }} />
           <div className="ml-[8px]">
-            <p>เศรษฐกิจ</p>
-            <p>29 ฉบับ</p>
+            เศรษฐกิจ <br className="hidden lg:inline" />
+            29 ฉบับ
           </div>
         </div>
-        <div className="flex">
+        <div className="flex items-center lg:items-start">
           <div className="circle_ratio" style={{ background: color_circle("การเมือง") }} />
           <div className="ml-[8px]">
-            <p>การเมือง</p>
-            <p>36 ฉบับ</p>
+            การเมือง <br className="hidden lg:inline" />
+            36 ฉบับ
           </div>
         </div>
-        <div className="flex">
+        <div className="flex items-center lg:items-start">
           <div className="circle_ratio" style={{ background: color_circle("ศาสนาและวัฒนธรรม") }} />
           <div className="ml-[8px]">
-            <p>ศาสนาและวัฒนธรรม</p>
-            <p>8 ฉบับ</p>
+            ศาสนาและวัฒนธรรม <br className="hidden lg:inline" />8 ฉบับ
           </div>
         </div>
       </div>
@@ -38,39 +37,36 @@ export const Summary_Part2 = () => {
 
   const ExpandYear = () => {
     return (
-      <div className="flex justify-center space-x-[32px] mt-5">
-        <div className="flex mt-4 b4 mb-9">
-          <div className=" relative w-[24px] h-[24px] mr-2">
+      <div className="flex space-y-2 lg:space-y-0  lg:space-x-[32px] justify-center flex-col lg:flex-row mt-10">
+        <div className="flex b4">
+          <div className=" relative w-[20px] h-[20px]  lg:w-[24px] lg:h-[24px] mr-2">
             <Image src="/images/circle_white_type_1.svg" layout="fill" objectFit="contain" />
           </div>
-          <div>
-            <p>รธน.ปี 40</p>
-            <p>x ฉบับ</p>
+          <div className="flex items-center ">
+            รธน.ปี 40 <br className="hidden lg:inline" />x ฉบับ
           </div>
         </div>
-        <div className="flex mt-4 b4 mb-9">
-          <div className=" relative w-[24px] h-[24px] mr-2">
+        <div className="flex b4">
+          <div className=" relative w-[20px] h-[20px]  lg:w-[24px] lg:h-[24px] mr-2">
             <Image src="/images/circle_white_type_2.svg" layout="fill" objectFit="contain" />
           </div>
-          <div>
-            <p>รธน.ปี 50</p>
-            <p>x ฉบับ</p>
+          <div className="flex items-center ">
+            รธน.ปี 50 <br className="hidden lg:inline" />x ฉบับ
           </div>
         </div>
-        <div className="flex mt-4 b4 mb-9">
-          <div className=" relative w-[24px] h-[24px] mr-2">
+        <div className="flex b4 ">
+          <div className=" relative w-[20px] h-[20px]  lg:w-[24px] lg:h-[24px] mr-2">
             <Image src="/images/circle_white_type_3.svg" layout="fill" objectFit="contain" />
           </div>
-          <div>
-            <p>รธน.ปี 60</p>
-            <p>x ฉบับ</p>
+          <div className="flex items-center ">
+            รธน.ปี 60 <br className="hidden lg:inline" />x ฉบับ
           </div>
         </div>
       </div>
     );
   };
   return (
-    <div className="py-20 ">
+    <div className="py-20  w-[290px] lg:w-full mx-auto ">
       <div className="text-center ">
         <p className="b2">ประกาศลงในราชกิจจานุเบกษา</p>
         <p className="h4">6.3%</p>

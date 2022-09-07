@@ -1,6 +1,11 @@
 export const DiagramCompare = () => {
   return (
-    <svg width="600" height="720" viewBox="0 0 600 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg
+      className="w-[350px] h-[570px] md:w-[500px] md:h-[720px]"
+      viewBox="0 0 600 720"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
       <g id="diagram_compare" clipPath="url(#clip0_340_1698630)">
         <g id="main_diagram">
           <path

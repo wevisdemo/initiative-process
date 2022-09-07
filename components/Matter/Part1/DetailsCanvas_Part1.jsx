@@ -5,7 +5,7 @@ import { DiagramPart1 } from "../../DiagramPart1";
 export const DetailsCanvas_Part1 = () => {
   return (
     <div id="DetailsCanvas_Part1" className="relative w-full ">
-      <div className=" sticky top-0 lg:h-[30vh] h-[0px]  lg:w-[50%] ">
+      <div className=" sticky top-0 lg:z-10  h-[0px]  lg:w-[50%] ">
         <div className="relative flex items-center h-screen ">
           <div id="DiagramPart1" className="absolute top-[50%] translate-y-[-50%]  md:left-[15%] cursor-pointer ">
             <DiagramPart1 />
@@ -13,16 +13,20 @@ export const DetailsCanvas_Part1 = () => {
         </div>
       </div>
       <div className="relative bg-black bg-opacity-75 ">
-        <div className="relative flex h-screen lg:-z-10 ">
+        <div className="relative flex h-screen ">
           <div className="flex-1 hidden lg:block" />
           <div className="flex flex-col justify-center flex-1 " id="detail_step_1">
-            <div className="max-w-[470px] mx-auto">
+            <div className=" w-[320px]  md:w-[470px] mx-auto">
               <p className="b3">จากขั้นตอนการเสนอกฎหมายแสนวกวนนี้</p>
               <p className="mt-2 font-bold b2">เป็นเพียงขั้นแรกเท่านั้น</p>
-              <p className="b3">กว่าจะบรรจุเข้าเป็นวาระเพื่อให้ร่างกฎหมายถูกพิจารณา</p>
-              <p className="mt-1 b3">และนี่คือ</p>
+              <p className="b3">
+                กว่าจะบรรจุเข้าเป็นวาระเพื่อให้ร่างกฎหมายถูกพิจารณา
+                <br className="hidden md:inline" />
+                และนี่คือ
+              </p>
+
               <div className="flex items-center mt-5 font-bold b1">
-                <div className={` relative w-[75px] h-[75px] mr-4 `}>
+                <div className={` relative w-[50px] h-[50px] md:w-[75px] md:h-[75px] mr-4 `}>
                   <Image src="/images/bullet_3.svg" layout="fill" objectFit="contain" />
                 </div>
                 อันดับที่ไม่ผ่านมากที่สุด
@@ -30,10 +34,10 @@ export const DetailsCanvas_Part1 = () => {
             </div>
           </div>
         </div>
-        <div className="relative flex h-screen lg:-z-10 ">
+        <div className="relative flex h-screen ">
           <div className="flex-1 hidden lg:block" />
           <div className="flex flex-col items-center justify-center flex-1 text-center b2 " id="detail_step_2">
-            <div className={` relative w-[305px] h-[356px] bg-black rounded-full mr-4 `}>
+            <div className={` relative w-[250px] h-[306px] md:w-[305px] md:h-[356px] bg-black rounded-full mr-4 `}>
               <Image src="/images/rank01.svg" layout="fill" objectFit="contain" />
             </div>
             <div className="flex items-center mt-10 ">
@@ -48,10 +52,10 @@ export const DetailsCanvas_Part1 = () => {
             </p>
           </div>
         </div>
-        <div className="relative flex h-screen lg:-z-10">
+        <div className="relative flex h-screen ">
           <div className="flex-1 hidden lg:block" />
           <div className="flex flex-col justify-center flex-1 " id="detail_step_3">
-            <div className=" max-w-[400px] mx-auto b4">
+            <div className=" w-[320px] md:w-[400px] mx-auto b4">
               <p>
                 สิ่งที่น่าสนใจ คือ
                 <span className=" text-scarlet">
@@ -79,10 +83,10 @@ export const DetailsCanvas_Part1 = () => {
             </div>
           </div>
         </div>
-        <div className="relative flex h-screen lg:-z-10">
+        <div className="relative flex h-screen ">
           <div className="flex-1 hidden lg:block" />
           <div className="flex flex-col items-center justify-center flex-1 text-center b2 " id="detail_step_4">
-            <div className={` relative w-[305px] h-[356px] bg-black rounded-full mr-4 `}>
+            <div className={` relative w-[250px] h-[306px] md:w-[305px] md:h-[356px] bg-black rounded-full mr-4 `}>
               <Image src="/images/rank02.svg" layout="fill" objectFit="contain" />
             </div>
             <div className="flex items-center mt-10 ">
@@ -98,10 +102,10 @@ export const DetailsCanvas_Part1 = () => {
             </p>
           </div>
         </div>
-        <div className="relative flex h-screen lg:-z-10">
+        <div className="relative flex h-screen ">
           <div className="flex-1 hidden lg:block" />
           <div className="flex flex-col items-center justify-center flex-1 text-center b2 " id="detail_step_5">
-            <div className={` relative w-[305px] bg-black rounded-full h-[356px] mr-4 `}>
+            <div className={` relative w-[250px] h-[306px] md:w-[305px] md:h-[356px] bg-black rounded-full mr-4 `}>
               <Image src="/images/rank03.svg" layout="fill" objectFit="contain" />
             </div>
             <div className="flex items-center mt-10 ">

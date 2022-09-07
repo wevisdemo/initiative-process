@@ -174,10 +174,10 @@ export const WrapperExpand = () => {
           </div>
         </div>
       </div>
-      <div className="mt-10 ">
-        {/* <Summary_Part2 />
-        <DetailsCanvas_Part2 /> */}
-      </div>
+      {/* <div className="mt-10 -top-[4300px] relative lg:top-0 ">
+        <Summary_Part2 />
+        <DetailsCanvas_Part2 />
+      </div> */}
     </div>
   );
 };

@@ -15,21 +15,21 @@ export const leg_04 = (world) => {
     isStatic: true,
     angle: Math.PI / 2 + Math.PI / 3.2,
     render: {
-      fillStyle: "red",
+      fillStyle: "transparent",
     },
   });
   const rect_2 = Bodies.rectangle(vwToPixels(64), y, w, 20, {
     isStatic: true,
     angle: -(Math.PI / 2 + Math.PI / 3),
     render: {
-      fillStyle: "red",
+      fillStyle: "transparent",
     },
   });
   const rect_3 = Bodies.rectangle(vwToPixels(75), y, w, 20, {
     isStatic: true,
     angle: Math.PI / 2 + Math.PI / 2.8,
     render: {
-      fillStyle: "red",
+      fillStyle: "transparent",
     },
   });
 

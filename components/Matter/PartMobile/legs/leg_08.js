@@ -1,7 +1,6 @@
 import { Bodies, Composite } from "matter-js";
 import { vwToPixels } from "../../../util";
 import { Triangle } from "../../filters/Triangle";
-import { device } from "../../../util";
 
 export const leg_08 = (world) => {
   const w = 250;
@@ -15,28 +14,28 @@ export const leg_08 = (world) => {
     isStatic: true,
     angle: Math.PI - Math.PI / 45,
     render: {
-      fillStyle: "red",
+      fillStyle: "transparent",
     },
   });
   const rect_2 = Bodies.rectangle(vwToPixels(53), y - 5, w, 20, {
     isStatic: true,
     angle: Math.PI / 2 + Math.PI / 3,
     render: {
-      fillStyle: "red",
+      fillStyle: "transparent",
     },
   });
   const rect_3 = Bodies.rectangle(vwToPixels(71), y - 9, w, 20, {
     isStatic: true,
     angle: -(Math.PI / 2 + Math.PI / 3),
     render: {
-      fillStyle: "red",
+      fillStyle: "transparent",
     },
   });
   const rect_4 = Bodies.rectangle(vwToPixels(87.5), y - 25, w, 20, {
     isStatic: true,
     angle: Math.PI / 2 + Math.PI / 3,
     render: {
-      fillStyle: "red",
+      fillStyle: "transparent",
     },
   });
 

@@ -20,6 +20,7 @@ import { IntroPart2 } from "./Matter/Part2/IntroPart2";
 import { Section_2_Mobile } from "./Matter/Part2Mobile/Section_2_Mobile";
 import { Canvas_2_Mobiles } from "./Matter/Part2Mobile/Canvas_2_Mobile";
 import { IntroPart_2_Mobile } from "./Matter/Part2Mobile/IntroPart_2_Mobile";
+import { ExpandImage } from "./ExpandImage";
 
 export const WrapperExpand = () => {
   const engine_01 = useRef(
@@ -67,7 +68,7 @@ export const WrapperExpand = () => {
   });
 
   return (
-    <div suppressHydrationWarning onMouseMove={handleMouseMove}>
+    <div suppressHydrationWarning onMouseMove={handleMouseMove} id="wrapper">
       <div className="relative lg:h-[605vh]  ">
         <ExpandYear current={current_01} />
         <div className="sticky top-0 z-10 hidden w-full h-screen lg:block " id="expand_step_0" />
@@ -141,20 +142,19 @@ export const WrapperExpand = () => {
       </div>
       <div className="relative   overflow-x-hidden  max-w-[100vw] lg:hidden  ">
         <IntroStepMobile current={current_03} />
-        <div className=" scale-[0.4]  relative -top-[1500px] ">
-          <Section_Mobile />
-          <Canvas_Mobile current={current_03} />
+        <div className=" h-[1840px] relative w-screen  md:translate-x-0  translate-x-[-65%] ">
+          <div className=" scale-[0.4] origin-top -left-[25%] absolute top-0">
+            <Section_Mobile />
+            <Canvas_Mobile current={current_03} />
+          </div>
         </div>
       </div>
 
-      <div className="mt-10 relative -top-[2800px] lg:top-0 ">
+      <div className="relative mt-10 ">
         <Summary_Part1 />
         <DetailsCanvas_Part1 />
       </div>
-      <div
-        className="relative z-20  overflow-x-hidden  max-w-[100vw] -top-[2100px] md:-top-[1800px] lg:top-0  "
-        id="section_2"
-      >
+      <div className="relative z-20  overflow-x-hidden  max-w-[100vw]  " id="section_2">
         <div className="hidden bg-black lg:block">
           <div className="relative z-50 pt-16">
             <IntroPart2 current={current_02} />
@@ -168,16 +168,19 @@ export const WrapperExpand = () => {
           <div className="relative z-50 pt-16">
             <IntroPart_2_Mobile current={current_04} />
           </div>
-          <div className=" -translate-y-[1300px] scale-[0.4]  ">
-            <Section_2_Mobile />
-            <Canvas_2_Mobiles current={current_04} />
+          <div className=" h-[1840px] relative w-screen  md:translate-x-0  translate-x-[-65%] ">
+            <div className="  scale-[0.4] origin-top -left-[25%] absolute top-0 ">
+              <Section_2_Mobile />
+              <Canvas_2_Mobiles current={current_04} />
+            </div>
           </div>
         </div>
       </div>
-      <div className="mt-10 -top-[4700px] md:-top-[4300px] relative lg:top-0 ">
+      <div className="relative mt-10 ">
         <Summary_Part2 />
         <DetailsCanvas_Part2 />
       </div>
+      <ExpandImage />
     </div>
   );
 };

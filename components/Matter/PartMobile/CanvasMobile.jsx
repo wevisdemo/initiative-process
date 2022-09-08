@@ -26,8 +26,7 @@ export const Canvas_Mobile = ({ current }) => {
 
     const cw = wrapper.clientWidth;
     const ch = wrapper.clientHeight;
-    //1440 document.body.clientWidth
-    //4734
+
     const render = Render.create({
       element: scene.current,
       engine: current,

@@ -6,35 +6,34 @@ export const drawBalls2060 = (world, data) => {
   data.map((d) => {
     const elem = document.getElementsByClassName(`${d["รธน."]}_${d["ลำดับ"]}_mobile`);
     const wrapper = document.getElementById("canvas_mobile");
-    const margin = wrapper.getBoundingClientRect().x - 12.5;
-    const ratio = device() === "tablet" ? 2 : 4;
-    const x = elem[0].getBoundingClientRect().x * ratio;
-
-    const circle = Bodies.circle(x - margin, elem[0].offsetTop + 12.5, 13, {
+    const ratio = device() === "tablet" ? 350 : 700;
+    const margin = wrapper.getBoundingClientRect().x + ratio;
+    const x = elem[0].getBoundingClientRect().x;
+    const circle = Bodies.circle(x + margin, elem[0].offsetTop + 12.5, 13, {
       render: {
         fillStyle: color_circle(d["ประเภท"]),
       },
     });
 
-    const line1 = Bodies.rectangle(x - margin, elem[0].offsetTop + 12.5, 24, 1, {
+    const line1 = Bodies.rectangle(x + margin, elem[0].offsetTop + 12.5, 24, 1, {
       render: {
         fillStyle: d["ประเภท"] != "การเมือง" ? "black" : "white",
       },
       angle: Math.PI - Math.PI / 4,
     });
-    const line2 = Bodies.rectangle(x - margin, elem[0].offsetTop + 12.5, 24, 1, {
+    const line2 = Bodies.rectangle(x + margin, elem[0].offsetTop + 12.5, 24, 1, {
       render: {
         fillStyle: d["ประเภท"] != "การเมือง" ? "black" : "white",
       },
       angle: -Math.PI + Math.PI / 4,
     });
-    const line3 = Bodies.rectangle(x - margin, elem[0].offsetTop + 12.5, 24, 1, {
+    const line3 = Bodies.rectangle(x + margin, elem[0].offsetTop + 12.5, 24, 1, {
       render: {
         fillStyle: d["ประเภท"] != "การเมือง" ? "black" : "white",
       },
       angle: Math.PI,
     });
-    const line4 = Bodies.rectangle(x - margin, elem[0].offsetTop + 12.5, 24, 1, {
+    const line4 = Bodies.rectangle(x + margin, elem[0].offsetTop + 12.5, 24, 1, {
       render: {
         fillStyle: d["ประเภท"] != "การเมือง" ? "black" : "white",
       },

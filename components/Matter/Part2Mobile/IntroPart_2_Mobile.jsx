@@ -19,6 +19,7 @@ export const IntroPart_2_Mobile = ({ current }) => {
       onClick={() => start()}
       id="click_start_draw_section_2_mobile"
     >
+      <div className="h-screen " />
       <p className="b4">
         จาก 33 ฉบับ <br />
         ที่ผ่านเข้าสู่วาระการประชุม <br />

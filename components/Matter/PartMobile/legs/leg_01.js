@@ -12,14 +12,14 @@ export const leg_01 = (world) => {
     isStatic: true,
     angle: Math.PI - Math.PI / 5.2,
     render: {
-      fillStyle: "red",
+      fillStyle: "transparent",
     },
   });
   const rect_right = Bodies.rectangle(vwToPixels(50) + w / 2, y, w, 20, {
     isStatic: true,
     angle: -Math.PI + Math.PI / 5.2,
     render: {
-      fillStyle: "red",
+      fillStyle: "transparent",
     },
   });
   const rect_center = Bodies.rectangle(vwToPixels(100) / 2, y + 10, 200, 45, {
@@ -27,7 +27,7 @@ export const leg_01 = (world) => {
     angle: Math.PI / 2,
     chamfer: 1,
     render: {
-      fillStyle: "red",
+      fillStyle: "transparent",
     },
   });
   Composite.add(world, [rect_left, rect_right, rect_center]);

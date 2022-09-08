@@ -69,5 +69,5 @@ export const label_filter = (label) => {
 };
 
 export const device = () => {
-  return document.body.clientWidth < 1025 ? "mobile" : "desktop";
+  return document.body.clientWidth < 768 ? "mobile" : "tablet";
 };

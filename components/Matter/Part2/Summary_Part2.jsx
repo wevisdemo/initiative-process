@@ -66,7 +66,7 @@ export const Summary_Part2 = () => {
     );
   };
   return (
-    <div className="py-20  w-[290px] lg:w-full mx-auto ">
+    <div className="py-20  w-[290px] lg:w-full mx-auto  bg-black relative z-20 ">
       <div className="text-center ">
         <p className="b2">ประกาศลงในราชกิจจานุเบกษา</p>
         <p className="h4">6.3%</p>

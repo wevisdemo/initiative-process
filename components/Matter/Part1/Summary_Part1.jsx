@@ -66,7 +66,7 @@ export const Summary_Part1 = () => {
     );
   };
   return (
-    <div className="py-20  w-[240px] lg:w-full mx-auto ">
+    <div className="py-20  w-[240px] lg:w-full mx-auto bg-black relative z-20 ">
       <div className="text-center ">
         <p className="b2">ผ่านเข้าสู่วาระการประชุม</p>
         <p className="h4">21.8%</p>

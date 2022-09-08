@@ -27,7 +27,7 @@ export const DetailsCanvas_Part2 = () => {
         </div>
       </div>
       <div className="relative bg-black bg-opacity-75 ">
-        <div className="relative flex h-screen ">
+        <div className="relative flex min-h-screen py-5 ">
           <div className="flex-1 hidden lg:block" />
           <div className="flex flex-col justify-center flex-1 " id="detail_step_6">
             <div className="max-w-[470px] mx-auto">
@@ -62,43 +62,43 @@ export const DetailsCanvas_Part2 = () => {
             <SummaryAll />
           </div>
         </div>
-        <div className="relative flex min-h-screen mt-40 md:my-0 ">
+        <div className="relative flex min-h-screen py-5 mt-40 ">
           <div className="flex-1 hidden lg:block" />
           <div className="flex flex-col justify-center flex-1 " id="detail_step_8">
             <StepConsider />
           </div>
         </div>
-        <div className="relative flex h-screen ">
+        <div className="relative flex min-h-screen py-5">
           <div className="flex-1 hidden lg:block" />
           <div className="flex flex-col justify-center flex-1 " id="detail_step_9">
             <StepAdjust />
           </div>
         </div>
-        <div className="relative flex h-screen ">
+        <div className="relative flex min-h-screen py-5">
           <div className="flex-1 hidden lg:block" />
           <div className="flex flex-col justify-center flex-1 " id="detail_step_10">
             <CompareStep1 />
           </div>
         </div>
-        <div className="relative flex h-screen ">
+        <div className="relative flex min-h-screen py-5">
           <div className="flex-1 hidden lg:block" />
           <div className="flex flex-col justify-center flex-1 " id="detail_step_11">
             <CompareStep3 />
           </div>
         </div>
-        <div className="relative flex h-screen ">
+        <div className="relative flex min-h-screen py-5">
           <div className="flex-1 hidden lg:block" />
           <div className="flex flex-col justify-center flex-1 " id="detail_step_12">
             <CompareStep45 />
           </div>
         </div>
-        <div className="relative flex h-screen ">
+        <div className="relative flex min-h-screen py-5">
           <div className="flex-1 hidden lg:block" />
           <div className="flex flex-col justify-center flex-1 " id="detail_step_13">
             <CompareStep6 />
           </div>
         </div>
-        <div className="relative flex h-screen ">
+        <div className="relative flex min-h-screen py-5">
           <div className="flex-1 hidden lg:block" />
           <div className="flex flex-col justify-center flex-1 " id="detail_step_14">
             <CompareStep7 />

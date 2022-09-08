@@ -2,7 +2,7 @@ export const DiagramPart1 = () => {
   return (
     <div id="image_zoom">
       <svg
-        className="w-[350px] h-[570px] md:w-[500px] md:h-[720px]"
+        className="w-full h-full md:w-[500px] md:h-[720px]"
         viewBox="0 0 500 720"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

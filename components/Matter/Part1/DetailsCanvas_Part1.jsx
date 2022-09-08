@@ -6,8 +6,8 @@ export const DetailsCanvas_Part1 = () => {
   return (
     <div id="DetailsCanvas_Part1" className="relative w-full ">
       <div className=" sticky top-0 lg:z-10  h-[0px]  lg:w-[50%] ">
-        <div className="relative flex items-center h-screen ">
-          <div id="DiagramPart1" className="absolute top-[50%] translate-y-[-50%]  md:left-[15%] cursor-pointer ">
+        <div className="relative flex items-center justify-center h-screen ">
+          <div id="DiagramPart1" className="absolute cursor-pointer ">
             <DiagramPart1 />
           </div>
         </div>

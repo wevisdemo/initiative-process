@@ -14,20 +14,14 @@ export const DetailsCanvas_Part2 = () => {
   return (
     <div id="DetailsCanvas_Part2" className="relative w-full ">
       <div className=" sticky top-0 lg:h-[30vh] h-[0px] lg:z-10  lg:w-[50%] ">
-        <div className="relative flex items-center h-screen ">
-          <div
-            id="DiagramPart2Full"
-            className="absolute top-[50%] translate-y-[-50%]  md:left-[10%]  opacity-0 cursor-pointer"
-          >
+        <div className="relative flex items-center justify-center h-screen ">
+          <div id="DiagramPart2Full" className="absolute opacity-0 cursor-pointer">
             <DiagramPart2Full />
           </div>
-          <div id="DiagramPart2" className="absolute top-[50%] md:left-[10%] translate-y-[-50%]  cursor-pointer ">
+          <div id="DiagramPart2" className="absolute cursor-pointer ">
             <DiagramPart2 />
           </div>
-          <div
-            id="DiagramCompare"
-            className="absolute  md:left-[10%] top-[50%] translate-y-[-50%]   opacity-0 cursor-pointer"
-          >
+          <div id="DiagramCompare" className="absolute opacity-0 cursor-pointer">
             <DiagramCompare />
           </div>
         </div>

@@ -142,8 +142,8 @@ export const WrapperExpand = () => {
       </div>
       <div className="relative   overflow-x-hidden  max-w-[100vw] lg:hidden  ">
         <IntroStepMobile current={current_03} />
-        <div className=" h-[1840px] relative w-screen  md:translate-x-0  translate-x-[-65%] ">
-          <div className=" scale-[0.4] origin-top -left-[25%] absolute top-0">
+        <div className=" h-[1840px] relative w-screen  ">
+          <div className=" scale-[0.4] origin-top absolute left-[50%] -translate-x-[50%]  ">
             <Section_Mobile />
             <Canvas_Mobile current={current_03} />
           </div>
@@ -168,8 +168,8 @@ export const WrapperExpand = () => {
           <div className="relative z-50 pt-16">
             <IntroPart_2_Mobile current={current_04} />
           </div>
-          <div className=" h-[1840px] relative w-screen  md:translate-x-0  translate-x-[-65%] ">
-            <div className="  scale-[0.4] origin-top -left-[25%] absolute top-0 ">
+          <div className=" h-[1840px] relative w-screen  ">
+            <div className=" scale-[0.4] origin-top absolute left-[50%] -translate-x-[50%]  ">
               <Section_2_Mobile />
               <Canvas_2_Mobiles current={current_04} />
             </div>

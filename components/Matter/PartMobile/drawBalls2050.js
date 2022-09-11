@@ -7,7 +7,7 @@ export const drawBalls2050 = (world, data) => {
     const elem = document.getElementsByClassName(`${d["รธน."]}_${d["ลำดับ"]}_mobile`);
     const wrapper = document.getElementById("canvas_mobile");
     const margin = wrapper.getBoundingClientRect().x - 12.5;
-    const ratio = device() === "tablet" ? 0.6 : 1;
+    const ratio = device() === "tablet" ? 0.8 : 1;
     const x = elem[0].getBoundingClientRect().x * ratio;
 
     const circle = Bodies.circle(x - margin, elem[0].offsetTop + 12.5, 13, {

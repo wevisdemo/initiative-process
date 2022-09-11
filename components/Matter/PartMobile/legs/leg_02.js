@@ -42,6 +42,6 @@ export const leg_02 = (world) => {
   const tri_1_ratio = 155;
   const tri_2_ratio = 85;
 
-  Triangle(world, elem_leg_width / 2 + tri_1_ratio, y - w / 2.8, Math.PI - Math.PI / 5, 21, 2);
-  Triangle(world, elem_leg_width / 2 + tri_2_ratio, y - w / 2.8, -Math.PI + Math.PI / 5, 22, 2);
+  Triangle(world, elem_leg_width / 2 + tri_1_ratio, y - w / 2.6, Math.PI - Math.PI / 5, 21, 2);
+  Triangle(world, elem_leg_width / 2 + tri_2_ratio, y - w / 2.6, -Math.PI + Math.PI / 5, 22, 2);
 };

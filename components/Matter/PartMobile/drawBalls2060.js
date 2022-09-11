@@ -44,7 +44,7 @@ export const drawBalls2060 = (world, data) => {
       parts: [circle, line1, line2, line3, line4],
       isStatic: false,
       friction: 0,
-      frictionAir: 0.06,
+      frictionAir: 0.04,
       restitution: 0.08,
       density: 0.1,
       collisionFilter: {

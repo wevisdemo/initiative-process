@@ -1,5 +1,5 @@
-import { TransformComponent, TransformWrapper } from "@pronestor/react-zoom-pan-pinch";
-import Image from "next/image";
+// import { TransformComponent, TransformWrapper } from "@pronestor/react-zoom-pan-pinch";
+// import Image from "next/image";
 export const ExpandImage = () => {
   return (
     <div id="expand_image" className="relative z-20 ">

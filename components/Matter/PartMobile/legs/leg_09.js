@@ -9,18 +9,18 @@ export const leg_09 = (world) => {
   const ratio = elem_leg.getBoundingClientRect().height + 40;
   const y = elem_leg.offsetTop + wrapper_section.offsetTop + ratio;
 
-  const rect_1 = Bodies.rectangle(vwToPixels(3.5), y - 60, w, 30, {
+  const rect_1 = Bodies.rectangle(vwToPixels(-0.5), y - 60, w, 30, {
     isStatic: true,
     angle: Math.PI / 2,
     render: {
-      fillStyle: "transparent",
+      fillStyle: "red",
     },
   });
-  const rect_2 = Bodies.rectangle(vwToPixels(11), y + 100, w, 20, {
+  const rect_2 = Bodies.rectangle(vwToPixels(6.5), y + 100, w, 20, {
     isStatic: true,
     angle: Math.PI / 5.3,
     render: {
-      fillStyle: "transparent",
+      fillStyle: "red",
     },
   });
 

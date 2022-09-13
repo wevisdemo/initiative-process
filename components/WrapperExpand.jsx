@@ -64,7 +64,6 @@ export const WrapperExpand = () => {
 
   useEffect(() => {
     animateZoom(state.x, state.y);
-    // window.requestAnimationFrame();
   });
 
   return (

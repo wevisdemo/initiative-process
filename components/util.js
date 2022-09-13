@@ -71,3 +71,10 @@ export const label_filter = (label) => {
 export const device = () => {
   return document.body.clientWidth < 768 ? "mobile" : "tablet";
 };
+
+export const ScrollTo = (elem) => {
+  console.log(elem);
+  setTimeout(() => {
+    document.querySelector(elem).scrollIntoView({ behavior: "smooth" });
+  }, 0);
+};

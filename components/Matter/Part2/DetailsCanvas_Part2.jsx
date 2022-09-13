@@ -98,7 +98,7 @@ export const DetailsCanvas_Part2 = () => {
             <CompareStep6 />
           </div>
         </div>
-        <div className="relative flex min-h-screen py-5">
+        <div className="relative flex min-h-screen py-5" id="CompareStep7">
           <div className="flex-1 hidden lg:block" />
           <div className="flex flex-col justify-center flex-1 " id="detail_step_14">
             <CompareStep7 />

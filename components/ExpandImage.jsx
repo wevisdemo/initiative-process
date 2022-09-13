@@ -9,8 +9,14 @@ export const ExpandImage = () => {
       return ScrollTo("#CompareStep7");
     }
     if (type === "next") {
-      return ScrollTo("#CompareStep7");
+      return ScrollTo("#summary_section");
     }
+  };
+
+  const hideBG = () => {
+    const bg = document.getElementById("bg_expand_image");
+    bg.style.display = "none";
+    ScrollTo("#expand_image");
   };
   return (
     <div className="relative z-20 ">
@@ -26,8 +32,9 @@ export const ExpandImage = () => {
           ย้อนกลับ
         </div>
         <div
-          className="absolute inset-0 z-20 flex flex-col items-center justify-center bg-black bg-opacity-50"
+          className="absolute inset-0 z-20 flex flex-col items-center justify-center bg-black bg-opacity-50 cursor-pointer"
           id="bg_expand_image"
+          onClick={() => hideBG()}
         >
           <p className="h4">เหมือนจะมีความหวัง แต่สุดท้ายต้องตกไป</p>
           <div className="flex ">

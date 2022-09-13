@@ -15,7 +15,6 @@ const GetPosition = (setStep_1, setStep_2, setStep_3, firstStep_3, setFirstStep_
     }
   };
   useScrollPosition(({ prevPos, currPos }) => {
-    const expand_image = get_position("expand_image");
     // const expand_step_0 = get_position("expand_step_0");
     // const expand_step_1 = get_position("expand_step_1");
     // const expand_step_3 = get_position("expand_step_3");
@@ -127,12 +126,6 @@ const GetPosition = (setStep_1, setStep_2, setStep_3, firstStep_3, setFirstStep_
     //   getClasslist("circle_compare").forEach((el) => (el.style.opacity = 0.25));
     //   getElem("circle_compare7").style.opacity = 1;
     // }
-
-    if (expand_image.top < 0) {
-      setTimeout(() => {
-        getElem("bg_expand_image").style.display = "none";
-      }, 3000);
-    }
   });
 };
 export default GetPosition;

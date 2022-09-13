@@ -73,7 +73,6 @@ export const device = () => {
 };
 
 export const ScrollTo = (elem) => {
-  console.log(elem);
   setTimeout(() => {
     document.querySelector(elem).scrollIntoView({ behavior: "smooth" });
   }, 0);

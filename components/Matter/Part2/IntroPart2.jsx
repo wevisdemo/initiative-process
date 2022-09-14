@@ -6,16 +6,16 @@ import { y_2540, y_2550, y_2560 } from "../../../public/data/part_2/constitution
 export const IntroPart2 = ({ current }) => {
   let isDrawed = false;
   const start = () => {
-    // if (!isDrawed)
-    drawBalls2040(current.world, y_2540);
-    drawBalls2050(current.world, y_2550);
-    drawBalls2060(current.world, y_2560);
-
-    // isDrawed = true;
+    if (!isDrawed) {
+      drawBalls2040(current.world, y_2540);
+      drawBalls2050(current.world, y_2550);
+      drawBalls2060(current.world, y_2560);
+    }
+    isDrawed = true;
   };
   return (
     <div
-      className="relative flex flex-col items-center text-center "
+      className="relative flex flex-col items-center text-center pointer-events-none "
       onClick={() => start()}
       id="click_start_draw_section_2"
     >

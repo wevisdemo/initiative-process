@@ -69,9 +69,10 @@ export const WrapperExpand = () => {
   });
 
   return (
-    <div suppressHydrationWarning onMouseMove={handleMouseMove} id="wrapper">
+    // <div onMouseMove={handleMouseMove} >
+    <div id="wrapper">
       <div className="relative lg:h-[605vh]  ">
-        <ExpandYear current={current_01} />
+        <ExpandYear />
         <div className="sticky top-0 z-0 hidden w-full h-screen lg:block " id="expand_step_0" />
         <div className="lg:sticky top-[0] z-30 w-full lg:pt-[250px] lg:h-screen " id="expand_step_1">
           <div className="h-full bg-black bg-opacity-75 ">

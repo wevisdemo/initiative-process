@@ -64,16 +64,16 @@ export const PinBallToolTip = ({ data }) => {
     <div className="flex flex-wrap-reverse">
       {data.map((d, index) => (
         <div className="relative" key={index}>
-          <button
+          <div
             id={`${d["รธน."]}_${d["ลำดับ"]}`}
             className={`lg:w-[24px] w-[16px] h-[16px] lg:h-[24px] relative m-[3px] lg:m-[5px]  ${d["รธน."]}_${
               d["ลำดับ"]
             } balls_${d["locals"] || d["รธน."]}  `}
-            onMouseEnter={() => openTooltip(d)}
+            onMouseOver={() => openTooltip(d)}
             onMouseLeave={() => closeTooltip(d["ลำดับ"])}
           >
             <Image src={circle_type(d["ประเภท"], d["รธน."])} layout="fill" objectFit="contain" />
-          </button>
+          </div>
           <ToolTip d={d} />
         </div>
       ))}

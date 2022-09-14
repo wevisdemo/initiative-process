@@ -75,7 +75,7 @@ export const DetailsCanvas_Part1 = () => {
                 เรื่องร่างแก้รัฐธรรมนูญสืบทอดอำนาจ
               </p>
               <div className="my-5 md:w-[400px]  w-[300px] ">
-                <video src={video} controls muted />
+                <video src={video} controls muted poster="/images/video.png" />
               </div>
               <p className=" text-scarlet">
                 “ไม่จำเป็นต้องสั่งใครทุกคนก็มีความคิด ความคิดดี หรือไม่ดี ถ้าระแวงเรื่องการสืบทอดอำนาจก็ไปแก้มา

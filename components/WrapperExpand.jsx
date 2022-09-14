@@ -254,8 +254,8 @@ export const WrapperExpand = () => {
             <WvNavButton dark={true} active={router.pathname === "/"}>
               <div onClick={() => select_route("/")}>หน้าหลัก</div>
             </WvNavButton>
-            <WvNavButton dark={true} active={router.pathname === "/about"}>
-              <div onClick={() => select_route("/about")}>เกี่ยวกับโครงการ</div>
+            <WvNavButton dark={true} active={router.pathname === "/About"}>
+              <div onClick={() => select_route("/About")}>เกี่ยวกับโครงการ</div>
             </WvNavButton>
           </WvNavbar>
         </div>

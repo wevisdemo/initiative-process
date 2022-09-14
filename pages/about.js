@@ -9,7 +9,7 @@ import WvFooter from "@wevisdemo/ui/components/footer";
 import WvNavbar from "@wevisdemo/ui/components/navbar";
 import WvNavButton from "@wevisdemo/ui/components/nav-button";
 
-const about = () => {
+const About = () => {
   const router = useRouter();
 
   const select_route = (path) => {
@@ -262,4 +262,4 @@ const about = () => {
   );
 };
 
-export default about;
+export default About;

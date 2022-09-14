@@ -44,5 +44,8 @@ html {
 .swiper-slide {
   @apply w-[240px] mx-[10px] md:mx-[15px] md:w-[280px] lg:w-[368px] !important;
 }
+.wv_button--blue {
+  border-width: 1px;
+}
 
 @import "tailwindcss/utilities";

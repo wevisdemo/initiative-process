@@ -1,4 +1,5 @@
 import { useScrollPosition } from "@n8tb1t/use-scroll-position";
+import { device } from "../components/util";
 
 const GetPosition = (setStep_1, setStep_2, setStep_3, firstStep_3, setFirstStep_3, drawBalls, setDrawBalls) => {
   const getElem = (id) => {
@@ -57,11 +58,11 @@ const GetPosition = (setStep_1, setStep_2, setStep_3, firstStep_3, setFirstStep_
       setStep_3(true);
       setFirstStep_3(true);
     }
-    if (section_2.y < section_2.height && !drawBalls) {
+    if (section_2.y < section_2.height && !drawBalls && device() === "labtop") {
       section_2_btn.click();
       setDrawBalls(true);
     }
-    if (section_2_mobile.y < section_2_mobile.height && !drawBalls) {
+    if (section_2_mobile.y < section_2_mobile.height && !drawBalls && device() != "labtop") {
       section_2_btn_mobile.click();
       setDrawBalls(true);
     }

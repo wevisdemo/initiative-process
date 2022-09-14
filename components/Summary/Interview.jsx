@@ -2,9 +2,12 @@ import React from "react";
 import { interview } from "../../public/data/interview";
 import triangle from "../../public/images/triangle.svg";
 import Image from "next/image";
+import WvSharer from "@wevisdemo/ui/components/sharer";
+import WvFooter from "@wevisdemo/ui/components/footer";
+import { ScrollTo } from "../util";
 export const Interview = () => {
   return (
-    <div className="container min-h-screen pt-24 ">
+    <div className="min-h-screen pt-24 ">
       <div id="title" className="text-center ">
         <p className="font-bold b2">
           ฟังความคิดเห็นของบุคคล
@@ -40,6 +43,20 @@ export const Interview = () => {
             </div>
           </div>
         ))}
+      </div>
+      <div className="py-10 text-center b4" id="restart">
+        <p>กลับไปเริ่มใหม่</p>
+        <div className={` relative w-[22px] h-[22px] mx-auto mt-5 cursor-pointer  `} onClick={() => ScrollTo("#intro")}>
+          <Image src="/images/restart.svg" layout="fill" objectFit="contain" />
+        </div>
+      </div>
+      <div className="text-center b4" id="share">
+        <p className="font-bold ">ร่วมแชร์เพื่อชวนเพื่อน </p>
+        <p>สำรวจเส้นทางและสนับสนุนกฎหมายของประชาชนต่อไป</p>
+        <div className="py-10 ">
+          <WvSharer center url="" light={true} />
+        </div>
+        <WvFooter />
       </div>
     </div>
   );

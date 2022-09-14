@@ -1,3 +1,4 @@
+import { useRouter } from "next/router";
 import { useRef, useState, useEffect } from "react";
 import { ExpandYear } from "./ExpandYear";
 import { Section_1 } from "./Matter/Part1/Section_1";
@@ -23,6 +24,9 @@ import { IntroPart_2_Mobile } from "./Matter/Part2Mobile/IntroPart_2_Mobile";
 import { ExpandImage } from "./ExpandImage";
 import { OurTeam } from "./Summary/OurTeam";
 import { Interview } from "./Summary/Interview";
+
+import WvNavButton from "@wevisdemo/ui/components/nav-button";
+import WvNavbar from "@wevisdemo/ui/components/navbar";
 
 export const WrapperExpand = () => {
   const engine_01 = useRef(
@@ -68,13 +72,19 @@ export const WrapperExpand = () => {
     animateZoom(state.x, state.y);
   });
 
+  const router = useRouter();
+
+  const select_route = (path) => {
+    router.push(path, undefined, { shallow: false });
+  };
+
   return (
     // <div onMouseMove={handleMouseMove} >
     <div id="wrapper">
       <div className="relative lg:h-[605vh]  ">
         <ExpandYear />
-        <div className="sticky top-0 z-0 hidden w-full h-screen lg:block " id="expand_step_0_mobile" />
-        <div className="lg:sticky top-[0] z-30 w-full lg:pt-[250px] lg:h-screen " id="expand_step_1_mobile">
+        <div className="sticky top-0 z-0 hidden w-full h-screen lg:block " id="expand_step_0" />
+        <div className="lg:sticky top-[0] z-30 w-full lg:pt-[250px] lg:h-screen " id="expand_step_1">
           <div className="h-full bg-black bg-opacity-75 ">
             <div className=" lg:hidden my-9">
               <div
@@ -189,7 +199,17 @@ export const WrapperExpand = () => {
         <DetailsCanvas_Part2 />
       </div>
       <ExpandImage />
-      <div id="summary_section">
+      <div id="summary_section" className="relative ">
+        <div className="sticky top-0 z-50 w-full ">
+          <WvNavbar title="Initiative Law" dark={true}>
+            <WvNavButton dark={true} active={router.pathname === "/"}>
+              <div onClick={() => select_route("/")}>หน้าหลัก</div>
+            </WvNavButton>
+            <WvNavButton dark={true} active={router.pathname === "/about"}>
+              <div onClick={() => select_route("/about")}>เกี่ยวกับโครงการ</div>
+            </WvNavButton>
+          </WvNavbar>
+        </div>
         <OurTeam />
         <Interview />
       </div>

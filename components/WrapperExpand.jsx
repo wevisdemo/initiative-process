@@ -73,11 +73,14 @@ export const WrapperExpand = () => {
     <div id="wrapper">
       <div className="relative lg:h-[605vh]  ">
         <ExpandYear />
-        <div className="sticky top-0 z-0 hidden w-full h-screen lg:block " id="expand_step_0" />
-        <div className="lg:sticky top-[0] z-30 w-full lg:pt-[250px] lg:h-screen " id="expand_step_1">
+        <div className="sticky top-0 z-0 hidden w-full h-screen lg:block " id="expand_step_0_mobile" />
+        <div className="lg:sticky top-[0] z-30 w-full lg:pt-[250px] lg:h-screen " id="expand_step_1_mobile">
           <div className="h-full bg-black bg-opacity-75 ">
             <div className=" lg:hidden my-9">
-              <div className="flex-col items-center pt-4 text-center max-w-[280px] mx-auto lg:max-w-full " id="step_1">
+              <div
+                className="flex-col items-center pt-4 text-center max-w-[280px] mx-auto lg:max-w-full "
+                id="step_1_mobile"
+              >
                 <p className="mt-2 font-black h7">ทำไม?</p>
                 <p className="mt-2 b4">
                   ปลายทางของกฎหมายประชาชนไม่เป็นไปตามนั้น
@@ -86,8 +89,10 @@ export const WrapperExpand = () => {
                 </p>
                 <p className="mt-2 font-bold b4">ไม่ใช่ทุกกฎหมายที่จะเสนอได้ และต้องมีจำนวนผู้เสนอครบ</p>
               </div>
-              <div className="py-2 text-center max-w-[280px] mx-auto lg:max-w-full" id="step_2">
-                <p className="font-bold b4">กฎหมายของรัฐธรรมนูญปี 2540-2560 ที่เปิดช่องทางลงชื่อการเข้าเสนอชื่อ</p>
+              <div className="py-2 text-center max-w-[280px] mx-auto lg:max-w-full" id="step_2_mobile">
+                <p className="font-bold pointer-events-none b4">
+                  กฎหมายของรัฐธรรมนูญปี 2540-2560 ที่เปิดช่องทางลงชื่อการเข้าเสนอชื่อ
+                </p>
               </div>
             </div>
 

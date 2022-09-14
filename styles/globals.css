@@ -24,7 +24,7 @@ html {
 
 .swiper-button-next {
   right: 0% !important;
-  /* background-image: url("../assets/images/swiper_arrow.svg") !important; */
+  background-image: url("../public/images/arrow.svg") !important;
   height: 60px !important;
   width: 60px !important;
   background-size: 60px !important;
@@ -37,7 +37,7 @@ html {
 }
 .swiper-button-prev {
   content: "" !important;
-  /* background-image: url("../assets/images/swiper_arrow.svg") !important; */
+  background-image: url("../public/images/arrow.svg") !important;
   height: 60px !important;
   width: 60px !important;
   background-size: 60px !important;

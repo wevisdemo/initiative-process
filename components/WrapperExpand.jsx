@@ -164,18 +164,51 @@ export const WrapperExpand = () => {
         <div className=" h-[1840px] relative w-screen  ">
           <DetailState
             top="100px"
+            left="50%"
             img="/images/bullet_0_white.svg"
-            des="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo arcu at lacus non proin integer duis. Urna in risus cursus amet arcu, ante tincidunt. Consectetur id diam posuere suspendisse pharetra tellus ut ultrices. Mi eu viverra nisi velit bibendum. Lacinia justo morbi ornare viverra."
+            des="ร่างพระราชบัญญัติผู้มีสิทธิเลือกตั้งเสนอ ไม่น้อยกว่า 20 คนและร่างรัฐธรรมนูญผู้มีสิทธิเลือกตั้งเสนอ ไม่น้อยกว่า 120 คนยื่นพร้อมโดยสามารถร้องขอให้สำนักเลขาธิการสภาผู้แทนราษฎรช่วยเหลือในการจัดทำร่างกฎหมายก่อนเสนอต่อประธานรัฐสภาหรือผู้ริเริ่มแก้ไขร่างได้ แต่ต้องแจ้งเป็นหนังสือต่อประธานรัฐสภาพร้อมเอกสารที่แก้ไขใหม่"
           />
           <DetailState
-            top="550px"
+            top="340px"
+            left="50%"
+            img="/images/bullet_1_white.svg"
+            des="ตรวจสอบเอกสารต่อไปนี้ <br/>1. ร่างพ.ร.บ. พร้อม<br/>- บันทึกหลักการและเหตุผล<br/>- บันทึกวิเคราะห์สรุปสาระสำคัญ<br/>2. รายชื่อกับสำเนาบัตรประชาชนของผู้ริเริ่ม"
+          />
+          <DetailState
+            top="540px"
+            left="50%"
             img="/images/bullet_2_white.svg"
-            des="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo arcu at lacus non proin integer duis. Urna in risus cursus amet arcu, ante tincidunt. Consectetur id diam posuere suspendisse pharetra tellus ut ultrices. Mi eu viverra nisi velit bibendum. Lacinia justo morbi ornare viverra."
+            des="ถ้าหลักการเป็นไปตามหมวด 3/5  แต่เนื้อหาหรือรูปแบบไม่เป็นไปตามรูปแบบการเสนอ สามารถร้องขอให้สำนักเลขาธิการสภาผู้แทนราษฎรช่วยเหลือในการจัดทำร่างได้"
           />
           <DetailState
-            top="950px"
+            top="720px"
+            left="50%"
+            img="/images/bullet_3_white.svg"
+            des="ผู้ริเริ่มจัดให้มีการลงชื่อเสนอร่างพ.ร.บ. <br/>*ซึ่งเอกสารต้องลงลายมือชื่อผู้มีสิทธิเลือกตั้งทุกแผ่น พร้อมรายละเอียด<br/>- ชื่อตัว - ชื่อสกุล<br/>- หมายเลขประจำตัวประชาชน<br/>และต้องปรากฎข้อความ <br/>- ลงลายมือชื่อเพื่อเสนอร่างพ.ร.บ.ใด<br/>- สามารถตรวจสอบร่างพ.ร.บ. ได้ที่ใด"
+          />
+          <DetailState
+            top="980px"
+            left="50%"
             img="/images/bullet_4_white.svg"
-            des="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo arcu at lacus non proin integer duis. Urna in risus cursus amet arcu, ante tincidunt. Consectetur id diam posuere suspendisse pharetra tellus ut ultrices. Mi eu viverra nisi velit bibendum. Lacinia justo morbi ornare viverra."
+            des="เมื่อรวบรวมรายชื่อผู้มีสิทธิเลือกตั้ง (ไม่น้อยกว่า 10,000 คน)<br/>- ยื่นหนังสือต่อประธานรัฐสภา หลังรวบรวมรายชื่อ<br/>- สำเนาร่างพ.ร.บ. พร้อมบันทึกหลักการเหตุผล และบันทึกวิเคราะห์สรุปสาระสำคัญ<br/>- เอกสารลายมือชื่อของผู้มีสิทธิเลือกตั้ง และสำเนาบัตรประชาชน<br/>- บัญชีรายชื่อผู้แทนของผู้เข้าชื่อเสนอร่างพ.ร.บ. ไม่เกิน 60 คน"
+          />
+          <DetailState
+            top="1270px"
+            left="50%"
+            img="/images/bullet_6_white.svg"
+            des="ตรวจข้อมูลเลขประจำตัวประชาชน 13 หลัก  "
+          />
+          <DetailState
+            top="1390px"
+            left="50%"
+            img="/images/bullet_7_white.svg"
+            des="- ประกาศรายชื่อทางสื่อเทคโนโลยีสารสนเทศของสำนักเลขาธิการสภาผู้แทนราษฎร<br/>- จัดทำบัญชีรายชื่อ ณ สำนักงานเลขาธิการสภาผู้แทนราษฎร<br/>- หนังสือแจ้งไปยังผู้มีรายชื่อเข้าชื่อเสนอกฎหมาย"
+          />
+          <DetailState
+            top="1590px"
+            left="50%"
+            img="/images/bullet_8_white.svg"
+            des="- ตรวจสอบรูปแบบของร่างพ.ร.บ.และบันทึกประกอบ<br/>- วิเคราะห์ว่าเป็นร่างการเงินหรือไม่<br/>- วิเคราะห์เกี่ยวกับเด็ก เยาวชน สตรี ผู้สูงอายุหรือคนพิการ หรือทุพพลภาพ"
           />
           <div className=" scale-[0.4] origin-top absolute left-[50%] -translate-x-[50%]  ">
             <Section_Mobile />
@@ -203,11 +236,6 @@ export const WrapperExpand = () => {
             <IntroPart_2_Mobile current={current_04} />
           </div>
           <div className=" h-[1840px] relative w-screen  ">
-            <DetailState
-              top="350px"
-              img="/images/bullet_11_white.svg"
-              des="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo arcu at lacus non proin integer duis. Urna in risus cursus amet arcu, ante tincidunt. Consectetur id diam posuere suspendisse pharetra tellus ut ultrices. Mi eu viverra nisi velit bibendum. Lacinia justo morbi ornare viverra."
-            />
             <div className=" scale-[0.4] origin-top absolute left-[50%] -translate-x-[50%]  ">
               <Section_2_Mobile />
               <Canvas_2_Mobiles current={current_04} />

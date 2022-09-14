@@ -1,15 +1,9 @@
 import Image from "next/image";
-import { DetailState } from "../../DetailState";
 
 export const Section_2 = () => {
   return (
     <div className="absolute z-20 w-full text-center ">
       <div className=" w-[1152px] h-full mx-auto relative " id="leg_section_2_wrapper">
-        <DetailState
-          top="350px"
-          img="/images/bullet_11_white.svg"
-          des="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo arcu at lacus non proin integer duis. Urna in risus cursus amet arcu, ante tincidunt. Consectetur id diam posuere suspendisse pharetra tellus ut ultrices. Mi eu viverra nisi velit bibendum. Lacinia justo morbi ornare viverra."
-        />
         <div className={` opacity-0  relative w-[500px] h-[197px] mx-auto top-[300px]`} id="leg_start_section_2">
           .
         </div>

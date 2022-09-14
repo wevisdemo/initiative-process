@@ -35,7 +35,16 @@ const about = () => {
             สุดท้ายแล้วกฎหมายที่ลงชื่อไปแต่เส้นทางกฎหมายของประชาชนในการเสนอกฎหมายแต่ละฉบับไปสิ้นสุดที่ตรงไหน
             <br />
             <br />
-            ทางทีม WeVis จึงพยายามรวบรวมข้อมูลตั้งรัฐธรรมนูญปี 2540 ถึงรัฐธรรมนูญปี 2560
+            ทางทีม{" "}
+            <a
+              href="https://wevis.info/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-black hover:underline "
+            >
+              WeVis
+            </a>{" "}
+            จึงพยายามรวบรวมข้อมูลตั้งรัฐธรรมนูญปี 2540 ถึงรัฐธรรมนูญปี 2560
             ที่ผ่านมามีร่างกฎหมายที่ประชาชนเสนอไปทั้งหมดกี่ฉบับ และเส้นทางกระบวนการของกฎหมายเป็นอย่างไร สุดท้ายแล้ว
             กว่าจะผ่านแต่ละเส้นทางมาได้ ร่างกฎหมายตกอยู่ที่กระบวนการไหนบ้าง สุดท้ายสามารถปรับอะไรกับเส้นทางนี้ได้
             <br />
@@ -45,16 +54,72 @@ const about = () => {
         </WvParagraphGroup>
 
         <WvParagraphGroup heading="ที่มาของข้อมูล">
-          <div>ข้อมูลจากกลุ่มงานเข้าชื่อเสนอกฎหมาย สำนักการประชุม สำนักเลขาธิการสภาผู้แทนราษฎร</div>
-          <p>*ข้อมูล ณ วันที่ 28 มีนาคม 2565</p>
+          <div>
+            ข้อมูลจากกลุ่มงานเข้าชื่อเสนอกฎหมาย สำนักการประชุม สำนักเลขาธิการสภาผู้แทนราษฎร (ข้อมูล ณ วันที่ 28 มีนาคม
+            2565) และข้อมูลสรุปภาพรวมการเข้าชื่อเสนอกฎหมายตามรัฐธรรมนูญ 2560 (ข้อมูล ณ วันที่ 16 มิถุนายน 2565)
+          </div>
 
           <ul className="ml-10 list-disc ">
-            <li>สำนักงานเลขาธิการสภา.pdf</li>
-            <li>คุณสมบัติและจำนวนของผู้มีสิทธิเข้าชื่อเสนอกฎหมาย.pdf</li>
-            <li>แผนงานการเข้าชื่อเสนอกฎหมาย พ.ศ 2564</li>
-            <li>การเข้าเสนอชื่อกฎหมาย สำนักงานเลขาธิการสภาผู้แทนราษฎร</li>
-            <li>TROPICO Comparative case studies on e-participation</li>
-            <li>สรุปภาพรวมการเข้าชื่อเสนอกฎหมายตามรธน.60</li>
+            <li>
+              <a
+                href="https://drive.google.com/file/d/1qC-Ce-RnlgPgi27FVJywrc-_8wZQjBYo/view?usp=sharing"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-black b5 hover:underline"
+              >
+                สำนักงานเลขาธิการสภา.pdf
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://web.parliament.go.th/assets/portals/5/fileups/8/files/%E0%B8%84%E0%B8%B8%E0%B8%93%E0%B8%AA%E0%B8%A1%E0%B8%9A%E0%B8%B1%E0%B8%95%E0%B8%B4%E0%B9%81%E0%B8%A5%E0%B8%B0%E0%B8%88%E0%B8%B3%E0%B8%99%E0%B8%A7%E0%B8%99%E0%B8%82%E0%B8%AD%E0%B8%87%E0%B8%9C%E0%B8%B9%E0%B9%89%E0%B8%A1%E0%B8%B5%E0%B8%AA%E0%B8%B4%E0%B8%97%E0%B8%98%E0%B8%B4%E0%B9%80%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B9%80%E0%B8%AA%E0%B8%99%E0%B8%AD%E0%B8%81%E0%B8%8E%E0%B8%AB%E0%B8%A1%E0%B8%B2%E0%B8%A2.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-black b5 hover:underline"
+              >
+                คุณสมบัติและจำนวนของผู้มีสิทธิเข้าชื่อเสนอกฎหมาย.pdf
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://web.parliament.go.th/assets/portals/5/fileups/8/files/%E0%B9%81%E0%B8%9C%E0%B8%99%E0%B8%87%E0%B8%B2%E0%B8%99%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B9%80%E0%B8%AA%E0%B8%99%E0%B8%AD%E0%B8%81%E0%B8%8E%E0%B8%AB%E0%B8%A1%E0%B8%B2%E0%B8%A2%20%E0%B8%9E_%E0%B8%A8_%202564.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-black b5 hover:underline"
+              >
+                แผนงานการเข้าชื่อเสนอกฎหมาย พ.ศ 2564
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://web.parliament.go.th/view/5/%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B9%80%E0%B8%AA%E0%B8%99%E0%B8%AD%E0%B8%81%E0%B8%8E%E0%B8%AB%E0%B8%A1%E0%B8%B2%E0%B8%A2/TH-TH"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-black b5 hover:underline"
+              >
+                การเข้าเสนอชื่อกฎหมาย สำนักงานเลขาธิการสภาผู้แทนราษฎร
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://tropico-project.eu/download/d5-1-comparative-case-studies/?wpdmdl=1155&refresh=60377162846821614246242"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-black b5 hover:underline"
+              >
+                TROPICO Comparative case studies on e-participation
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://web.parliament.go.th/assets/portals/5/fileups/8/files/%E0%B8%AA%E0%B8%A3%E0%B8%B8%E0%B8%9B%E0%B8%A0%E0%B8%B2%E0%B8%9E%E0%B8%A3%E0%B8%A7%E0%B8%A1%E0%B8%81%E0%B8%B2%E0%B8%A3%E0%B9%80%E0%B8%82%E0%B9%89%E0%B8%B2%E0%B8%8A%E0%B8%B7%E0%B9%88%E0%B8%AD%E0%B9%80%E0%B8%AA%E0%B8%99%E0%B8%AD%E0%B8%81%E0%B8%8E%E0%B8%AB%E0%B8%A1%E0%B8%B2%E0%B8%A2%E0%B8%95%E0%B8%B2%E0%B8%A1%E0%B8%A3%E0%B8%98%E0%B8%99_60%20160665.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-black b5 hover:underline"
+              >
+                สรุปภาพรวมการเข้าชื่อเสนอกฎหมายตามรธน.60
+              </a>
+            </li>
           </ul>
         </WvParagraphGroup>
 
@@ -82,7 +147,7 @@ const about = () => {
 
           <WvParagraphGroup small heading="ออกแบบ">
             <a
-              href="https://www.instagram.com/messymachine/"
+              href="https://pearwawa.myportfolio.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="text-black b5 hover:underline"
@@ -114,8 +179,32 @@ const about = () => {
           </WvParagraphGroup>
 
           <WvParagraphGroup small heading="ประสานงานและจัดการอื่นๆ">
-            Punch Up และ WeVis ในโปรเจกต์ Initiative law สำรวจเส้นทางกฎหมายของประชาชน
-            ยังได้รับการสนับสนุนทุนในการดำเนินงานจาก National Endowment for Democracy (NED)
+            <a
+              href="https://punchup.world/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-black hover:underline "
+            >
+              Punch Up
+            </a>{" "}
+            และ{" "}
+            <a
+              href="https://wevis.info/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-black hover:underline "
+            >
+              WeVis
+            </a>{" "}
+            ในโปรเจกต์ Initiative law สำรวจเส้นทางกฎหมายของประชาชน ยังได้รับการสนับสนุนทุนในการดำเนินงานจาก{" "}
+            <a
+              href="https://www.ned.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-black hover:underline "
+            >
+              National Endowment for Democracy (NED)
+            </a>{" "}
             ซึ่งนำมาใช้เป็นต้นทุนในการรวมรวมข้อมูล ออกแบบ พัฒนาเว็บไซต์ ประสานงาน บริหารจัดการ ตลอดจนการจัด Meetup
             เพื่อดำเนินโครงการ
           </WvParagraphGroup>
@@ -123,7 +212,7 @@ const about = () => {
 
         <WvButtonGroup center>
           <a
-            href="https://docs.google.com/spreadsheets/d/1L6rVuwhfpyhx2eK0reUx-hTJd4vMv8aelgJrGPoYS2s/edit#gid=0"
+            href="https://docs.google.com/spreadsheets/d/1PkmwnObEItVRlxXR-eDBkm72OLnmKLcUSczWRHcW7iI/edit?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
           >

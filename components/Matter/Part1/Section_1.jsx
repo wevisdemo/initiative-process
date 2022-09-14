@@ -44,18 +44,51 @@ export const Section_1 = ({ current }) => {
       <div className="h-[5000px]  w-[1152px] mx-auto" id="leg_section_1_wrapper">
         <DetailState
           top="1200px"
+          left="95%"
           img="/images/bullet_0_white.svg"
-          des="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo arcu at lacus non proin integer duis. Urna in risus cursus amet arcu, ante tincidunt. Consectetur id diam posuere suspendisse pharetra tellus ut ultrices. Mi eu viverra nisi velit bibendum. Lacinia justo morbi ornare viverra."
+          des="ร่างพระราชบัญญัติผู้มีสิทธิเลือกตั้งเสนอ ไม่น้อยกว่า 20 คนและร่างรัฐธรรมนูญผู้มีสิทธิเลือกตั้งเสนอ ไม่น้อยกว่า 120 คนยื่นพร้อมโดยสามารถร้องขอให้สำนักเลขาธิการสภาผู้แทนราษฎรช่วยเหลือในการจัดทำร่างกฎหมายก่อนเสนอต่อประธานรัฐสภาหรือผู้ริเริ่มแก้ไขร่างได้ แต่ต้องแจ้งเป็นหนังสือต่อประธานรัฐสภาพร้อมเอกสารที่แก้ไขใหม่"
         />
         <DetailState
-          top="2000px"
+          top="1900px"
+          left="40%"
+          img="/images/bullet_1_white.svg"
+          des="ตรวจสอบเอกสารต่อไปนี้ <br/>1. ร่างพ.ร.บ. พร้อม<br/>- บันทึกหลักการและเหตุผล<br/>- บันทึกวิเคราะห์สรุปสาระสำคัญ<br/><br/>2. รายชื่อกับสำเนาบัตรประชาชนของผู้ริเริ่ม"
+        />
+        <DetailState
+          top="2100px"
+          left="95%"
           img="/images/bullet_2_white.svg"
-          des="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo arcu at lacus non proin integer duis. Urna in risus cursus amet arcu, ante tincidunt. Consectetur id diam posuere suspendisse pharetra tellus ut ultrices. Mi eu viverra nisi velit bibendum. Lacinia justo morbi ornare viverra."
+          des="ถ้าหลักการเป็นไปตามหมวด 3/5  แต่เนื้อหาหรือรูปแบบไม่เป็นไปตามรูปแบบการเสนอ สามารถร้องขอให้สำนักเลขาธิการสภาผู้แทนราษฎรช่วยเหลือในการจัดทำร่างได้"
+        />
+        <DetailState
+          top="2400px"
+          left="95%"
+          img="/images/bullet_3_white.svg"
+          des="ผู้ริเริ่มจัดให้มีการลงชื่อเสนอร่างพ.ร.บ. <br/>*ซึ่งเอกสารต้องลงลายมือชื่อผู้มีสิทธิเลือกตั้งทุกแผ่น พร้อมรายละเอียด<br/>- ชื่อตัว - ชื่อสกุล<br/>- หมายเลขประจำตัวประชาชน<br/><br/>และต้องปรากฎข้อความ <br/>- ลงลายมือชื่อเพื่อเสนอร่างพ.ร.บ.ใด<br/>- สามารถตรวจสอบร่างพ.ร.บ. ได้ที่ใด"
         />
         <DetailState
           top="2800px"
+          left="95%"
           img="/images/bullet_4_white.svg"
-          des="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo arcu at lacus non proin integer duis. Urna in risus cursus amet arcu, ante tincidunt. Consectetur id diam posuere suspendisse pharetra tellus ut ultrices. Mi eu viverra nisi velit bibendum. Lacinia justo morbi ornare viverra."
+          des="เมื่อรวบรวมรายชื่อผู้มีสิทธิเลือกตั้ง (ไม่น้อยกว่า 10,000 คน)<br/>- ยื่นหนังสือต่อประธานรัฐสภา หลังรวบรวมรายชื่อ<br/>- สำเนาร่างพ.ร.บ. พร้อมบันทึกหลักการเหตุผล และบันทึกวิเคราะห์สรุปสาระสำคัญ<br/>- เอกสารลายมือชื่อของผู้มีสิทธิเลือกตั้ง และสำเนาบัตรประชาชน<br/>- บัญชีรายชื่อผู้แทนของผู้เข้าชื่อเสนอร่างพ.ร.บ. ไม่เกิน 60 คน"
+        />
+        <DetailState
+          top="3300px"
+          left="95%"
+          img="/images/bullet_6_white.svg"
+          des="ตรวจข้อมูลเลขประจำตัวประชาชน 13 หลัก  "
+        />
+        <DetailState
+          top="3600px"
+          left="95%"
+          img="/images/bullet_7_white.svg"
+          des="- ประกาศรายชื่อทางสื่อเทคโนโลยีสารสนเทศของสำนักเลขาธิการสภาผู้แทนราษฎร<br/>- จัดทำบัญชีรายชื่อ ณ สำนักงานเลขาธิการสภาผู้แทนราษฎร<br/>- หนังสือแจ้งไปยังผู้มีรายชื่อเข้าชื่อเสนอกฎหมาย"
+        />
+        <DetailState
+          top="4000px"
+          left="95%"
+          img="/images/bullet_8_white.svg"
+          des="- ตรวจสอบรูปแบบของร่างพ.ร.บ.และบันทึกประกอบ<br/>- วิเคราะห์ว่าเป็นร่างการเงินหรือไม่<br/>- วิเคราะห์เกี่ยวกับเด็ก เยาวชน สตรี ผู้สูงอายุหรือคนพิการ หรือทุพพลภาพ"
         />
         <div className={`  relative w-[1000px] h-[197px] mx-auto top-[400px]`} id="leg_startsection_1">
           <div className="absolute top-0 w-full ">

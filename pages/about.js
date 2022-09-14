@@ -1,3 +1,5 @@
+import { useRouter } from "next/router";
+import React from "react";
 import WvContainer from "@wevisdemo/ui/components/container";
 import WvParagraphGroup from "@wevisdemo/ui/components/paragraph-group";
 import WvButtonGroup from "@wevisdemo/ui/components/button-group";
@@ -6,7 +8,6 @@ import WvSharer from "@wevisdemo/ui/components/sharer";
 import WvFooter from "@wevisdemo/ui/components/footer";
 import WvNavbar from "@wevisdemo/ui/components/navbar";
 import WvNavButton from "@wevisdemo/ui/components/nav-button";
-import { useRouter } from "next/router";
 
 const about = () => {
   const router = useRouter();

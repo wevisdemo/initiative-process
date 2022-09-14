@@ -69,7 +69,9 @@ export const label_filter = (label) => {
 };
 
 export const device = () => {
-  return document.body.clientWidth < 768 ? "mobile" : "tablet";
+  if (document.body.clientWidth < 768) return "mobile";
+  if (document.body.clientWidth < 1025 && document.body.clientWidth > 768) return "tablet";
+  return "labtop";
 };
 
 export const ScrollTo = (elem) => {

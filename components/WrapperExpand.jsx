@@ -21,7 +21,7 @@ import { Section_2_Mobile } from "./Matter/Part2Mobile/Section_2_Mobile";
 import { Canvas_2_Mobiles } from "./Matter/Part2Mobile/Canvas_2_Mobile";
 import { IntroPart_2_Mobile } from "./Matter/Part2Mobile/IntroPart_2_Mobile";
 import { ExpandImage } from "./ExpandImage";
-import { OurTeam } from "./Matter/OurTeam";
+import { OurTeam } from "./Summary/OurTeam";
 
 export const WrapperExpand = () => {
   const engine_01 = useRef(

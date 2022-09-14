@@ -6,37 +6,21 @@ import { drawBalls2060 } from "./drawBalls2060";
 import { y_2540, y_2550_1, y_2550_2, y_2560_1, y_2560_2 } from "../../../public/data/part_1/constitution";
 
 export const Section_1 = ({ current }) => {
-  let isDrawed = false;
-
   const start = () => {
-    // const balls_2540 = document.querySelectorAll(".balls_2540");
-    // const balls_2550_1 = document.querySelectorAll(".balls_2550_1");
-    // const balls_2550_2 = document.querySelectorAll(".balls_2550_2");
-    // const balls_2560_1 = document.querySelectorAll(".balls_2560_1");
-    // const balls_2560_2 = document.querySelectorAll(".balls_2560_2");
-
-    if (!isDrawed) {
-      drawBalls2040(current.world, y_2540);
-      // Object.values(balls_2540).map((a) => (a.style.display = "none"));
-      setTimeout(() => {
-        drawBalls2050(current.world, y_2550_2);
-        // Object.values(balls_2550_1).map((a) => (a.style.display = "none"));
-      }, 5000);
-      setTimeout(() => {
-        drawBalls2050(current.world, y_2550_1);
-        // Object.values(balls_2550_2).map((a) => (a.style.display = "none"));
-      }, 10000);
-      setTimeout(() => {
-        drawBalls2060(current.world, y_2560_1);
-        // Object.values(balls_2560_1).map((a) => (a.style.display = "none"));
-      }, 15000);
-      setTimeout(() => {
-        drawBalls2060(current.world, y_2560_2);
-        // Object.values(balls_2560_2).map((a) => (a.style.display = "none"));
-      }, 20000);
-    }
-
-    isDrawed = true;
+    document.getElementById("start_btn").style.pointerEvents = "none";
+    drawBalls2040(current.world, y_2540);
+    setTimeout(() => {
+      drawBalls2050(current.world, y_2550_2);
+    }, 7000);
+    setTimeout(() => {
+      drawBalls2050(current.world, y_2550_1);
+    }, 13000);
+    setTimeout(() => {
+      drawBalls2060(current.world, y_2560_1);
+    }, 18000);
+    setTimeout(() => {
+      drawBalls2060(current.world, y_2560_2);
+    }, 25000);
   };
 
   return (

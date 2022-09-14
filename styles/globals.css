@@ -17,4 +17,43 @@ html {
   @apply font-bold text-scarlet;
 }
 
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  content: "" !important;
+}
+
+.swiper-button-next {
+  right: 0% !important;
+  /* background-image: url("../assets/images/swiper_arrow.svg") !important; */
+  height: 60px !important;
+  width: 60px !important;
+  background-size: 60px !important;
+  background-repeat: no-repeat !important;
+  @media screen and (max-width: 767px) {
+    height: 40px !important;
+    width: 40px !important;
+    background-size: 40px !important;
+  }
+}
+.swiper-button-prev {
+  content: "" !important;
+  /* background-image: url("../assets/images/swiper_arrow.svg") !important; */
+  height: 60px !important;
+  width: 60px !important;
+  background-size: 60px !important;
+  background-repeat: no-repeat !important;
+  transform: rotate(180deg) !important;
+  @media screen and (max-width: 767px) {
+    height: 40px !important;
+    width: 40px !important;
+    background-size: 40px !important;
+  }
+}
+.swiper-button-disabled {
+  display: none !important;
+}
+.swiper-slide {
+  @apply w-[280px] lg:w-[368px] !important;
+}
+
 @import "tailwindcss/utilities";

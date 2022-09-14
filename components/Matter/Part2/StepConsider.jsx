@@ -3,7 +3,7 @@ import Image from "next/image";
 export const StepConsider = () => {
   return (
     <div className=" w-[280px] md:w-[440px]  mx-auto">
-      <div className={` relative w-[40px] h-[40px] md:w-[60px] md:h-[60px] mb-4`}>
+      <div className=" relative w-[40px] h-[40px] md:w-[60px] md:h-[60px] mb-4">
         <Image src="/images/exclamation.svg" layout="fill" objectFit="contain" />
       </div>
       <p className="b2">

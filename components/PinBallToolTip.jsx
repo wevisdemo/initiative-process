@@ -29,6 +29,14 @@ export const PinBallToolTip = ({ data }) => {
         id={d["ลำดับ"]}
       >
         <div className=" border border-white rounded-[10px] w-[292px] bg-black b6 p-4 flex flex-col space-y-[4px]">
+          {d["ลำดับกระบวนการ"] === 20 && (
+            <div className="flex items-center mb-2 ">
+              <div className=" relative w-[16px] h-[16px]  mr-2">
+                <Image src="/images/correct.svg" layout="fill" objectFit="contain" />
+              </div>
+              <p>1 ใน 9 ฉบับที่ผ่าน</p>
+            </div>
+          )}
           <p className="font-bold ">ชื่อกฎหมาย:</p>
           <p>{d["ชื่อกฎหมาย"]}</p>
 
@@ -63,15 +71,18 @@ export const PinBallToolTip = ({ data }) => {
   return (
     <div className="flex flex-wrap-reverse">
       {data.map((d, index) => (
-        <div className="relative" key={index}>
+        <div className="relative  m-[3.5px] lg:m-[5px]  h-[16px] lg:h-[24px]" key={index}>
           <button
             id={`${d["รธน."]}_${d["ลำดับ"]}`}
-            className={`lg:w-[24px] w-[16px] h-[16px] lg:h-[24px] relative m-[3px] lg:m-[5px]  ${d["รธน."]}_${
-              d["ลำดับ"]
-            } balls_${d["locals"] || d["รธน."]}  `}
+            className={`lg:w-[24px] w-[16px] h-[16px] lg:h-[24px] relative  ${d["รธน."]}_${d["ลำดับ"]} balls_${
+              d["locals"] || d["รธน."]
+            }  `}
             onMouseOver={() => openTooltip(d)}
             onMouseLeave={() => closeTooltip(d["ลำดับ"])}
           >
+            {d["ลำดับกระบวนการ"] === 20 && (
+              <div className=" absolute lg:w-[34px] w-[24px] h-[24px] lg:h-[34px] border-2 border-white rounded-full top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]" />
+            )}
             <Image src={circle_type(d["ประเภท"], d["รธน."])} layout="fill" objectFit="contain" />
           </button>
           <ToolTip d={d} />

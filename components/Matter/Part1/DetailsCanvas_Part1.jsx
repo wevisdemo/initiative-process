@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 import { DiagramPart1 } from "../../DiagramPart1";
+import video from "../../../public/video.mp4";
 
 export const DetailsCanvas_Part1 = () => {
   return (
@@ -55,7 +56,7 @@ export const DetailsCanvas_Part1 = () => {
         <div className="relative flex min-h-screen py-5 ">
           <div className="flex-1 hidden lg:block" />
           <div className="flex flex-col justify-center flex-1 " id="detail_step_3">
-            <div className=" w-[320px] md:w-[400px] mx-auto b4">
+            <div className=" w-[320px] md:w-[400px] h-full mx-auto b4">
               <p>
                 สิ่งที่น่าสนใจ คือ
                 <span className=" text-scarlet">
@@ -73,7 +74,9 @@ export const DetailsCanvas_Part1 = () => {
                 โดยในรัฐธรรมนูญปี 2560 จะมีกฎหมายไม่ให้คำรับรองมากที่สุด จึงขอหยิบยกตัวอย่างของดุลยพินิจของนายกรัฐมนตรี
                 เรื่องร่างแก้รัฐธรรมนูญสืบทอดอำนาจ
               </p>
-              <div className="py-5 h-[225px] ">----video----</div>
+              <div className="my-5 md:w-[400px]  w-[300px] ">
+                <video src={video} controls muted />
+              </div>
               <p className=" text-scarlet">
                 “ไม่จำเป็นต้องสั่งใครทุกคนก็มีความคิด ความคิดดี หรือไม่ดี ถ้าระแวงเรื่องการสืบทอดอำนาจก็ไปแก้มา
                 แก้ให้ได้แล้วกัน”

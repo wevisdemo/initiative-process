@@ -27,6 +27,7 @@ import { Interview } from "./Summary/Interview";
 
 import WvNavButton from "@wevisdemo/ui/components/nav-button";
 import WvNavbar from "@wevisdemo/ui/components/navbar";
+import { DetailState } from "./DetailState";
 
 export const WrapperExpand = () => {
   const engine_01 = useRef(
@@ -161,6 +162,21 @@ export const WrapperExpand = () => {
       <div className="relative   overflow-x-hidden  max-w-[100vw] lg:hidden  ">
         <IntroStepMobile current={current_03} />
         <div className=" h-[1840px] relative w-screen  ">
+          <DetailState
+            top="100px"
+            img="/images/bullet_0_white.svg"
+            des="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo arcu at lacus non proin integer duis. Urna in risus cursus amet arcu, ante tincidunt. Consectetur id diam posuere suspendisse pharetra tellus ut ultrices. Mi eu viverra nisi velit bibendum. Lacinia justo morbi ornare viverra."
+          />
+          <DetailState
+            top="550px"
+            img="/images/bullet_2_white.svg"
+            des="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo arcu at lacus non proin integer duis. Urna in risus cursus amet arcu, ante tincidunt. Consectetur id diam posuere suspendisse pharetra tellus ut ultrices. Mi eu viverra nisi velit bibendum. Lacinia justo morbi ornare viverra."
+          />
+          <DetailState
+            top="950px"
+            img="/images/bullet_4_white.svg"
+            des="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo arcu at lacus non proin integer duis. Urna in risus cursus amet arcu, ante tincidunt. Consectetur id diam posuere suspendisse pharetra tellus ut ultrices. Mi eu viverra nisi velit bibendum. Lacinia justo morbi ornare viverra."
+          />
           <div className=" scale-[0.4] origin-top absolute left-[50%] -translate-x-[50%]  ">
             <Section_Mobile />
             <Canvas_Mobile current={current_03} />
@@ -187,6 +203,11 @@ export const WrapperExpand = () => {
             <IntroPart_2_Mobile current={current_04} />
           </div>
           <div className=" h-[1840px] relative w-screen  ">
+            <DetailState
+              top="350px"
+              img="/images/bullet_11_white.svg"
+              des="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo arcu at lacus non proin integer duis. Urna in risus cursus amet arcu, ante tincidunt. Consectetur id diam posuere suspendisse pharetra tellus ut ultrices. Mi eu viverra nisi velit bibendum. Lacinia justo morbi ornare viverra."
+            />
             <div className=" scale-[0.4] origin-top absolute left-[50%] -translate-x-[50%]  ">
               <Section_2_Mobile />
               <Canvas_2_Mobiles current={current_04} />

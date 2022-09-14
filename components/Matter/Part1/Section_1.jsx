@@ -4,6 +4,7 @@ import { drawBalls2040 } from "./drawBalls2040";
 import { drawBalls2050 } from "./drawBalls2050";
 import { drawBalls2060 } from "./drawBalls2060";
 import { y_2540, y_2550_1, y_2550_2, y_2560_1, y_2560_2 } from "../../../public/data/part_1/constitution";
+import { DetailState } from "../../DetailState";
 
 export const Section_1 = ({ current }) => {
   const start = () => {
@@ -41,6 +42,21 @@ export const Section_1 = ({ current }) => {
         </div>
       </div>
       <div className="h-[5000px]  w-[1152px] mx-auto" id="leg_section_1_wrapper">
+        <DetailState
+          top="1200px"
+          img="/images/bullet_0_white.svg"
+          des="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo arcu at lacus non proin integer duis. Urna in risus cursus amet arcu, ante tincidunt. Consectetur id diam posuere suspendisse pharetra tellus ut ultrices. Mi eu viverra nisi velit bibendum. Lacinia justo morbi ornare viverra."
+        />
+        <DetailState
+          top="2000px"
+          img="/images/bullet_2_white.svg"
+          des="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo arcu at lacus non proin integer duis. Urna in risus cursus amet arcu, ante tincidunt. Consectetur id diam posuere suspendisse pharetra tellus ut ultrices. Mi eu viverra nisi velit bibendum. Lacinia justo morbi ornare viverra."
+        />
+        <DetailState
+          top="2800px"
+          img="/images/bullet_4_white.svg"
+          des="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Commodo arcu at lacus non proin integer duis. Urna in risus cursus amet arcu, ante tincidunt. Consectetur id diam posuere suspendisse pharetra tellus ut ultrices. Mi eu viverra nisi velit bibendum. Lacinia justo morbi ornare viverra."
+        />
         <div className={`  relative w-[1000px] h-[197px] mx-auto top-[400px]`} id="leg_startsection_1">
           <div className="absolute top-0 w-full ">
             <p className=" text-center relative -top-[15vh] font-black h4"> ขั้นตอนการเสนอกฎหมาย</p>

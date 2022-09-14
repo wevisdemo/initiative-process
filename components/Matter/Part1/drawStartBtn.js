@@ -12,7 +12,7 @@ export const drawStartBtn = (world) => {
     {
       isStatic: true,
       render: {
-        // fillStyle: "transparent",
+        fillStyle: "transparent",
       },
     }
   );

@@ -72,8 +72,8 @@ export const WrapperExpand = () => {
     <div suppressHydrationWarning onMouseMove={handleMouseMove} id="wrapper">
       <div className="relative lg:h-[605vh]  ">
         <ExpandYear current={current_01} />
-        <div className="sticky top-0 z-10 hidden w-full h-screen lg:block " id="expand_step_0" />
-        <div className="lg:sticky top-[0] z-10 w-full lg:pt-[250px] lg:h-screen " id="expand_step_1">
+        <div className="sticky top-0 z-0 hidden w-full h-screen lg:block " id="expand_step_0" />
+        <div className="lg:sticky top-[0] z-30 w-full lg:pt-[250px] lg:h-screen " id="expand_step_1">
           <div className="h-full bg-black bg-opacity-75 ">
             <div className=" lg:hidden my-9">
               <div className="flex-col items-center pt-4 text-center max-w-[280px] mx-auto lg:max-w-full " id="step_1">
@@ -89,6 +89,7 @@ export const WrapperExpand = () => {
                 <p className="font-bold b4">กฎหมายของรัฐธรรมนูญปี 2540-2560 ที่เปิดช่องทางลงชื่อการเข้าเสนอชื่อ</p>
               </div>
             </div>
+
             <ExpandStep
               step="1"
               isStep_1={step_1}
@@ -107,7 +108,7 @@ export const WrapperExpand = () => {
             </div>
           </div>
         </div>
-        <div className="sticky top-[0] pt-[250px] z-10 w-full h-screen hidden lg:block " id="expand_step_2">
+        <div className="sticky top-[0] pt-[250px] z-30 w-full h-screen hidden lg:block " id="expand_step_2">
           <ExpandStep
             step="2"
             isStep_1={step_1}
@@ -118,7 +119,7 @@ export const WrapperExpand = () => {
             setStep_3={setStep_3}
           />
         </div>
-        <div className="sticky top-[0] pt-[250px] z-10 w-full h-screen hidden lg:block  " id="expand_step_3">
+        <div className="sticky top-[0] pt-[250px] z-30 w-full h-screen hidden lg:block  " id="expand_step_3">
           <ExpandStep
             step="3"
             isStep_1={step_1}

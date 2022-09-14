@@ -42,6 +42,7 @@ export const OurTeam = () => {
                         id="fb"
                         href={team.facebook}
                         target="_blank"
+                        rel="facebook"
                       >
                         <Image src={fb} layout="fill" objectFit="cover" />
                       </a>
@@ -52,6 +53,7 @@ export const OurTeam = () => {
                         id="twt"
                         href={team.twitter1}
                         target="_blank"
+                        rel="twitter"
                       >
                         <Image src={twt} layout="fill" objectFit="cover" />
                       </a>
@@ -62,6 +64,7 @@ export const OurTeam = () => {
                         id="twt"
                         href={team.twitter2}
                         target="_blank"
+                        rel="twitter"
                       >
                         <Image src={twt} layout="fill" objectFit="cover" />
                       </a>
@@ -81,6 +84,7 @@ export const OurTeam = () => {
                         id="web"
                         href={team.website}
                         target="_blank"
+                        rel="website"
                       >
                         <Image src={web} layout="fill" objectFit="cover" />
                       </a>

@@ -23,7 +23,7 @@ export const ExpandImage = () => {
       <div className="h-screen lg:hidden " />
       <div className="relative flex items-center justify-center min-h-screen bg-black " id="expand_image">
         <div
-          className="absolute top-0 right-0 z-20 flex flex-col items-center m-20 cursor-pointer b5"
+          className="absolute top-0 right-0 z-20 flex flex-col items-center m-10 cursor-pointer md:m-20 b5"
           onClick={() => onClickScrollTo("prev")}
         >
           <div className={` relative w-[24px] h-[24px] rotate-180 `}>
@@ -36,7 +36,10 @@ export const ExpandImage = () => {
           id="bg_expand_image"
           onClick={() => hideBG()}
         >
-          <p className="h4">เหมือนจะมีความหวัง แต่สุดท้ายต้องตกไป</p>
+          <p className="h4">
+            เหมือนจะมีความหวัง
+            <br className=" md:hidden" /> แต่สุดท้ายต้องตกไป
+          </p>
           <div className="flex ">
             <div className={` relative w-[17px] h-[24px] mr-3`}>
               <Image src="/images/click_scarlet.svg" layout="fill" objectFit="contain" />
@@ -70,7 +73,7 @@ export const ExpandImage = () => {
           )}
         </TransformWrapper>
         <div
-          className="absolute bottom-0 right-0 flex flex-col items-center m-20 cursor-pointer b5"
+          className="absolute bottom-0 right-0 flex flex-col items-center m-10 cursor-pointer md:m-20 b5"
           onClick={() => onClickScrollTo("next")}
         >
           ไปต่อ

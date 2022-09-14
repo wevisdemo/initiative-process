@@ -22,6 +22,7 @@ import { Canvas_2_Mobiles } from "./Matter/Part2Mobile/Canvas_2_Mobile";
 import { IntroPart_2_Mobile } from "./Matter/Part2Mobile/IntroPart_2_Mobile";
 import { ExpandImage } from "./ExpandImage";
 import { OurTeam } from "./Summary/OurTeam";
+import { Interview } from "./Summary/Interview";
 
 export const WrapperExpand = () => {
   const engine_01 = useRef(
@@ -183,6 +184,7 @@ export const WrapperExpand = () => {
       <ExpandImage />
       <div id="summary_section">
         <OurTeam />
+        <Interview />
       </div>
     </div>
   );

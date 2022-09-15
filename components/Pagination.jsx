@@ -1,6 +1,7 @@
 import React from "react";
 import { ScrollTo, device } from "./util";
-
+import Image from "next/image";
+import { color_circle } from "./util";
 export const Pagination = () => {
   const data = [0, "a", "b", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
   let name;
@@ -76,9 +77,20 @@ export const Pagination = () => {
 
     if (name) ScrollTo("#" + name);
   };
+  const openInfo = () => {
+    let seemore = document.getElementById("info_pagination");
+    seemore.style.display = "block";
+  };
+  const closeInfo = () => {
+    let seemore = document.getElementById("info_pagination");
+    seemore.style.display = "none";
+  };
   return (
-    <div className="fixed  top-[50%] translate-y-[-50%] z-40   left-0 opacity-0" id="pagination">
-      <div className="flex flex-col pl-3 space-y-1 md:space-y-2 ">
+    <div className="fixed  top-[50%] translate-y-[-50%] z-[70]   left-0 opacity-0" id="pagination">
+      <div className="flex flex-col items-center pl-3 space-y-1 md:space-y-2 ">
+        <div className=" relative w-[20px] h-[20px] mb-2 cursor-pointer" onClick={() => openInfo()}>
+          <Image src="/images/info.svg" layout="fill" objectFit="contain" />
+        </div>
         {data.map((d) => (
           <button
             onClick={() => clickScroll(d)}
@@ -91,6 +103,57 @@ export const Pagination = () => {
             </div>
           </button>
         ))}
+      </div>
+      <div
+        className=" absolute border border-white rounded-[10px] bg-black  left-[0] top-0 hidden translate-x-[5%] md:translate-x-[20%] z-20 p-8 md:w-max  w-[350px]  "
+        id="info_pagination"
+      >
+        <div id="close_info" className="absolute top-0 right-0 m-8 ">
+          <div className="  w-[32px] h-[32px]   cursor-pointer" onClick={() => closeInfo()}>
+            <Image src="/images/close_white.svg" layout="fill" objectFit="contain" />
+          </div>
+        </div>
+        <p className="mb-3 font-bold b2">วิธีดูสัญลักษณ์</p>
+        <p className="mb-2 font-bold b4">ประเภทกฎหมาย</p>
+        <div className="flex flex-row flex-wrap ">
+          <div className="flex items-center mr-[12px]">
+            <div className="circle_ratio" style={{ background: color_circle("สังคม") }} />
+            <p className="ml-[8px] b6">สังคม</p>
+          </div>
+          <div className="flex items-center mr-[12px]">
+            <div className="circle_ratio" style={{ background: color_circle("เศรษฐกิจ") }} />
+            <p className="ml-[8px] b6">เศรษฐกิจ</p>
+          </div>
+          <div className="flex items-center mr-[12px]">
+            <div className="circle_ratio" style={{ background: color_circle("การเมือง") }} />
+            <p className="ml-[8px] b6">การเมือง</p>
+          </div>
+          <div className="flex items-center md:mr-[12px] mt-2 md:mt-0">
+            <div className="circle_ratio" style={{ background: color_circle("ศาสนาและวัฒนธรรม") }} />
+            <p className="ml-[8px] b6">ศาสนาและวัฒนธรรม</p>
+          </div>
+        </div>
+        <p className="mt-4 mb-2 font-bold b4">ปีรัฐธรรมนูญ</p>
+        <div className="flex space-x-[12px] flex-row ">
+          <div className="flex items-center b6">
+            <div className="relative mr-2 circle_ratio">
+              <Image src="/images/circle_white_type_1.svg" layout="fill" objectFit="contain" />
+            </div>
+            2540
+          </div>
+          <div className="flex items-center b6">
+            <div className="relative mr-2 circle_ratio">
+              <Image src="/images/circle_white_type_2.svg" layout="fill" objectFit="contain" />
+            </div>
+            2550
+          </div>
+          <div className="flex items-center b6">
+            <div className="relative mr-2 circle_ratio">
+              <Image src="/images/circle_white_type_3.svg" layout="fill" objectFit="contain" />
+            </div>
+            2560
+          </div>
+        </div>
       </div>
     </div>
   );

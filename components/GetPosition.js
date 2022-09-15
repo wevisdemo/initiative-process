@@ -378,6 +378,8 @@ const GetPosition = (setStep_1, setStep_2, setStep_3, firstStep_3, setFirstStep_
       getElem("pagination").style.opacity = 1;
     } else {
       getElem("pagination").style.opacity = 0;
+      let seemore = document.getElementById("info_pagination");
+      seemore.style.display = "none";
     }
   });
 };

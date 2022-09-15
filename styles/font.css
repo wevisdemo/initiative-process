@@ -139,3 +139,7 @@
   line-height: 125%;
   @apply w-[25px] h-[25px]  border-white  rounded-full border-[2px] flex items-center justify-center hover:bg-white hover:text-black;
 }
+.hint {
+  line-height: 125%;
+  @apply text-[6px] font-bold top-[50%] translate-y-[-50%] left-0 flex items-center justify-center;
+}

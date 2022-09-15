@@ -96,7 +96,7 @@ export const Section_1 = ({ current }) => {
           </div>
         </div>
         {/*---------*/}
-        <div className={` relative w-[500px] h-[197px] mx-auto top-[600px]`} id="leg_01">
+        <div className={` relative w-[500px] h-[197px] mx-auto top-[600px] hint_leg_00`} id="leg_01">
           <Image src="/images/leg_01.svg" layout="fill" objectFit="contain" />
           <div className="absolute -top-[120px] w-full ">
             <p className="relative text-center b2">
@@ -106,18 +106,18 @@ export const Section_1 = ({ current }) => {
           </div>
         </div>
         {/*---------*/}
-        <div className={` relative w-[700px] h-[197px] left-[-80px]  top-[700px]`} id="leg_02">
+        <div className={` relative w-[700px] h-[197px] left-[-80px]  top-[700px] hint_leg_ab`} id="leg_02">
           <Image src="/images/leg_02.svg" layout="fill" objectFit="contain" />
         </div>
         {/*---------*/}
-        <div className={` relative w-[600px] h-[197px] mx-[60%] top-[700px]`} id="leg_03">
+        <div className={` relative w-[600px] h-[197px] mx-[60%] top-[700px] hint_leg_01`} id="leg_03">
           <Image src="/images/leg_03.svg" layout="fill" objectFit="contain" />
           <div className="absolute -top-[80px] -left-[90px] w-full ">
             <p className="relative text-center b2">ตรวจสอบเอกสาร</p>
           </div>
         </div>
         {/*---------*/}
-        <div className={` relative w-[600px] h-[197px] mx-[36%] top-[780px]`} id="leg_04">
+        <div className={` relative w-[600px] h-[197px] mx-[36%] top-[780px] hint_leg_02`} id="leg_04">
           <Image src="/images/leg_04.svg" layout="fill" objectFit="contain" />
           <div className="absolute -top-[80px] -left-[90px] w-full ">
             <p className="relative text-center b2">
@@ -128,7 +128,7 @@ export const Section_1 = ({ current }) => {
           </div>
         </div>
         {/*---------*/}
-        <div className={` relative w-[700px] h-[197px] mx-[12%] top-[880px]`} id="leg_05">
+        <div className={` relative w-[700px] h-[197px] mx-[12%] top-[880px] hint_leg_03`} id="leg_05">
           <Image src="/images/leg_05.svg" layout="fill" objectFit="contain" />
           <div className="absolute -top-[80px] -left-[130px] w-full ">
             <p className="relative text-center b2">
@@ -139,11 +139,11 @@ export const Section_1 = ({ current }) => {
           </div>
         </div>
         {/*---------*/}
-        <div className={` relative w-[250px] h-[433px] mx-[2%] top-[750px]`} id="leg_07">
+        <div className={` relative w-[250px] h-[433px] mx-[2%] top-[750px] `} id="leg_07">
           <Image src="/images/leg_07.svg" layout="fill" objectFit="contain" />
         </div>
         {/*---------*/}
-        <div className={` relative w-[600px] h-[197px] mx-[11%] top-[800px]`} id="leg_06">
+        <div className={` relative w-[600px] h-[197px] mx-[11%] top-[800px] hint_leg_04`} id="leg_06">
           <Image src="/images/leg_06.svg" layout="fill" objectFit="contain" />
           <div className="absolute -top-[70px] -left-[100px] w-full ">
             <p className="relative text-center b2">
@@ -153,7 +153,7 @@ export const Section_1 = ({ current }) => {
           </div>
         </div>
         {/*---------*/}
-        <div className={` relative w-[800px] h-[197px] mx-[30%] top-[900px]`} id="leg_08">
+        <div className={` relative w-[800px] h-[197px] mx-[30%] top-[900px] hint_leg_05`} id="leg_08">
           <Image src="/images/leg_08.svg" layout="fill" objectFit="contain" />
           <div className="absolute -top-[80px]  w-full ">
             <p className="relative text-center b2">
@@ -164,7 +164,7 @@ export const Section_1 = ({ current }) => {
           </div>
         </div>
         {/*---------*/}
-        <div className={` relative w-[250px] h-[433px] mx-[0] top-[600px]`} id="leg_09">
+        <div className={` relative w-[250px] h-[433px] mx-[0] top-[600px] hint_leg_06`} id="leg_09">
           <Image src="/images/leg_07.svg" layout="fill" objectFit="contain" />
           <div className="absolute top-[15%] left-[25%] w-[400px]">
             <p className="relative text-center b2">
@@ -176,7 +176,7 @@ export const Section_1 = ({ current }) => {
           </div>
         </div>
         {/*---------*/}
-        <div className={` relative w-[800px] h-[300px] mx-[6%] top-[550px]`} id="leg_10">
+        <div className={` relative w-[800px] h-[300px] mx-[6%] top-[550px] hint_leg_07`} id="leg_10">
           <Image src="/images/leg_09.svg" layout="fill" objectFit="contain" />
           <div className="absolute top-[30px] -left-[23%]  w-full ">
             <p className="relative text-center b2">
@@ -186,11 +186,11 @@ export const Section_1 = ({ current }) => {
           </div>
         </div>
         {/*---------*/}
-        <div className={` relative w-[150px] h-[433px] mx-[0%] top-[350px] opacity-0`} id="leg_11">
+        <div className={` relative w-[150px] h-[433px] mx-[0%] top-[350px] opacity-0 `} id="leg_11">
           <Image src="/images/leg_07.svg" layout="fill" objectFit="contain" />
         </div>
         {/*---------*/}
-        <div className={` relative w-[650px] h-[170px] mx-auto top-[450px]`} id="leg_12">
+        <div className={` relative w-[650px] h-[170px] mx-auto top-[450px] hint_leg_08`} id="leg_12">
           <Image src="/images/leg_10.svg" layout="fill" objectFit="contain" />
           <div className="absolute -top-[100px] -left-[17%]  w-full ">
             <p className="relative text-center b2">
@@ -200,7 +200,7 @@ export const Section_1 = ({ current }) => {
           </div>
         </div>
         {/*---------*/}
-        <div className={` relative w-[850px] h-[190px] mx-[42%] top-[600px]`} id="leg_13">
+        <div className={` relative w-[850px] h-[190px] mx-[42%] top-[600px] hint_leg_09`} id="leg_13">
           <Image src="/images/leg_11.svg" layout="fill" objectFit="contain" />
           <div className="absolute -top-[100px]  w-full ">
             <p className="relative text-center b2">
@@ -210,7 +210,7 @@ export const Section_1 = ({ current }) => {
           </div>
         </div>
         {/*---------*/}
-        <div className={` relative w-[280px] h-[350px] mx-[3%] top-[300px]`} id="leg_14">
+        <div className={` relative w-[280px] h-[350px] mx-[3%] top-[300px] hint_leg_10`} id="leg_14">
           <Image src="/images/leg_12.svg" layout="fill" objectFit="contain" />
           <div className="absolute top-[20%]  left-[20%]  w-full ">
             <p className="relative text-center b2">

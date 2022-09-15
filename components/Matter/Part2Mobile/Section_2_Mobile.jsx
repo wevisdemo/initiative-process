@@ -8,7 +8,7 @@ export const Section_2_Mobile = () => {
           .
         </div>
         {/* -------- */}
-        <div className={` relative w-[550px] h-[197px] mx-[63%] top-[600px]`} id="leg_15_mobile">
+        <div className={` relative w-[550px] h-[197px] mx-[63%] top-[600px] hint_leg_11_mobile`} id="leg_15_mobile">
           <Image src="/images/leg_13.svg" layout="fill" objectFit="contain" />
           <div className="absolute -top-[60%]  left-[25%]   ">
             <div className="px-2 py-1 rounded-full b2 bg-gray">ชั้น ส.ส.</div>
@@ -19,7 +19,7 @@ export const Section_2_Mobile = () => {
           </div>
         </div>
         {/* -------- */}
-        <div className={` relative w-[250px] h-[433px] left-[55%]  top-[500px]`} id="leg_16_mobile">
+        <div className={` relative w-[250px] h-[433px] left-[55%]  top-[500px] hint_leg_12_mobile`} id="leg_16_mobile">
           <Image src="/images/leg_14.svg" layout="fill" objectFit="contain" />
           <div className="absolute top-[25%] w-[500px]   ">
             <p className="relative text-center b2">
@@ -29,7 +29,7 @@ export const Section_2_Mobile = () => {
           </div>
         </div>
         {/* -------- */}
-        <div className={` relative w-[600px] h-[197px] mx-[63%] top-[600px]`} id="leg_17_mobile">
+        <div className={` relative w-[600px] h-[197px] mx-[63%] top-[600px] hint_leg_13_mobile`} id="leg_17_mobile">
           <Image src="/images/leg_15.svg" layout="fill" objectFit="contain" />
           <div className="absolute -top-[40%] left-[26%]   ">
             <p className="relative text-center b2">
@@ -39,7 +39,7 @@ export const Section_2_Mobile = () => {
           </div>
         </div>
         {/* -------- */}
-        <div className={` relative w-[550px] h-[197px] mx-[42%] top-[680px]`} id="leg_18_mobile">
+        <div className={` relative w-[550px] h-[197px] mx-[42%] top-[680px] hint_leg_14_mobile`} id="leg_18_mobile">
           <Image src="/images/leg_16.svg" layout="fill" objectFit="contain" />
           <div className="absolute -top-[60%]  left-[25%]   ">
             <div className="px-2 py-1 rounded-full b2 bg-gray">ชั้น ส.ว.</div>
@@ -51,7 +51,7 @@ export const Section_2_Mobile = () => {
           </div>
         </div>
         {/* -------- */}
-        <div className={` relative  w-[250px] h-[433px] mx-[33%] top-[500px]`} id="leg_19_mobile">
+        <div className={` relative  w-[250px] h-[433px] mx-[33%] top-[500px] hint_leg_15_mobile`} id="leg_19_mobile">
           <Image src="/images/leg_17.svg" layout="fill" objectFit="contain" />
           <div className="absolute top-[45%]  w-[400px]   ">
             <p className="relative text-center b2">
@@ -61,7 +61,7 @@ export const Section_2_Mobile = () => {
           </div>
         </div>
         {/* -------- */}
-        <div className={` relative w-[450px] h-[197px] mx-[40%] top-[550px]`} id="leg_20_mobile">
+        <div className={` relative w-[450px] h-[197px] mx-[40%] top-[550px] hint_leg_16_mobile`} id="leg_20_mobile">
           <Image src="/images/leg_18.svg" layout="fill" objectFit="contain" />
           <div className="absolute -top-[40%] left-[39%]   ">
             <p className="relative text-center b2">
@@ -70,7 +70,7 @@ export const Section_2_Mobile = () => {
           </div>
         </div>
         {/* -------- */}
-        <div className={` relative w-[500px] h-[197px] mx-[65%] top-[550px]`} id="leg_21_mobile">
+        <div className={` relative w-[500px] h-[197px] mx-[65%] top-[550px] hint_leg_17_mobile`} id="leg_21_mobile">
           <Image src="/images/leg_19.svg" layout="fill" objectFit="contain" />
           <div className="absolute left-[25%] top-[15%]   ">
             <p className="relative text-center b2">
@@ -98,7 +98,7 @@ export const Section_2_Mobile = () => {
           <Image src="/images/leg_17.svg" layout="fill" objectFit="contain" />
         </div>
         {/* -------- */}
-        <div className={` relative w-[450px] h-[300px] mx-[6%] top-[500px]`} id="leg_25_mobile">
+        <div className={` relative w-[450px] h-[300px] mx-[6%] top-[500px] hint_leg_18_mobile`} id="leg_25_mobile">
           <Image src="/images/leg_22.svg" layout="fill" objectFit="contain" />
           <div className="absolute left-[35%] top-[5%]   ">
             <p className="relative text-center b2">
@@ -107,7 +107,7 @@ export const Section_2_Mobile = () => {
           </div>
         </div>
         {/* -------- */}
-        <div className={` relative w-[400px] h-[197px] mx-[30%] top-[500px] `} id="leg_26_mobile">
+        <div className={` relative w-[400px] h-[197px] mx-[30%] top-[500px] hint_leg_19_mobile`} id="leg_26_mobile">
           <Image src="/images/leg_23.svg" layout="fill" objectFit="contain" />
           <div className="absolute left-[45%] -top-[35%]   ">
             <p className="relative text-center b2">
@@ -118,7 +118,7 @@ export const Section_2_Mobile = () => {
           </div>
         </div>
         {/* -------- */}
-        <div className={` relative w-[200px] h-[433px] mx-[-1%] top-[150px]`} id="leg_27_mobile">
+        <div className={` relative w-[200px] h-[433px] mx-[-5%] top-[300px] hint_leg_20_mobile`} id="leg_27_mobile">
           <Image src="/images/leg_24.svg" layout="fill" objectFit="contain" />
           <div className="absolute top-[40%] w-[400px]   ">
             <p className="relative text-center b2">

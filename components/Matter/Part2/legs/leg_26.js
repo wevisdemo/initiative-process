@@ -7,14 +7,7 @@ export const leg_26 = (world) => {
 
   const y = elem_leg.offsetTop + elem_leg.getBoundingClientRect().height / 2;
 
-  const rect_1 = Bodies.rectangle(vwToPixels(1.5), y - 80, w, 30, {
-    isStatic: true,
-    angle: Math.PI / 2,
-    render: {
-      fillStyle: "transparent",
-    },
-  });
-  const rect_2 = Bodies.rectangle(vwToPixels(8), y + 45, w, 20, {
+  const rect_2 = Bodies.rectangle(vwToPixels(5), y + 195, w, 20, {
     isStatic: true,
     angle: Math.PI / 5.25,
     render: {
@@ -22,5 +15,5 @@ export const leg_26 = (world) => {
     },
   });
 
-  Composite.add(world, [rect_1, rect_2]);
+  Composite.add(world, [rect_2]);
 };

@@ -1,3 +1,5 @@
+import { unstable_renderSubtreeIntoContainer } from "react-dom";
+
 export const color_circle = (type) => {
   if (type === "สังคม") return "#EFFF8B";
   if (type === "เศรษฐกิจ") return "#9B8CCD";
@@ -70,12 +72,12 @@ export const label_filter = (label) => {
 
 export const device = () => {
   if (document.body.clientWidth < 768) return "mobile";
-  if (document.body.clientWidth < 1025 && document.body.clientWidth > 768) return "tablet";
+  if (document.body.clientWidth < 1025 && document.body.clientWidth >= 768) return "tablet";
   return "labtop";
 };
 
 export const ScrollTo = (elem) => {
   setTimeout(() => {
-    document.querySelector(elem).scrollIntoView({ behavior: "smooth" });
+    document.querySelector(elem).scrollIntoView({ behavior: "smooth", block: "center" });
   }, 0);
 };

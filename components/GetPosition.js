@@ -37,19 +37,19 @@ const GetPosition = (setStep_1, setStep_2, setStep_3, firstStep_3, setFirstStep_
     const detail_step_12 = get_position("detail_step_12");
     const detail_step_13 = get_position("detail_step_13");
     const detail_step_14 = get_position("detail_step_14");
-    if (expand_step_0.y > expand_step_0.height / 2 && device() != "labtop") {
+    if (expand_step_0.y > expand_step_0.height / 2 && device() === "labtop") {
       getElem("step_0").style.display = "flex";
       getElem("step_1").style.display = "none";
     }
-    if (expand_step_0.y < expand_step_0.height / 2 && device() != "labtop") {
+    if (expand_step_0.y < expand_step_0.height / 2 && device() === "labtop") {
       getElem("step_0").style.display = "none";
       getElem("step_1").style.display = "flex";
     }
-    if (expand_step_1.y < expand_step_1.height / 2 && device() != "labtop") {
+    if (expand_step_1.y < expand_step_1.height / 2 && device() === "labtop") {
       getElem("step_1").style.display = "none";
       getElem("step_2").style.display = "block";
     }
-    if (expand_step_1.y > expand_step_1.height / 2 && device() != "labtop") {
+    if (expand_step_1.y > expand_step_1.height / 2 && device() === "labtop") {
       getElem("step_2").style.display = "none";
     }
     if (expand_step_3.y < expand_step_3.height && !firstStep_3) {

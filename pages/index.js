@@ -5,6 +5,7 @@ import { WrapperExpand } from "../components/WrapperExpand";
 import WvNavButton from "@wevisdemo/ui/components/nav-button";
 import WvNavbar from "@wevisdemo/ui/components/navbar";
 import { Seemore_1, Seemore_2 } from "../components/Matter/Part2/Seemore";
+import { Pagination } from "../components/Pagination";
 
 const Home = () => {
   const router = useRouter();
@@ -16,6 +17,7 @@ const Home = () => {
     <div className={styles.container} id="content">
       <Seemore_1 />
       <Seemore_2 />
+      <Pagination />
       <main className={styles.main} id="main">
         <div className="sticky top-0 z-50 w-full ">
           <WvNavbar title="Initiative Law" dark={true}>

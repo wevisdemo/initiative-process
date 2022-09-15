@@ -77,8 +77,8 @@ export const Pagination = () => {
     if (name) ScrollTo("#" + name);
   };
   return (
-    <div className="fixed  top-[50%] translate-y-[-50%] z-40 " id="pagination">
-      <div className="flex flex-col space-y-2 ">
+    <div className="fixed  top-[50%] translate-y-[-50%] z-40   left-0 opacity-0" id="pagination">
+      <div className="flex flex-col pl-3 space-y-1 md:space-y-2 ">
         {data.map((d) => (
           <button
             onClick={() => clickScroll(d)}

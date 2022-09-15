@@ -19,7 +19,7 @@ const Home = () => {
       <Seemore_2 />
       <Pagination />
       <main className={styles.main} id="main">
-        <div className="sticky top-0 z-50 w-full ">
+        <div className="sticky top-0 left-0 z-50 w-screen ">
           <WvNavbar title="Initiative Law" dark={true}>
             <WvNavButton dark={true} active={router.pathname === "/"}>
               <div onClick={() => select_route("/")}>หน้าหลัก</div>

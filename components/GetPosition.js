@@ -362,6 +362,23 @@ const GetPosition = (setStep_1, setStep_2, setStep_3, firstStep_3, setFirstStep_
     } else {
       getElem("hint_20").style.background = "black";
     }
+    /////////////////////////
+    const leg_section_1 = get_position("leg_section_1_wrapper");
+    const leg_section_1_mobile = get_position("leg_section_1_wrapper_mobile");
+    const leg_section_2_mobile = get_position("leg_section_2_wrapper_mobile");
+    const leg_section_2 = get_position("leg_section_2_wrapper");
+    const expand_image = get_position("expand_image");
+    if (
+      (leg_section_1.y < 0 && leg_section_1.y > -leg_section_1.height + 500) ||
+      (leg_section_1_mobile.y < 0 && leg_section_1_mobile.y > -leg_section_1_mobile.height) ||
+      (leg_section_2_mobile.y < 0 && leg_section_2_mobile.y > -leg_section_2_mobile.height) ||
+      (leg_section_2.y < 0 && leg_section_2.y > -leg_section_2.height) ||
+      (expand_image.y < 0 && expand_image.y > -expand_image.height / 2)
+    ) {
+      getElem("pagination").style.opacity = 1;
+    } else {
+      getElem("pagination").style.opacity = 0;
+    }
   });
 };
 export default GetPosition;

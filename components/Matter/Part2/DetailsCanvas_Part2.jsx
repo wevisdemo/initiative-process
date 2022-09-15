@@ -10,6 +10,7 @@ import { CompareStep7 } from "./CompareStep7";
 import { StepAdjust } from "./StepAdjust";
 import { StepConsider } from "./StepConsider";
 import { SummaryAll } from "./SummaryAll";
+
 export const DetailsCanvas_Part2 = () => {
   return (
     <div id="DetailsCanvas_Part2" className="relative w-full ">

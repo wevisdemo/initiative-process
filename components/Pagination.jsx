@@ -88,7 +88,11 @@ export const Pagination = () => {
   return (
     <div className="fixed  top-[50%] translate-y-[-50%] z-[70]   left-0 opacity-0" id="pagination">
       <div className="flex flex-col items-center pl-3 space-y-1 md:space-y-2 ">
-        <div className=" relative w-[20px] h-[20px] mb-2 cursor-pointer" onClick={() => openInfo()}>
+        <div
+          className=" relative w-[20px] h-[20px] mb-2 cursor-pointer"
+          onClick={() => openInfo()}
+          onMouseLeave={() => closeInfo()}
+        >
           <Image src="/images/info.svg" layout="fill" objectFit="contain" />
         </div>
         {data.map((d) => (

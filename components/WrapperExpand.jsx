@@ -1,4 +1,3 @@
-import { useRouter } from "next/router";
 import { useRef, useState, useEffect } from "react";
 import { ExpandYear } from "./ExpandYear";
 import { Section_1 } from "./Matter/Part1/Section_1";
@@ -25,8 +24,6 @@ import { ExpandImage } from "./ExpandImage";
 import { OurTeam } from "./Summary/OurTeam";
 import { Interview } from "./Summary/Interview";
 
-import WvNavButton from "@wevisdemo/ui/components/nav-button";
-import WvNavbar from "@wevisdemo/ui/components/navbar";
 import { DetailState } from "./DetailState";
 
 export const WrapperExpand = () => {
@@ -72,12 +69,6 @@ export const WrapperExpand = () => {
   useEffect(() => {
     animateZoom(state.x, state.y);
   });
-
-  const router = useRouter();
-
-  const select_route = (path) => {
-    router.push(path, undefined, { shallow: false });
-  };
 
   return (
     // <div onMouseMove={handleMouseMove} >
@@ -249,16 +240,6 @@ export const WrapperExpand = () => {
       </div>
       <ExpandImage />
       <div id="summary_section" className="relative ">
-        <div className="sticky top-0 z-50 w-full ">
-          <WvNavbar title="Initiative Law" dark={true}>
-            <WvNavButton dark={true} active={router.pathname === "/"}>
-              <div onClick={() => select_route("/")}>หน้าหลัก</div>
-            </WvNavButton>
-            <WvNavButton dark={true} active={router.pathname === "/About"}>
-              <div onClick={() => select_route("/About")}>เกี่ยวกับโครงการ</div>
-            </WvNavButton>
-          </WvNavbar>
-        </div>
         <OurTeam />
         <Interview />
       </div>

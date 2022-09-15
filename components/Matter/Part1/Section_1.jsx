@@ -200,7 +200,7 @@ export const Section_1 = ({ current }) => {
           </div>
         </div>
         {/*---------*/}
-        <div className={` relative w-[850px] h-[190px] mx-[42%] top-[600px] hint_leg_09`} id="leg_13">
+        <div className={` relative w-[850px] h-[190px] mx-[42%] top-[580px] hint_leg_09`} id="leg_13">
           <Image src="/images/leg_11.svg" layout="fill" objectFit="contain" />
           <div className="absolute -top-[100px]  w-full ">
             <p className="relative text-center b2">
@@ -210,7 +210,7 @@ export const Section_1 = ({ current }) => {
           </div>
         </div>
         {/*---------*/}
-        <div className={` relative w-[280px] h-[350px] mx-[3%] top-[300px] hint_leg_10`} id="leg_14">
+        <div className={` relative w-[280px] h-[350px] mx-[3%] top-[510px] hint_leg_10`} id="leg_14">
           <Image src="/images/leg_12.svg" layout="fill" objectFit="contain" />
           <div className="absolute top-[20%]  left-[20%]  w-full ">
             <p className="relative text-center b2">

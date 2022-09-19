@@ -22,14 +22,13 @@ function MetaHead() {
       <meta property="og:url" content={web_url} />
 
       <meta name="twitter:title" content={title} />
-      <meta name="twitter:image:alt" content={title} />
+
       <meta name="twitter:description" content={description} />
 
       <meta name="twitter:card" content="summary_large_image" />
 
-      <meta name="twitter:image" content={web_url + "/" + og_image} />
+      <meta name="twitter:image:src" content={web_url + "/" + og_image} />
 
-      <meta property="twitter:url" content={web_url} />
       <link rel="stylesheet" href="https://design-systems.wevis.info/typography.css" />
     </Head>
   );

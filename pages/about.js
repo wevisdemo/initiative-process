@@ -257,7 +257,7 @@ const About = () => {
           </a>
         </WvButtonGroup>
 
-        <WvSharer center url="https://initiative-process.vercel.app/" />
+        <WvSharer center url="https://initiative-process.vercel.app" />
       </WvContainer>
       <WvFooter />
     </div>

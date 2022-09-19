@@ -8,6 +8,7 @@ import WvSharer from "@wevisdemo/ui/components/sharer";
 import WvFooter from "@wevisdemo/ui/components/footer";
 import WvNavbar from "@wevisdemo/ui/components/navbar";
 import WvNavButton from "@wevisdemo/ui/components/nav-button";
+import MetaHead from "../components/MetaHead";
 
 const About = () => {
   const router = useRouter();
@@ -18,6 +19,7 @@ const About = () => {
 
   return (
     <div className="relative h-full overflow-y-auto text-black bg-white ">
+      <MetaHead />
       <div className="sticky top-0 z-50 w-full ">
         <WvNavbar title="Initiative Law" dark={true}>
           <WvNavButton dark={true} active={router.pathname === "/"}>

@@ -5,7 +5,7 @@ function MetaHead() {
   const title = "Initiative law เส้นทางของกฎหมายประชาชนสุดท้ายจบที่ไหน";
   const description = "ร่วมสำรวจข้อมูลการลงชื่อเสนอกฎหมายของประชาชนต้องผ่านกระบวนขั้นตอนวกวน และไม่รู้ว่าจะจบที่ตรงไหน";
   const web_url = "https://initiative-process.vercel.app/";
-  const og_image = "og_image";
+  const og_image = "og_image.png";
   return (
     <Head>
       <title>{title}</title>

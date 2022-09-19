@@ -4,8 +4,8 @@ import Head from "next/head";
 function MetaHead() {
   const title = "Initiative law เส้นทางของกฎหมายประชาชนสุดท้ายจบที่ไหน";
   const description = "ร่วมสำรวจข้อมูลการลงชื่อเสนอกฎหมายของประชาชนต้องผ่านกระบวนขั้นตอนวกวน และไม่รู้ว่าจะจบที่ตรงไหน";
-  const web_url = "https://initiative-process.vercel.app/";
-  const og_image = "og_image.png";
+  const web_url = "https://initiative-process.vercel.app";
+  const og_image = "og_image.jpg";
   return (
     <Head>
       <title>{title}</title>
@@ -17,9 +17,9 @@ function MetaHead() {
 
       <meta property="og:type" content="website" />
 
-      <meta property="og:image" content={web_url + og_image} />
+      <meta property="og:image" content={web_url + "/" + og_image} />
 
-      <meta property="og:url" content={web_url + og_image} />
+      <meta property="og:url" content={web_url} />
 
       <meta name="twitter:title" content={title} />
 
@@ -27,9 +27,9 @@ function MetaHead() {
 
       <meta name="twitter:card" content="summary_large_image" />
 
-      <meta name="twitter:image:src" content={web_url + og_image} />
+      <meta name="twitter:image:src" content={web_url + "/" + og_image} />
 
-      <meta property="twitter:url" content={web_url + og_image} />
+      <meta property="twitter:url" content={web_url} />
       <link rel="stylesheet" href="https://design-systems.wevis.info/typography.css" />
     </Head>
   );

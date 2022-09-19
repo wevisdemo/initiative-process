@@ -95,7 +95,7 @@ export const Section_2 = () => {
         </div>
         {/* ----x---- */}
         <div className={` relative  w-[250px] h-[433px] mx-[0%] top-[500px]`} id="leg_24">
-          <Image src="/images/leg_17.svg" layout="fill" objectFit="contain" />
+          <Image src="/images/leg_free.svg" layout="fill" objectFit="contain" />
         </div>
         {/* -------- */}
         <div className={` relative w-[450px] h-[300px] mx-[6%] top-[500px] hint_leg_18`} id="leg_25">

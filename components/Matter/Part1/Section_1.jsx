@@ -140,7 +140,7 @@ export const Section_1 = ({ current }) => {
         </div>
         {/*---------*/}
         <div className={` relative w-[250px] h-[433px] mx-[2%] top-[750px] `} id="leg_07">
-          <Image src="/images/leg_07.svg" layout="fill" objectFit="contain" />
+          <Image src="/images/leg_free.svg" layout="fill" objectFit="contain" />
         </div>
         {/*---------*/}
         <div className={` relative w-[600px] h-[197px] mx-[11%] top-[800px] hint_leg_04`} id="leg_06">

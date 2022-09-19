@@ -10,19 +10,53 @@ import { CompareStep7 } from "./CompareStep7";
 import { StepAdjust } from "./StepAdjust";
 import { StepConsider } from "./StepConsider";
 import { SummaryAll } from "./SummaryAll";
+import { useState, useEffect } from "react";
+import { animateZoom } from "../../animateZoom";
 
 export const DetailsCanvas_Part2 = () => {
+  const [position, setPosition] = useState({});
+  const handleMouseMove = (e) => {
+    e.persist();
+    setPosition({ x: e.clientX, y: e.clientY });
+    const circleCursorZoom = document.querySelector(".cursor-circle-zoom");
+    circleCursorZoom.classList.add("zoom-active");
+  };
+
+  const handleMouseLeave = () => {
+    const circleCursorZoom = document.querySelector(".cursor-circle-zoom");
+    circleCursorZoom.classList.remove("zoom-active");
+  };
+
+  useEffect(() => {
+    animateZoom(position.x, position.y, "image_zoom_2");
+  }, [position]);
+
   return (
     <div id="DetailsCanvas_Part2" className="relative w-full ">
       <div className=" sticky top-0 lg:h-[30vh] h-[0px] lg:z-10  lg:w-[50%] ">
         <div className="relative flex items-center justify-center h-screen ">
-          <div id="DiagramPart2Full" className="absolute opacity-0 cursor-pointer">
-            <DiagramPart2Full />
-          </div>
-          <div id="DiagramPart2" className="absolute cursor-pointer ">
+          <div
+            className="absolute cursor-pointer"
+            id="image_zoom_2"
+            onMouseMove={handleMouseMove}
+            onMouseLeave={handleMouseLeave}
+          >
             <DiagramPart2 />
           </div>
-          <div id="DiagramCompare" className="absolute opacity-0 cursor-pointer">
+          <div
+            className="absolute cursor-pointer"
+            id="image_zoom_2"
+            onMouseMove={handleMouseMove}
+            onMouseLeave={handleMouseLeave}
+          >
+            <DiagramPart2Full />
+          </div>
+          <div
+            className="absolute cursor-pointer"
+            id="image_zoom_2"
+            onMouseMove={handleMouseMove}
+            onMouseLeave={handleMouseLeave}
+          >
             <DiagramCompare />
           </div>
         </div>

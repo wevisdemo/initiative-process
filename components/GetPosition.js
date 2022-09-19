@@ -16,6 +16,7 @@ const GetPosition = (setStep_1, setStep_2, setStep_3, firstStep_3, setFirstStep_
     }
   };
   useScrollPosition(({ prevPos, currPos }) => {
+    const circleCursorZoom = document.querySelector(".cursor-circle-zoom");
     //////////////////////////////////////////////////
     const expand_step_0 = get_position("expand_step_0");
     const expand_step_1 = get_position("expand_step_1");
@@ -71,68 +72,82 @@ const GetPosition = (setStep_1, setStep_2, setStep_3, firstStep_3, setFirstStep_
       getElem("hilight_1").style.opacity = 1;
       getElem("hilight_2").style.opacity = 1;
       getElem("hilight_3").style.opacity = 1;
+      circleCursorZoom.style.backgroundImage = "url('/images/diagram_part1_all.png')";
     }
     if (detail_step_2.y < detail_step_2.height / 2) {
       getElem("hilight_2").style.opacity = 0.25;
       getElem("hilight_3").style.opacity = 0.25;
+      circleCursorZoom.style.backgroundImage = "url('/images/diagram_part1_01.png')";
     }
     if (detail_step_3.y < detail_step_3.height / 2) {
       getElem("hilight_1").style.opacity = 1;
       getElem("hilight_2").style.opacity = 0.25;
       getElem("hilight_3").style.opacity = 0.25;
+      circleCursorZoom.style.backgroundImage = "url('/images/diagram_part1_01.png')";
     }
     if (detail_step_4.y < detail_step_4.height / 2) {
       getElem("hilight_1").style.opacity = 0.25;
       getElem("hilight_2").style.opacity = 1;
       getElem("hilight_3").style.opacity = 0.25;
+      circleCursorZoom.style.backgroundImage = "url('/images/diagram_part1_02.png')";
     }
     if (detail_step_5.y < detail_step_5.height / 2) {
       getElem("hilight_1").style.opacity = 0.25;
       getElem("hilight_2").style.opacity = 0.25;
       getElem("hilight_3").style.opacity = 1;
+      circleCursorZoom.style.backgroundImage = "url('/images/diagram_part1_03.png')";
     }
     if (detail_step_6.y < detail_step_6.height / 2) {
       getElem("DiagramPart2").style.opacity = 1;
       getElem("DiagramPart2Full").style.opacity = 0;
+      circleCursorZoom.style.backgroundImage = "url('/images/diagram_part2_01.png')";
     }
     if (detail_step_7.y < detail_step_7.height / 2) {
       getElem("DiagramPart2").style.opacity = 0;
       getElem("DiagramPart2Full").style.opacity = 1;
       getClasslist("diagram_part_2").forEach((el) => (el.style.opacity = 0));
       getClasslist("part_2_rank").forEach((el) => (el.style.opacity = 1));
+      circleCursorZoom.style.backgroundImage = "url('/images/diagram_part2_02.png')";
     }
     if (detail_step_8.y < detail_step_8.height / 2) {
       getClasslist("diagram_part_2").forEach((el) => (el.style.opacity = 0));
       getClasslist("part_2_circle").forEach((el) => (el.style.opacity = 1));
+      circleCursorZoom.style.backgroundImage = "url('/images/diagram_part2_03.png')";
     }
     if (detail_step_9.y < detail_step_9.height / 2) {
       getElem("DiagramPart2Full").style.opacity = 1;
       getElem("DiagramCompare").style.opacity = 0;
       getClasslist("diagram_part_2").forEach((el) => (el.style.opacity = 0));
       getClasslist("part_2_compare").forEach((el) => (el.style.opacity = 1));
+      circleCursorZoom.style.backgroundImage = "url('/images/diagram_part2_04.png')";
     }
     if (detail_step_10.y < detail_step_10.height / 2) {
       getElem("DiagramPart2Full").style.opacity = 0;
       getElem("DiagramCompare").style.opacity = 1;
       getClasslist("circle_compare").forEach((el) => (el.style.opacity = 0.25));
       getElem("circle_compare1").style.opacity = 1;
+      circleCursorZoom.style.backgroundImage = "url('/images/diagram_part2_0401.png')";
     }
     if (detail_step_11.y < detail_step_11.height / 2) {
       getClasslist("circle_compare").forEach((el) => (el.style.opacity = 0.25));
       getElem("circle_compare3").style.opacity = 1;
+      circleCursorZoom.style.backgroundImage = "url('/images/diagram_part2_0402.png')";
     }
     if (detail_step_12.y < detail_step_12.height / 2) {
       getClasslist("circle_compare").forEach((el) => (el.style.opacity = 0.25));
       getElem("circle_compare4").style.opacity = 1;
       getElem("circle_compare5").style.opacity = 1;
+      circleCursorZoom.style.backgroundImage = "url('/images/diagram_part2_0403.png')";
     }
     if (detail_step_13.y < detail_step_13.height / 2) {
       getClasslist("circle_compare").forEach((el) => (el.style.opacity = 0.25));
       getElem("circle_compare6").style.opacity = 1;
+      circleCursorZoom.style.backgroundImage = "url('/images/diagram_part2_0404.png')";
     }
     if (detail_step_14.y < detail_step_14.height / 2) {
       getClasslist("circle_compare").forEach((el) => (el.style.opacity = 0.25));
       getElem("circle_compare7").style.opacity = 1;
+      circleCursorZoom.style.backgroundImage = "url('/images/diagram_part2_0405.png')";
     }
     //////////////////////////////////////////////////
 

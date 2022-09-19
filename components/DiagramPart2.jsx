@@ -1,6 +1,7 @@
 export const DiagramPart2 = () => {
   return (
     <svg
+      id="DiagramPart2"
       className="w-full h-full md:w-[500px] md:h-[720px]"
       viewBox="0 0 500 720"
       fill="none"

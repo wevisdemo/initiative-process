@@ -1,6 +1,24 @@
+import { useState, useEffect } from "react";
+import { animateZoom } from "./animateZoom";
 export const DiagramPart1 = () => {
+  const [position, setPosition] = useState({});
+  const handleMouseMove = (e) => {
+    e.persist();
+    setPosition({ x: e.clientX, y: e.clientY });
+    const circleCursorZoom = document.querySelector(".cursor-circle-zoom");
+    circleCursorZoom.classList.add("zoom-active");
+  };
+
+  const handleMouseLeave = () => {
+    const circleCursorZoom = document.querySelector(".cursor-circle-zoom");
+    circleCursorZoom.classList.remove("zoom-active");
+  };
+
+  useEffect(() => {
+    animateZoom(position.x, position.y, "image_zoom");
+  }, [position.x]);
   return (
-    <div id="image_zoom">
+    <div id="image_zoom" onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
       <svg
         className="w-full h-full md:w-[500px] md:h-[720px]"
         viewBox="0 0 500 720"

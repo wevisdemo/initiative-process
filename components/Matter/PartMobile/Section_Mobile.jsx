@@ -57,7 +57,7 @@ export const Section_Mobile = () => {
         </div>
         {/*---------*/}
         <div className={` relative w-[250px] h-[433px] mx-[2%] top-[410px] `} id="leg_07_mobile">
-          <Image src="/images/leg_07.svg" layout="fill" objectFit="contain" />
+          <Image src="/images/leg_free.svg" layout="fill" objectFit="contain" />
         </div>
         {/*---------*/}
         <div className={` relative w-[600px] h-[197px] mx-[8%] top-[435px] hint_leg_04_mobile `} id="leg_06_mobile">

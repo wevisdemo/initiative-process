@@ -1,7 +1,8 @@
 export const DiagramCompare = () => {
   return (
     <svg
-      className="w-full h-full md:w-[500px] md:h-[720px]"
+      id="DiagramCompare"
+      className="w-full h-full md:w-[500px] md:h-[720px]  opacity-0"
       viewBox="0 0 600 720"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

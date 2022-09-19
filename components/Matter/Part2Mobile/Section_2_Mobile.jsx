@@ -95,7 +95,7 @@ export const Section_2_Mobile = () => {
         </div>
         {/* ----x---- */}
         <div className={` relative  w-[250px] h-[433px] mx-[0%] top-[500px]`} id="leg_24_mobile">
-          <Image src="/images/leg_17.svg" layout="fill" objectFit="contain" />
+          <Image src="/images/leg_free.svg" layout="fill" objectFit="contain" />
         </div>
         {/* -------- */}
         <div className={` relative w-[450px] h-[300px] mx-[6%] top-[500px] hint_leg_18_mobile`} id="leg_25_mobile">

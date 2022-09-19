@@ -31,7 +31,7 @@ const Home = () => {
         </div>
         <Intro />
         <WrapperExpand />
-        <div id="cursor" className="fixed left-[50%] top-[50%] translate-y-[-50%] pointer-events-none ">
+        <div id="cursor" className="fixed left-[50%] z-50 top-[50%] translate-y-[-50%] pointer-events-none ">
           <div id="cursor-circle">
             <div className="cursor-circle">
               <div className="cursor-circle-hover-link"></div>

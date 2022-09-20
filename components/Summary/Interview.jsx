@@ -4,10 +4,15 @@ import triangle from "../../public/images/triangle.svg";
 import Image from "next/image";
 import WvSharer from "@wevisdemo/ui/components/sharer";
 import WvFooter from "@wevisdemo/ui/components/footer";
+import Spline from "@splinetool/react-spline";
 import { ScrollTo } from "../util";
 export const Interview = () => {
   return (
-    <div className="min-h-screen pt-24 ">
+    <div className="relative min-h-screen pt-24 overflow-hidden ">
+      <div className="absolute top-0 ">
+        <Spline scene=" https://prod.spline.design/MkKIeHHUF5d1vao8/scene.splinecode" />
+        <Spline scene=" https://prod.spline.design/MkKIeHHUF5d1vao8/scene.splinecode" />
+      </div>
       <div id="title" className="text-center ">
         <p className="font-bold b2">
           ฟังความคิดเห็นของบุคคล

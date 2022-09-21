@@ -23,7 +23,7 @@ const Home = () => {
       <div className="fixed inset-0 bg-black z-[99] flex items-center justify-center" id="loading">
         <svg
           aria-hidden="true"
-          class=" w-[62px] h-[62px]  text-black animate-spin dark:text-black fill-white"
+          className=" w-[62px] h-[62px]  text-black animate-spin dark:text-black fill-white"
           viewBox="0 0 100 101"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"

@@ -35,10 +35,10 @@ export const leg_05 = (world) => {
   Composite.add(world, [rect_1, rect_2, rect_3]);
   const tri_1_ratio = w / 2 + 40;
   const tri_2_ratio = w / 2 + 100;
-  const y_position_1 = 1.7;
-  const y_position_2 = 3;
+  const y_position_1 = 1.5;
+  const y_position_2 = 1.85;
 
-  Triangle(world, elem_leg_left + tri_1_ratio, y - w / y_position_1, -Math.PI + Math.PI / 8, 3, 3);
+  Triangle(world, elem_leg_left + tri_1_ratio, y - w / y_position_1, -Math.PI + Math.PI / 6, 3, 3);
 
   Triangle(world, elem_leg_left + tri_2_ratio, y - w / y_position_2, Math.PI - Math.PI / 5, 4, 2.5);
   Triangle(world, elem_leg_left + tri_2_ratio, y - w / y_position_2, Math.PI - Math.PI / 5, 5, 2.5);

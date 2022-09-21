@@ -33,7 +33,7 @@ export const leg_07 = (world) => {
   });
 
   Composite.add(world, [rect_1, rect_2, rect_3]);
-
+  Triangle(world, elem_leg_left - margin + 430, y + w + 155, -Math.PI + Math.PI / 8, 4, 2);
   Triangle(world, elem_leg_left - margin + 30, y + w + 55, -Math.PI + Math.PI / 8, 4, 2);
   Triangle(world, elem_leg_left - margin + 30, y + w + 55, -Math.PI + Math.PI / 8, 5, 2);
   Triangle(world, elem_leg_left - margin + 100, y + w + 55, Math.PI - Math.PI / 5, 6, 2);

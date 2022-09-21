@@ -7,28 +7,25 @@ export const Summary_Part2 = () => {
         <div className="flex items-center lg:items-start">
           <div className="circle_ratio" style={{ background: color_circle("สังคม") }} />
           <div className="ml-[8px]">
-            สังคม <br className="hidden lg:inline" />
-            54 ฉบับ
+            สังคม <br className="hidden lg:inline" />7 ฉบับ
           </div>
         </div>
         <div className="flex items-center lg:items-start">
           <div className="circle_ratio" style={{ background: color_circle("เศรษฐกิจ") }} />
           <div className="ml-[8px]">
-            เศรษฐกิจ <br className="hidden lg:inline" />
-            29 ฉบับ
+            เศรษฐกิจ <br className="hidden lg:inline" />0 ฉบับ
           </div>
         </div>
         <div className="flex items-center lg:items-start">
           <div className="circle_ratio" style={{ background: color_circle("การเมือง") }} />
           <div className="ml-[8px]">
-            การเมือง <br className="hidden lg:inline" />
-            36 ฉบับ
+            การเมือง <br className="hidden lg:inline" />2 ฉบับ
           </div>
         </div>
         <div className="flex items-center lg:items-start">
           <div className="circle_ratio" style={{ background: color_circle("ศาสนาและวัฒนธรรม") }} />
           <div className="ml-[8px]">
-            ศาสนาและวัฒนธรรม <br className="hidden lg:inline" />8 ฉบับ
+            ศาสนาและวัฒนธรรม <br className="hidden lg:inline" />0 ฉบับ
           </div>
         </div>
       </div>
@@ -43,7 +40,7 @@ export const Summary_Part2 = () => {
             <Image src="/images/circle_white_type_1.svg" layout="fill" objectFit="contain" />
           </div>
           <div className="flex items-center ">
-            รธน.ปี 40 <br className="hidden lg:inline" />x ฉบับ
+            รธน.ปี 40 <br className="hidden lg:inline" />1 ฉบับ
           </div>
         </div>
         <div className="flex b4">
@@ -51,7 +48,7 @@ export const Summary_Part2 = () => {
             <Image src="/images/circle_white_type_2.svg" layout="fill" objectFit="contain" />
           </div>
           <div className="flex items-center ">
-            รธน.ปี 50 <br className="hidden lg:inline" />x ฉบับ
+            รธน.ปี 50 <br className="hidden lg:inline" />8 ฉบับ
           </div>
         </div>
         <div className="flex b4 ">
@@ -59,7 +56,7 @@ export const Summary_Part2 = () => {
             <Image src="/images/circle_white_type_3.svg" layout="fill" objectFit="contain" />
           </div>
           <div className="flex items-center ">
-            รธน.ปี 60 <br className="hidden lg:inline" />x ฉบับ
+            รธน.ปี 60 <br className="hidden lg:inline" />0 ฉบับ
           </div>
         </div>
       </div>

@@ -12,16 +12,16 @@ export const Section_1 = ({ current }) => {
     drawBalls2040(current.world, y_2540);
     setTimeout(() => {
       drawBalls2050(current.world, y_2550_2);
-    }, 7000);
+    }, 12000);
     setTimeout(() => {
       drawBalls2050(current.world, y_2550_1);
-    }, 13000);
-    setTimeout(() => {
-      drawBalls2060(current.world, y_2560_1);
     }, 18000);
     setTimeout(() => {
+      drawBalls2060(current.world, y_2560_1);
+    }, 24000);
+    setTimeout(() => {
       drawBalls2060(current.world, y_2560_2);
-    }, 25000);
+    }, 33000);
   };
 
   return (
@@ -110,7 +110,7 @@ export const Section_1 = ({ current }) => {
           <Image src="/images/leg_02.svg" layout="fill" objectFit="contain" />
         </div>
         {/*---------*/}
-        <div className={` relative w-[600px] h-[197px] mx-[60%] top-[700px] hint_leg_01`} id="leg_03">
+        <div className={` relative w-[600px] h-[197px] mx-[55%] top-[700px] hint_leg_01`} id="leg_03">
           <Image src="/images/leg_03.svg" layout="fill" objectFit="contain" />
           <div className="absolute -top-[80px] -left-[90px] w-full ">
             <p className="relative text-center b2">ตรวจสอบเอกสาร</p>

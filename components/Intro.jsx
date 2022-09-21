@@ -25,11 +25,15 @@ export const Intro = () => {
             <Image src="/images/intro_leg_2.svg" layout="fill" objectFit="contain" />
           </div>
         </div>
-        {/* <Spline scene="https://prod.spline.design/UhysZeNNft-gAyaC/scene.splinecode" className="absolute top-0 hidden lg:block" /> */}
-        <Spline
-          scene="https://prod.spline.design/wFfz2JgSeTIeo5rl/scene.splinecode"
-          className="absolute top-0 lg:hidden"
-        />
+        <div className="absolute top-0 hidden w-full h-full lg:block">
+          <Spline
+            scene="https://prod.spline.design/E3l64mEHZYNC5zbn/scene.splinecode"
+            className="absolute top-0 hidden lg:block"
+          />
+        </div>
+        <div className="absolute top-0 w-full h-full lg:hidden">
+          <Spline scene="https://prod.spline.design/wFfz2JgSeTIeo5rl/scene.splinecode" />
+        </div>
       </div>
       <div className="relative overflow-hidden">
         <div className="relative w-[320px]  lg:w-[350px] border-2 border-white border-y-0 mx-auto text-center pointer-events-none z-10">

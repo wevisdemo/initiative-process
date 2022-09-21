@@ -22,7 +22,7 @@ export const IntroStepMobile = ({ current }) => {
       }, 20000);
       setTimeout(() => {
         drawBalls2060(current.world, y_2560_2);
-      }, 25000);
+      }, 28000);
     }
 
     isDrawed = true;

@@ -8,27 +8,26 @@ export const Summary_Part1 = () => {
           <div className="circle_ratio" style={{ background: color_circle("สังคม") }} />
           <div className="ml-[8px]">
             สังคม <br className="hidden lg:inline" />
-            54 ฉบับ
+            15 ฉบับ
           </div>
         </div>
         <div className="flex items-center lg:items-start">
           <div className="circle_ratio" style={{ background: color_circle("เศรษฐกิจ") }} />
           <div className="ml-[8px]">
-            เศรษฐกิจ <br className="hidden lg:inline" />
-            29 ฉบับ
+            เศรษฐกิจ <br className="hidden lg:inline" />5 ฉบับ
           </div>
         </div>
         <div className="flex items-center lg:items-start">
           <div className="circle_ratio" style={{ background: color_circle("การเมือง") }} />
           <div className="ml-[8px]">
             การเมือง <br className="hidden lg:inline" />
-            36 ฉบับ
+            11 ฉบับ
           </div>
         </div>
         <div className="flex items-center lg:items-start">
           <div className="circle_ratio" style={{ background: color_circle("ศาสนาและวัฒนธรรม") }} />
           <div className="ml-[8px]">
-            ศาสนาและวัฒนธรรม <br className="hidden lg:inline" />8 ฉบับ
+            ศาสนาและวัฒนธรรม <br className="hidden lg:inline" />1 ฉบับ
           </div>
         </div>
       </div>

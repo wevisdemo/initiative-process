@@ -41,5 +41,5 @@ export const leg_13 = (world) => {
 
   Composite.add(world, [rect_1, rect_2, rect_3, rect_4]);
 
-  Triangle(world, elem_leg_left - margin + w / 2 + 65, y - w / 1.55, -Math.PI + Math.PI / 8, 9, 2.5);
+  Triangle(world, elem_leg_left - margin + w / 2 + 85, y - w / 1.35, -Math.PI + Math.PI / 8, 9, 2.5);
 };

@@ -33,8 +33,8 @@ export const drawBalls2050 = (world, data) => {
       parts: [circle, line1, line2],
       isStatic: false,
       friction: 0,
-      frictionAir: 0.04,
-      restitution: 0.08,
+      frictionAir: 0.06,
+      restitution: 0.8,
       density: 0.1,
       collisionFilter: {
         group: label_filter(d["ลำดับกระบวนการ"]),

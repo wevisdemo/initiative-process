@@ -36,7 +36,7 @@ export const leg_07 = (world) => {
 
   const tri_1_ratio = w + 10;
   const tri_2_ratio = w + 60;
-
+  Triangle(world, elem_leg_left + tri_1_ratio + 350, y + w + 155, -Math.PI + Math.PI / 8, 4, 2);
   Triangle(world, elem_leg_left + tri_1_ratio, y + w + 55, -Math.PI + Math.PI / 8, 4, 2);
   Triangle(world, elem_leg_left + tri_1_ratio, y + w + 55, -Math.PI + Math.PI / 8, 5, 2);
   Triangle(world, elem_leg_left + tri_2_ratio, y + w + 55, Math.PI - Math.PI / 5, 6, 2);

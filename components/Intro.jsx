@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import Spline from "@splinetool/react-spline";
+import { device } from "./util";
 export const Intro = () => {
   return (
     <div className=" w-[320px] lg:container mx-auto  " id="intro">
@@ -25,15 +26,19 @@ export const Intro = () => {
             <Image src="/images/intro_leg_2.svg" layout="fill" objectFit="contain" />
           </div>
         </div>
-        <div className="absolute top-0 hidden w-full h-full lg:block">
-          <Spline
-            scene="https://prod.spline.design/E3l64mEHZYNC5zbn/scene.splinecode"
-            className="absolute top-0 hidden lg:block"
-          />
-        </div>
-        <div className="absolute top-0 w-full h-full lg:hidden">
-          <Spline scene="https://prod.spline.design/wFfz2JgSeTIeo5rl/scene.splinecode" />
-        </div>
+        {device() === "labtop" && (
+          <div className="absolute top-0 hidden w-full h-full lg:block">
+            <Spline
+              scene="https://prod.spline.design/E3l64mEHZYNC5zbn/scene.splinecode"
+              className="absolute top-0 hidden lg:block"
+            />
+          </div>
+        )}
+        {device() != "labtop" && (
+          <div className="absolute top-0 w-full h-full lg:hidden">
+            <Spline scene="https://prod.spline.design/wFfz2JgSeTIeo5rl/scene.splinecode" />
+          </div>
+        )}
       </div>
       <div className="relative overflow-hidden">
         <div className="relative w-[320px]  lg:w-[350px] border-2 border-white border-y-0 mx-auto text-center lg:pointer-events-none z-10">
@@ -54,12 +59,16 @@ export const Intro = () => {
             <br /> ปลายทางของสิ่งที่ประชาชนเสนอ
           </p>
         </div>
-        <div className="absolute top-0 hidden w-full h-full lg:block">
-          <Spline scene="https://prod.spline.design/8aMCNzLozPWGWR70/scene.splinecode" />
-        </div>
-        <div className="absolute top-0 w-full h-full lg:hidden">
-          <Spline scene="https://prod.spline.design/MkKIeHHUF5d1vao8/scene.splinecode" />
-        </div>
+        {device() === "labtop" && (
+          <div className="absolute top-0 hidden w-full h-full lg:block">
+            <Spline scene="https://prod.spline.design/8aMCNzLozPWGWR70/scene.splinecode" />
+          </div>
+        )}
+        {device() != "labtop" && (
+          <div className="absolute top-0 w-full h-full lg:hidden">
+            <Spline scene="https://prod.spline.design/MkKIeHHUF5d1vao8/scene.splinecode" />
+          </div>
+        )}
       </div>
 
       <div className="relative ">
@@ -87,15 +96,19 @@ export const Intro = () => {
           />
           <p className="pt-10 b4">และเป็นไปตามเจตนารมย์อย่างที่คิด</p>
         </div>
-        <div className="absolute top-0 hidden w-full h-full lg:block ">
-          <Spline scene="https://prod.spline.design/riMsp148negqdlYv/scene.splinecode" />
-        </div>
-        <div className="absolute top-0 overflow-hidden h-[617px] lg:hidden  w-[320px]">
-          <Spline
-            scene="https://prod.spline.design/MkKIeHHUF5d1vao8/scene.splinecode"
-            className="absolute top-0 translate-x-[-36.5%]"
-          />
-        </div>
+        {device() === "labtop" && (
+          <div className="absolute top-0 hidden w-full h-full lg:block ">
+            <Spline scene="https://prod.spline.design/riMsp148negqdlYv/scene.splinecode" />
+          </div>
+        )}
+        {device() != "labtop" && (
+          <div className="absolute top-0 overflow-hidden h-[617px] lg:hidden  w-[320px]">
+            <Spline
+              scene="https://prod.spline.design/MkKIeHHUF5d1vao8/scene.splinecode"
+              className="absolute top-0 translate-x-[-36.5%]"
+            />
+          </div>
+        )}
       </div>
     </div>
   );

@@ -68,6 +68,7 @@ export const Seemore_2 = () => {
       img: "/images/union_black.svg",
     },
   ];
+
   return (
     <div
       id="seemore_2"

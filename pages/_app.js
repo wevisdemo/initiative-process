@@ -4,13 +4,16 @@ import "../styles/pointer.scss";
 import "@wevisdemo/ui/styles/typography.css";
 import "@wevisdemo/ui/styles/components.css";
 import MetaHead from "../components/MetaHead";
+import SafeHydrate from "../components/SafeHydrate";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <div id="html">
+    <>
       <MetaHead />
-      <Component {...pageProps} />
-    </div>
+      <SafeHydrate>
+        <Component {...pageProps} />
+      </SafeHydrate>
+    </>
   );
 }
 

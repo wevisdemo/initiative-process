@@ -5,21 +5,14 @@ import Image from "next/image";
 import WvSharer from "@wevisdemo/ui/components/sharer";
 import WvFooter from "@wevisdemo/ui/components/footer";
 import Spline from "@splinetool/react-spline";
-import { device, ScrollTo } from "../util";
+import { ScrollTo } from "../util";
 export const Interview = () => {
-  const BG = () => {
-    if (device() === "labtop") {
-      return (
-        <div className="absolute top-0  left-[50%] translate-x-[-50%] ">
-          <Spline scene=" https://prod.spline.design/MkKIeHHUF5d1vao8/scene.splinecode" />
-          <Spline scene=" https://prod.spline.design/MkKIeHHUF5d1vao8/scene.splinecode" />
-        </div>
-      );
-    }
-  };
   return (
     <div className="relative min-h-screen pt-24 overflow-hidden ">
-      <BG />
+      <div className="absolute top-0  left-[50%] translate-x-[-50%] ">
+        <Spline scene=" https://prod.spline.design/MkKIeHHUF5d1vao8/scene.splinecode" />
+        <Spline scene=" https://prod.spline.design/MkKIeHHUF5d1vao8/scene.splinecode" />
+      </div>
       <div id="title" className="text-center ">
         <p className="font-bold b2">
           ฟังความคิดเห็นของบุคคล

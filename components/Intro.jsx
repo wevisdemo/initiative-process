@@ -54,12 +54,12 @@ export const Intro = () => {
             <br /> ปลายทางของสิ่งที่ประชาชนเสนอ
           </p>
         </div>
-        <div className="absolute top-0 hidden w-full h-full lg:block">
+        {/* <div className="absolute top-0 hidden w-full h-full lg:block">
           <Spline scene="https://prod.spline.design/8aMCNzLozPWGWR70/scene.splinecode" />
         </div>
         <div className="absolute top-0 w-full h-full lg:hidden">
           <Spline scene="https://prod.spline.design/MkKIeHHUF5d1vao8/scene.splinecode" />
-        </div>
+        </div> */}
       </div>
 
       <div className="relative ">

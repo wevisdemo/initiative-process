@@ -60,7 +60,7 @@ export const ExpandYear = () => {
       className="top-0 z-20 flex flex-col justify-around w-full py-10 mx-auto bg-black lg:h-screen lg:sticky lg:max-w-6xl "
       id="page_start"
     >
-      <div className="flex flex-col items-center pt-10 text-center min-h-[250px] " id="step_0">
+      <div className="flex flex-col items-center pt-10 text-center min-h-[270px] " id="step_0">
         <div className="b4">
           เพราะตั้งแต่รัฐธรรมนูญปี 2540 เปิดโอกาส
           <br className=" lg:hidden" />
@@ -82,14 +82,14 @@ export const ExpandYear = () => {
           <br className=" lg:hidden" /> ตามแต่ละรัฐธรรมนูญ ถูกแบ่งดังนี้{" "}
         </p>
         <Ratio />
-        <div className="flex items-center mt-4 opacity-75 ">
+        <div className="flex items-center my-4 opacity-75 ">
           <div className={` relative w-[24px] h-[24px] mr-1 `}>
             <Image src="/images/click_able.svg" layout="fill" objectFit="contain" />
           </div>
           <p className=" b5">ชี้เพื่อดูรายละเอียดของกฎหมายแต่ละฉบับ</p>
         </div>
       </div>
-      <div className="flex-col items-center hidden pt-10 text-center  min-h-[250px]" id="step_1">
+      <div className="flex-col items-center hidden pt-10 text-center  min-h-[270px]" id="step_1">
         <p className="mt-2 font-black h7">ทำไม?</p>
         <p className="mt-2 b4">
           ปลายทางของกฎหมายประชาชนไม่เป็นไปตามนั้น
@@ -97,7 +97,7 @@ export const ExpandYear = () => {
         </p>
         <p className="font-bold b4">ไม่ใช่ทุกกฎหมายที่จะเสนอได้ และต้องมีจำนวนผู้เสนอครบ</p>
       </div>
-      <div className="hidden pt-10 text-center  min-h-[250px]" id="step_2">
+      <div className="hidden pt-10 text-center  min-h-[270px]" id="step_2">
         <p className="font-bold b4">กฎหมายของรัฐธรรมนูญปี 2540-2560 ที่เปิดช่องทางลงชื่อการเข้าเสนอชื่อ</p>
       </div>
 

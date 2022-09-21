@@ -112,7 +112,7 @@
 }
 .b7 {
   line-height: 150%;
-  @apply text-[12px];
+  @apply lg:text-[12px] text-[9px];
 }
 
 .u1 {

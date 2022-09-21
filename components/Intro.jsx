@@ -3,12 +3,19 @@ import Image from "next/image";
 import Spline from "@splinetool/react-spline";
 import { device } from "./util";
 export const Intro = () => {
+  const handleLoading = () => {
+    document.getElementById("loading").style.display = "none";
+  };
+
   return (
-    <div className=" w-[320px] lg:container mx-auto  " id="intro">
+    <div className=" w-[320px] lg:container mx-auto   " id="intro">
       <div className="relative ">
+        <div className="  w-[24px] h-[24px] lg:w-[62px] lg:h-[62px] animate-bounce absolute bottom-0 lg:bottom-[15%] left-[50%] translate-x-[-50%] z-10  pointer-events-none">
+          <Image src="/images/chevron.svg" layout="fill" objectFit="contain" />
+        </div>
         <div className="relative z-10 mx-auto font-bold lg:pointer-events-none h-[568px] lg:h-screen h3">
           <div className="relative w-[283px] h-[98px] lg:w-[820px] lg:h-[420px] top-[200px] lg:top-[60px] flex justify-center   ">
-            <p className="rotate-[15deg] relative lg:translate-y-[20%] translate-y-[-60%] left-5">
+            <p className="rotate-[15deg] relative lg:translate-y-[120px] translate-y-[-60%] left-5 lg:left-3">
               <span>เส้นทางกฎหมาย </span>
               <br className=" lg:hidden" />
               <span className=" text-lime">ของประชาชน</span>
@@ -30,13 +37,16 @@ export const Intro = () => {
           <div className="absolute top-0 hidden w-full h-full lg:block">
             <Spline
               scene="https://prod.spline.design/E3l64mEHZYNC5zbn/scene.splinecode"
-              className="absolute top-0 hidden lg:block"
+              onLoad={() => handleLoading()}
             />
           </div>
         )}
         {device() != "labtop" && (
           <div className="absolute top-0 w-full h-full lg:hidden">
-            <Spline scene="https://prod.spline.design/wFfz2JgSeTIeo5rl/scene.splinecode" />
+            <Spline
+              scene="https://prod.spline.design/wFfz2JgSeTIeo5rl/scene.splinecode"
+              onLoad={() => handleLoading()}
+            />
           </div>
         )}
       </div>

@@ -57,9 +57,9 @@ export const Intro = () => {
         <div className="absolute top-0 hidden w-full h-full lg:block">
           <Spline scene="https://prod.spline.design/8aMCNzLozPWGWR70/scene.splinecode" />
         </div>
-        <div className="absolute top-0 w-full h-full lg:hidden">
+        {/* <div className="absolute top-0 w-full h-full lg:hidden">
           <Spline scene="https://prod.spline.design/MkKIeHHUF5d1vao8/scene.splinecode" />
-        </div>
+        </div> */}
       </div>
 
       <div className="relative ">
@@ -90,12 +90,12 @@ export const Intro = () => {
         <div className="absolute top-0 hidden w-full h-full lg:block ">
           <Spline scene="https://prod.spline.design/riMsp148negqdlYv/scene.splinecode" />
         </div>
-        {/* <div className="absolute top-0 overflow-hidden h-[617px] lg:hidden  w-[320px]">
+        <div className="absolute top-0 overflow-hidden h-[617px] lg:hidden  w-[320px]">
           <Spline
             scene="https://prod.spline.design/MkKIeHHUF5d1vao8/scene.splinecode"
             className="absolute top-0 translate-x-[-36.5%]"
           />
-        </div> */}
+        </div>
       </div>
     </div>
   );

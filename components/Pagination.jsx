@@ -113,7 +113,7 @@ export const Pagination = () => {
         id="info_pagination"
       >
         <div id="close_info" className="absolute top-0 right-0 m-8 ">
-          <div className="  w-[32px] h-[32px]   cursor-pointer" onClick={() => closeInfo()}>
+          <div className="  w-[32px] h-[32px]  lg:hidden   cursor-pointer" onClick={() => closeInfo()}>
             <Image src="/images/close_white.svg" layout="fill" objectFit="contain" />
           </div>
         </div>

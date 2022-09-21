@@ -5,7 +5,7 @@ export const Intro = () => {
   return (
     <div id="intro" className=" w-[320px] lg:container mx-auto  ">
       <div className="relative ">
-        <div className="relative z-10 mx-auto font-bold pointer-events-none h-[568px] lg:h-screen h3">
+        <div className="relative z-10 mx-auto font-bold lg:pointer-events-none h-[568px] lg:h-screen h3">
           <div className="relative w-[283px] h-[98px] lg:w-[820px] lg:h-[420px] top-[200px] lg:top-[60px] flex justify-center   ">
             <p className="rotate-[15deg] relative lg:translate-y-[20%] translate-y-[-60%] left-5">
               <span>เส้นทางกฎหมาย </span>
@@ -36,7 +36,7 @@ export const Intro = () => {
         </div>
       </div>
       <div className="relative overflow-hidden">
-        <div className="relative w-[320px]  lg:w-[350px] border-2 border-white border-y-0 mx-auto text-center pointer-events-none z-10">
+        <div className="relative w-[320px]  lg:w-[350px] border-2 border-white border-y-0 mx-auto text-center lg:pointer-events-none z-10">
           <p className=" mt-[84px] b4 pt-10">
             การลงชื่อเสนอกฎหมายของประชาชน
             <br /> อย่างที่หลายๆคนรู้ว่าเป็น
@@ -57,9 +57,9 @@ export const Intro = () => {
         {/* <div className="absolute top-0 hidden w-full h-full lg:block">
           <Spline scene="https://prod.spline.design/8aMCNzLozPWGWR70/scene.splinecode" />
         </div> */}
-        {/* <div className="absolute top-0 w-full h-full lg:hidden">
+        <div className="absolute top-0 w-full h-full lg:hidden">
           <Spline scene="https://prod.spline.design/MkKIeHHUF5d1vao8/scene.splinecode" />
-        </div> */}
+        </div>
       </div>
 
       <div className="relative ">
@@ -76,7 +76,7 @@ export const Intro = () => {
             <Image src="/images/intro_serration.svg" layout="fill" objectFit="contain" />
           </div>
         </div>
-        <div className=" w-[320px]  lg:w-[480px] h-[300px] lg:h-[720px] relative text-center mx-auto top-[-25px] z-10 pointer-events-none">
+        <div className=" w-[320px]  lg:w-[480px] h-[300px] lg:h-[720px] relative text-center mx-auto top-[-25px] z-10 lg:pointer-events-none">
           <div
             className=" h-[270px] lg:h-[720px] w-[2px] bg-white absolute left-[-25px] lg:left-[-10px] top-[-3px] lg:top-[-10px]  rotate-12"
             id="line"

@@ -75,7 +75,7 @@ export const Pagination = () => {
       name = device() === "labtop" ? "leg_27" : "leg_27_mobile";
     }
 
-    if (name) ScrollTo("#" + name);
+    if (name) ScrollTo("#" + name, "center");
   };
   const openInfo = () => {
     let seemore = document.getElementById("info_pagination");

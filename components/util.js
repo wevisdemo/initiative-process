@@ -76,8 +76,8 @@ export const device = () => {
   return "labtop";
 };
 
-export const ScrollTo = (elem) => {
+export const ScrollTo = (elem, block) => {
   setTimeout(() => {
-    document.querySelector(elem).scrollIntoView({ behavior: "smooth", block: "center" });
+    document.querySelector(elem).scrollIntoView({ behavior: "smooth", block: block });
   }, 0);
 };

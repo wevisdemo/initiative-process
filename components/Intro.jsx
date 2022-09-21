@@ -3,7 +3,7 @@ import Image from "next/image";
 import Spline from "@splinetool/react-spline";
 export const Intro = () => {
   return (
-    <div id="intro" className=" w-[320px] lg:container mx-auto  ">
+    <div className=" w-[320px] lg:container mx-auto  " id="intro">
       <div className="relative ">
         <div className="relative z-10 mx-auto font-bold lg:pointer-events-none h-[568px] lg:h-screen h3">
           <div className="relative w-[283px] h-[98px] lg:w-[820px] lg:h-[420px] top-[200px] lg:top-[60px] flex justify-center   ">
@@ -31,9 +31,9 @@ export const Intro = () => {
             className="absolute top-0 hidden lg:block"
           />
         </div>
-        {/* <div className="absolute top-0 w-full h-full lg:hidden">
+        <div className="absolute top-0 w-full h-full lg:hidden">
           <Spline scene="https://prod.spline.design/wFfz2JgSeTIeo5rl/scene.splinecode" />
-        </div> */}
+        </div>
       </div>
       <div className="relative overflow-hidden">
         <div className="relative w-[320px]  lg:w-[350px] border-2 border-white border-y-0 mx-auto text-center lg:pointer-events-none z-10">
@@ -63,7 +63,7 @@ export const Intro = () => {
       </div>
 
       <div className="relative ">
-        <div className="relative lg:w-[350px] h-[317px] mx-auto  text-center  flex items-center justify-center pointer-events-none top-[-15px] z-10">
+        <div className="relative lg:w-[350px] h-[317px] mx-auto  text-center  flex items-center justify-center lg:pointer-events-none top-[-15px] z-10">
           <div className=" absolute  w-[66px] h-[320px] left-0 rotate-180 top-0  ">
             <Image src="/images/intro_serration.svg" layout="fill" objectFit="contain" />
           </div>

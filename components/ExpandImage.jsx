@@ -6,17 +6,17 @@ export const ExpandImage = () => {
     const bg = document.getElementById("bg_expand_image");
     bg.style.display = "flex";
     if (type === "prev") {
-      return ScrollTo("#CompareStep7");
+      return ScrollTo("#CompareStep7", "start");
     }
     if (type === "next") {
-      return ScrollTo("#summary_section");
+      return ScrollTo("#summary_section", "start");
     }
   };
 
   const hideBG = () => {
     const bg = document.getElementById("bg_expand_image");
     bg.style.display = "none";
-    ScrollTo("#expand_image");
+    ScrollTo("#expand_image", "start");
   };
   return (
     <div className="relative z-20 ">
@@ -24,7 +24,7 @@ export const ExpandImage = () => {
       <div className="relative flex items-center justify-center min-h-screen bg-black " id="expand_image">
         <div
           className="absolute top-0 right-0 z-20 flex flex-col items-center m-10 cursor-pointer md:m-20 b5"
-          onClick={() => onClickScrollTo("prev")}
+          onClick={() => onClickScrollTo("prev", "center")}
         >
           <div className={` relative w-[24px] h-[24px] rotate-180 `}>
             <Image src="/images/chevron.svg" layout="fill" objectFit="contain" />
@@ -74,7 +74,7 @@ export const ExpandImage = () => {
         </TransformWrapper>
         <div
           className="absolute bottom-0 right-0 flex flex-col items-center m-10 cursor-pointer md:m-20 b5"
-          onClick={() => onClickScrollTo("next")}
+          onClick={() => onClickScrollTo("next", "center")}
         >
           ไปต่อ
           <div className={` relative w-[24px] h-[24px] `}>

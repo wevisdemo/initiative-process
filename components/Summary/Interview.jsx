@@ -9,7 +9,7 @@ import { ScrollTo } from "../util";
 export const Interview = () => {
   return (
     <div className="relative min-h-screen pt-24 overflow-hidden ">
-      <div className="absolute top-0 ">
+      <div className="absolute top-0  left-[50%] translate-x-[-50%]">
         <Spline scene=" https://prod.spline.design/MkKIeHHUF5d1vao8/scene.splinecode" />
         <Spline scene=" https://prod.spline.design/MkKIeHHUF5d1vao8/scene.splinecode" />
       </div>
@@ -51,7 +51,10 @@ export const Interview = () => {
       </div>
       <div className="py-10 text-center b4" id="restart">
         <p>กลับไปเริ่มใหม่</p>
-        <div className={` relative w-[22px] h-[22px] mx-auto mt-5 cursor-pointer  `} onClick={() => ScrollTo("#intro")}>
+        <div
+          className={` relative w-[22px] h-[22px] mx-auto mt-5 cursor-pointer  `}
+          onClick={() => ScrollTo("#intro", "start")}
+        >
           <Image src="/images/restart.svg" layout="fill" objectFit="contain" />
         </div>
       </div>

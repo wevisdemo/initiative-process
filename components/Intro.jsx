@@ -87,7 +87,7 @@ export const Intro = () => {
           />
           <p className="pt-10 b4">และเป็นไปตามเจตนารมย์อย่างที่คิด</p>
         </div>
-        {/* <div className="absolute top-0 hidden w-full h-full lg:block ">
+        <div className="absolute top-0 hidden w-full h-full lg:block ">
           <Spline scene="https://prod.spline.design/riMsp148negqdlYv/scene.splinecode" />
         </div>
         <div className="absolute top-0 overflow-hidden h-[617px] lg:hidden  w-[320px]">
@@ -95,7 +95,7 @@ export const Intro = () => {
             scene="https://prod.spline.design/MkKIeHHUF5d1vao8/scene.splinecode"
             className="absolute top-0 translate-x-[-36.5%]"
           />
-        </div> */}
+        </div>
       </div>
     </div>
   );

@@ -16,15 +16,19 @@ export const Interview = () => {
         </div>
       )}
 
-      <div id="title" className="text-center ">
-        <p className="font-bold b2">
-          ฟังความคิดเห็นของบุคคล
-          <br className=" md:hidden" />
-          หรือองค์กรที่ทำสิ่งนี้กัน
-        </p>
-        <p className="b4">ในฐานะผู้ที่ผลักดันการขับเคลื่อนกฎหมายคิดเห็นอย่างไรบ้าง? </p>
-      </div>
-      <div id="interview" className=" mt-14">
+      <div id="interview">
+        <div id="title" className="relative text-center my-14 ">
+          <p className="font-bold b2">
+            ฟังความคิดเห็นของบุคคล
+            <br className=" md:hidden" />
+            หรือองค์กรที่ทำสิ่งนี้กัน
+          </p>
+          <p className="b4">
+            ในฐานะผู้ที่ผลักดันการขับเคลื่อนกฎหมาย
+            <br className=" md:hidden" />
+            คิดเห็นอย่างไรบ้าง?{" "}
+          </p>
+        </div>
         {interview.map((p, index) => (
           <div
             key={index}

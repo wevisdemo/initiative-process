@@ -30,7 +30,10 @@ export const IntroStepMobile = ({ current }) => {
 
   return (
     <div className="relative z-20 flex-col items-center mb-10 text-center ">
-      <p className="mt-8 b4">หรืออาจเป็นเพราะกระบวนการ ที่ส่งผลต่อการลงชื่อเสนอกฎหมาย</p>
+      <p className="mt-8 b4">
+        หรืออาจเป็นเพราะกระบวนการ
+        <br className=" lg:hidden" /> ที่ส่งผลต่อการลงชื่อเสนอกฎหมาย
+      </p>
       <p className="mt-6 b4">โดยแบ่งเป็น</p>
       <p className="font-black h6">
         ขั้นตอนการ

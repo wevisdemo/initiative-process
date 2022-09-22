@@ -20,7 +20,11 @@ export const OurTeam = () => {
 
   return (
     <div className="container flex flex-col items-center py-24 mx-auto lg:h-screen ">
-      <p className="font-bold text-center b2">ส่วนหนึ่งขององค์กรที่คอยผลักดันเรื่องการเสนอกฎหมาย</p>
+      <p className="font-bold text-center b2">
+        ส่วนหนึ่งขององค์กรที่คอยผลักดัน
+        <br className=" md:hidden" />
+        เรื่องการเสนอกฎหมาย
+      </p>
       <p className="text-center b4">
         ขอหยิบยกบางส่วนให้เพื่อให้พวกเราคอยติดตามข้อมูล สนับสนุน ร่วมลงชื่อเสนอกฎหมาย กับองค์กรเหล่านี้ได้
       </p>

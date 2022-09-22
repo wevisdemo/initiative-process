@@ -11,9 +11,6 @@ export const Intro = () => {
     <div id="intro-wrapper" className="w-full overflow-x-hidden ">
       <div className=" w-[320px] lg:container mx-auto   " id="intro">
         <div className="relative ">
-          <div className="  w-[24px] h-[24px] lg:w-[62px] lg:h-[62px] animate-bounce absolute bottom-0 lg:bottom-[15%] left-[50%] translate-x-[-50%] z-10  pointer-events-none">
-            <Image src="/images/chevron.svg" layout="fill" objectFit="contain" />
-          </div>
           <div className="relative z-10 mx-auto font-bold lg:pointer-events-none h-[568px] lg:h-screen h3">
             <div className="relative w-[283px] h-[98px] lg:w-[820px] lg:h-[420px] top-[200px] lg:top-[60px] flex justify-center   ">
               <p className="rotate-[15deg] relative lg:translate-y-[120px] translate-y-[-60%] left-5 lg:left-3">
@@ -50,6 +47,11 @@ export const Intro = () => {
               />
             </div>
           )}
+          <div className=" absolute bottom-[5%] lg:bottom-[15%] w-full pointer-events-none ">
+            <div className="  w-[24px] h-[24px] lg:w-[62px] lg:h-[62px] animate-bounce  mx-auto  ">
+              <Image src="/images/chevron.svg" layout="fill" objectFit="contain" />
+            </div>
+          </div>
         </div>
         <div className="relative overflow-hidden">
           <div className="relative w-[320px]  lg:w-[350px] border-2 border-white border-y-0 mx-auto text-center lg:pointer-events-none z-10">

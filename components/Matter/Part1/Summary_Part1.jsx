@@ -69,7 +69,7 @@ export const Summary_Part1 = () => {
       <div className="text-center ">
         <p className="b2">ผ่านเข้าสู่วาระการประชุม</p>
         <p className="h4">21.8%</p>
-        <p className="b2">31 ฉบับ จาก 142 ฉบับ</p>
+        <p className="b2">30 ฉบับ จาก 142 ฉบับ</p>
       </div>
       <Ratio />
       <ExpandYear />

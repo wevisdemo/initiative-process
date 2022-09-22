@@ -13,16 +13,16 @@ export const IntroStepMobile = ({ current }) => {
 
       setTimeout(() => {
         drawBalls2050(current.world, y_2550_2);
-      }, 7000);
+      }, 12000);
       setTimeout(() => {
         drawBalls2050(current.world, y_2550_1);
-      }, 13000);
+      }, 18000);
       setTimeout(() => {
         drawBalls2060(current.world, y_2560_1);
-      }, 20000);
+      }, 24000);
       setTimeout(() => {
         drawBalls2060(current.world, y_2560_2);
-      }, 28000);
+      }, 33000);
     }
 
     isDrawed = true;

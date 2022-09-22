@@ -1,9 +1,10 @@
-import React from "react";
 import { ScrollTo, device } from "./util";
 import Image from "next/image";
 import { color_circle } from "./util";
+import { useState } from "react";
 export const Pagination = () => {
   const data = [0, "a", "b", 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20];
+  const [isOpen, setIsOpen] = useState(false);
   let name;
   const clickScroll = (id) => {
     if (id === 0) {
@@ -85,9 +86,17 @@ export const Pagination = () => {
     let seemore = document.getElementById("info_pagination");
     seemore.style.display = "none";
   };
+  const openDetail = () => {
+    setIsOpen(!isOpen);
+    if (isOpen) {
+      document.getElementById("detail_state_mobile").style.display = "none";
+    } else {
+      document.getElementById("detail_state_mobile").style.display = "block";
+    }
+  };
   return (
     <div className="fixed  top-[50%] translate-y-[-50%] z-[70]   left-0 opacity-0" id="pagination">
-      <div className="flex flex-col items-center pl-3 space-y-1 md:space-y-2 ">
+      <div className="flex flex-col items-center ml-3 space-y-1 bg-black md:space-y-2 ">
         <div
           className=" relative w-[20px] h-[20px] mb-2 cursor-pointer"
           onClick={() => openInfo()}
@@ -107,6 +116,18 @@ export const Pagination = () => {
             </div>
           </button>
         ))}
+        <div
+          className=" relative w-[20px] h-[20px] border  items-center hidden justify-center border-white rounded-full mt-2  lg:hidden"
+          onClick={() => openDetail()}
+          id="btn_detail_state"
+        >
+          {!isOpen && <div className=" absolute translate-y-[-15%] b6">...</div>}
+          {isOpen && (
+            <div className="  absolute w-[20px] h-[20px]  translate-y-[-4%]">
+              <Image src="/images/close_white.svg" layout="fill" objectFit="contain" />
+            </div>
+          )}
+        </div>
       </div>
       <div
         className=" absolute border border-white rounded-[10px] bg-black  left-[0] top-0 hidden translate-x-[5%] md:translate-x-[20%] z-20 p-8 md:w-max  w-[350px]  "

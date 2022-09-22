@@ -21,10 +21,6 @@ const GetPosition = (setStep_1, setStep_2, setStep_3, firstStep_3, setFirstStep_
     const expand_step_0 = get_position("expand_step_0");
     const expand_step_1 = get_position("expand_step_1");
     const expand_step_3 = get_position("expand_step_3");
-    const section_2 = get_position("click_start_draw_section_2");
-    const section_2_btn = getElem("click_start_draw_section_2");
-    const section_2_mobile = get_position("click_start_draw_section_2_mobile");
-    const section_2_btn_mobile = getElem("click_start_draw_section_2_mobile");
     const detail_step_1 = get_position("detail_step_1");
     const detail_step_2 = get_position("detail_step_2");
     const detail_step_3 = get_position("detail_step_3");
@@ -60,13 +56,21 @@ const GetPosition = (setStep_1, setStep_2, setStep_3, firstStep_3, setFirstStep_
       setStep_3(true);
       setFirstStep_3(true);
     }
-    if (section_2.y < section_2.height && !drawBalls) {
-      section_2_btn.click();
-      setDrawBalls(true);
+    if (device() === "labtop") {
+      const section_2 = get_position("click_start_draw_section_2");
+      const section_2_btn = getElem("click_start_draw_section_2");
+      if (section_2.y < section_2.height && !drawBalls) {
+        section_2_btn.click();
+        setDrawBalls(true);
+      }
     }
-    if (section_2_mobile.y < section_2_mobile.height && !drawBalls) {
-      section_2_btn_mobile.click();
-      setDrawBalls(true);
+    if (device() != "labtop") {
+      const section_2_mobile = get_position("click_start_draw_section_2_mobile");
+      const section_2_btn_mobile = getElem("click_start_draw_section_2_mobile");
+      if (section_2_mobile.y < section_2_mobile.height && !drawBalls) {
+        section_2_btn_mobile.click();
+        setDrawBalls(true);
+      }
     }
     if (detail_step_1.y < detail_step_1.height / 2) {
       getElem("hilight_1").style.opacity = 1;
@@ -378,23 +382,45 @@ const GetPosition = (setStep_1, setStep_2, setStep_3, firstStep_3, setFirstStep_
       getElem("hint_20").style.background = "black";
     }
     /////////////////////////
-    const leg_section_1 = get_position("leg_section_1_wrapper");
-    const leg_section_1_mobile = get_position("leg_section_1_wrapper_mobile");
-    const leg_section_2_mobile = get_position("leg_section_2_wrapper_mobile");
-    const leg_section_2 = get_position("leg_section_2_wrapper");
+
     const expand_image = get_position("expand_image");
-    if (
-      (leg_section_1.y < 0 && leg_section_1.y > -leg_section_1.height + 500) ||
-      (leg_section_1_mobile.y < 0 && leg_section_1_mobile.y > -leg_section_1_mobile.height) ||
-      (leg_section_2_mobile.y < 0 && leg_section_2_mobile.y > -leg_section_2_mobile.height) ||
-      (leg_section_2.y < 0 && leg_section_2.y > -leg_section_2.height) ||
-      (expand_image.y < 0 && expand_image.y > -expand_image.height / 2)
-    ) {
-      getElem("pagination").style.opacity = 1;
-    } else {
-      getElem("pagination").style.opacity = 0;
-      let seemore = document.getElementById("info_pagination");
-      seemore.style.display = "none";
+
+    if (device() === "labtop") {
+      const leg_section_1 = get_position("leg_section_1_wrapper");
+      const leg_section_2 = get_position("leg_section_2_wrapper");
+      if (
+        (leg_section_1.y < 0 && leg_section_1.y > -leg_section_1.height + 500) ||
+        (leg_section_2.y < 0 && leg_section_2.y > -leg_section_2.height) ||
+        (expand_image.y < 0 && expand_image.y > -expand_image.height / 2)
+      ) {
+        getElem("pagination").style.opacity = 1;
+      } else {
+        getElem("pagination").style.opacity = 0;
+        let seemore = document.getElementById("info_pagination");
+        seemore.style.display = "none";
+      }
+    }
+    if (device() != "labtop") {
+      const leg_section_1_mobile = get_position("leg_section_1_wrapper_mobile");
+      const leg_section_2_mobile = get_position("leg_section_2_wrapper_mobile");
+
+      if (
+        (leg_section_1_mobile.y < 0 && leg_section_1_mobile.y > -leg_section_1_mobile.height) ||
+        (leg_section_2_mobile.y < 0 && leg_section_2_mobile.y > -leg_section_2_mobile.height) ||
+        (expand_image.y < 0 && expand_image.y > -expand_image.height / 2)
+      ) {
+        getElem("pagination").style.opacity = 1;
+      } else {
+        getElem("pagination").style.opacity = 0;
+        let seemore = document.getElementById("info_pagination");
+        seemore.style.display = "none";
+      }
+
+      if (leg_section_1_mobile.y < 0 && leg_section_1_mobile.y > -leg_section_1_mobile.height) {
+        getElem("btn_detail_state").style.display = "flex";
+      } else {
+        getElem("btn_detail_state").style.display = "none";
+      }
     }
   });
 };

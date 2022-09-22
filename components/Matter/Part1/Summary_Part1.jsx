@@ -20,8 +20,7 @@ export const Summary_Part1 = () => {
         <div className="flex items-center lg:items-start">
           <div className="circle_ratio" style={{ background: color_circle("การเมือง") }} />
           <div className="ml-[8px]">
-            การเมือง <br className="hidden lg:inline" />
-            11 ฉบับ
+            การเมือง <br className="hidden lg:inline" />9 ฉบับ
           </div>
         </div>
         <div className="flex items-center lg:items-start">
@@ -42,7 +41,7 @@ export const Summary_Part1 = () => {
             <Image src="/images/circle_white_type_1.svg" layout="fill" objectFit="contain" />
           </div>
           <div className="flex items-center ">
-            รธน.ปี 40 <br className="hidden lg:inline" />x ฉบับ
+            รธน.ปี 40 <br className="hidden lg:inline" />3 ฉบับ
           </div>
         </div>
         <div className="flex b4">
@@ -50,7 +49,8 @@ export const Summary_Part1 = () => {
             <Image src="/images/circle_white_type_2.svg" layout="fill" objectFit="contain" />
           </div>
           <div className="flex items-center ">
-            รธน.ปี 50 <br className="hidden lg:inline" />x ฉบับ
+            รธน.ปี 50 <br className="hidden lg:inline" />
+            18 ฉบับ
           </div>
         </div>
         <div className="flex b4 ">
@@ -58,7 +58,7 @@ export const Summary_Part1 = () => {
             <Image src="/images/circle_white_type_3.svg" layout="fill" objectFit="contain" />
           </div>
           <div className="flex items-center ">
-            รธน.ปี 60 <br className="hidden lg:inline" />x ฉบับ
+            รธน.ปี 60 <br className="hidden lg:inline" />9 ฉบับ
           </div>
         </div>
       </div>

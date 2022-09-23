@@ -121,7 +121,11 @@ export const Pagination = () => {
           onClick={() => openDetail()}
           id="btn_detail_state"
         >
-          {!isOpen && <div className=" absolute translate-y-[-15%] b6">...</div>}
+          {!isOpen && (
+            <div className="  absolute w-[12px] h-[12px] rotate-90  ">
+              <Image src="/images/dot_manu.png" layout="fill" objectFit="contain" />
+            </div>
+          )}
           {isOpen && (
             <div className="  absolute w-[20px] h-[20px]  translate-y-[-4%]">
               <Image src="/images/close_white.svg" layout="fill" objectFit="contain" />

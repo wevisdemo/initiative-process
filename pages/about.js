@@ -19,7 +19,7 @@ const About = () => {
 
   return (
     <PlausibleProvider
-      domain="initiativelaw.wevis.info"
+      domain="http://wevis.info/initiativelaw"
       customDomain="https://analytics.punchup.world/js/plausible.js"
       selfHosted={true}
     >

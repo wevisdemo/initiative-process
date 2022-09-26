@@ -22,7 +22,7 @@ const Home = () => {
   return (
     <PlausibleProvider
       domain="initiativelaw.wevis.info"
-      customDomain="https://analytics.punchup.world/js/plausible.js"
+      customDomain="https://analytics.punchup.world"
       selfHosted={true}
     >
       <div className={styles.container} id="content">

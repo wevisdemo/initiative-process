@@ -69,7 +69,7 @@ export const Interview = () => {
         <p className="font-bold ">ร่วมแชร์เพื่อชวนเพื่อน </p>
         <p>สำรวจเส้นทางและสนับสนุนกฎหมายของประชาชนต่อไป</p>
         <div className="py-10 ">
-          <WvSharer center url="https://initiative-process.vercel.app" light={true} />
+          <WvSharer center url="https://initiativelaw.wevis.info" light={true} />
         </div>
         <WvFooter />
       </div>

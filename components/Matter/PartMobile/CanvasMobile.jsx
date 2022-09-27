@@ -41,7 +41,6 @@ export const Canvas_Mobile = ({ current }) => {
     });
 
     Composite.add(current.world, [
-      //walls
       Bodies.rectangle(cw / 2, -5, cw, 20, {
         isStatic: true,
         render: {

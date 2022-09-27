@@ -1,7 +1,7 @@
-import enlaw from "../images/enlaw.jpg";
-import ilaw from "../images/ilaw.png";
-import thcan from "../images/thcan.jpg";
-import crcf from "../images/crcf.jpg";
+import enlaw from "assets/images/enlaw.jpg";
+import ilaw from "assets/images/ilaw.png";
+import thcan from "assets/images/thcan.jpg";
+import crcf from "assets/images/crcf.jpg";
 export const ourTeam = [
   {
     unit: "โครงการนิติธรรมสิ่งแวดล้อม (Enlaw)",

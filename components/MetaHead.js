@@ -4,13 +4,13 @@ import Head from "next/head";
 function MetaHead() {
   const title = "Initiative law เส้นทางของกฎหมายประชาชนสุดท้ายจบที่ไหน";
   const description = "ร่วมสำรวจข้อมูลการลงชื่อเสนอกฎหมายของประชาชนต้องผ่านกระบวนขั้นตอนวกวน และไม่รู้ว่าจะจบที่ตรงไหน";
-  const web_url = "https://initiativelaw.wevis.info";
+  const web_url = "wevis.info/initiativelaw ";
   const og_image = "og_image.jpg";
   return (
     <Head>
       <title>{title}</title>
       <meta name="description" content={description} />
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="/initiativelaw/favicon.ico" />
       <meta property="og:title" content={title} />
 
       <meta property="og:description" content={description} />

@@ -1,6 +1,7 @@
 import React from "react";
-import Image from "next/image";
+
 import Spline from "@splinetool/react-spline";
+import intro_leg_1 from "assets/images/intro_leg_1.svg";
 import { device } from "./util";
 export const Intro = () => {
   const handleLoading = () => {
@@ -12,15 +13,17 @@ export const Intro = () => {
       <div className=" w-[320px] lg:container mx-auto   " id="intro">
         <div className="relative ">
           <div className="relative z-10 mx-auto font-bold lg:pointer-events-none h-[568px] lg:h-screen h3">
-            <div className="relative w-[283px] h-[98px] lg:w-[820px] lg:h-[420px] top-[200px] lg:top-[60px] flex justify-center   ">
-              <p className="rotate-[15deg] relative lg:translate-y-[120px] translate-y-[-60%] left-5 lg:left-3">
+            <div className="relative w-[283px] h-[98px] lg:w-[820px] lg:h-[420px] top-[100px] lg:top-[150px] flex justify-center   ">
+              <p className="rotate-[15deg] relative left-5 lg:left-3">
                 <span>เส้นทางกฎหมาย </span>
                 <br className=" lg:hidden" />
                 <span className=" text-lime">ของประชาชน</span>
               </p>
-              <Image src="/images/intro_leg_1.svg" layout="fill" objectFit="contain" />
+              <div className="absolute top-0  lg:translate-y-[-40px] translate-y-[50px]">
+                <img src={intro_leg_1} alt="image" />
+              </div>
             </div>
-            <div className="relative lg:w-[610px] w-[217px] h-[65px] lg:h-[300px] ml-auto top-[300px]  lg:top-0 ">
+            <div className="relative lg:w-[610px] w-[217px] h-[65px] lg:h-[320px] ml-auto top-[230px]  lg:top-0 ">
               <p className="-rotate-[15deg] relative top-[-70px] lg:top-[60px]">
                 <span>
                   สุดท้าย
@@ -28,7 +31,9 @@ export const Intro = () => {
                   ไปจบที่ไหน...{" "}
                 </span>
               </p>
-              <Image src="/images/intro_leg_2.svg" layout="fill" objectFit="contain" />
+              <div className="absolute top-0  lg:translate-y-[60px] translate-y-[0]">
+                <img src={require("assets/images/intro_leg_2.svg")} alt="image" />
+              </div>
             </div>
           </div>
           {device() === "labtop" && (
@@ -48,9 +53,11 @@ export const Intro = () => {
             </div>
           )}
           <div className=" absolute bottom-[5%] lg:bottom-[15%] w-full pointer-events-none ">
-            <div className="  w-[24px] h-[24px] lg:w-[62px] lg:h-[62px] animate-bounce  mx-auto  ">
-              <Image src="/images/chevron.svg" layout="fill" objectFit="contain" />
-            </div>
+            <img
+              src={require("assets/images/chevron.svg")}
+              alt="image"
+              className="  w-[24px] h-[24px] lg:w-[62px] lg:h-[62px] animate-bounce  mx-auto  "
+            />
           </div>
         </div>
         <div className="relative overflow-hidden">
@@ -86,17 +93,23 @@ export const Intro = () => {
 
         <div className="relative ">
           <div className="relative lg:w-[350px] h-[317px] mx-auto  text-center  flex items-center justify-center lg:pointer-events-none top-[-15px] z-10">
-            <div className=" absolute  w-[66px] h-[320px] left-0 rotate-180 top-0  ">
-              <Image src="/images/intro_serration.svg" layout="fill" objectFit="contain" />
-            </div>
+            <img
+              src={require("assets/images/intro_serration.svg")}
+              alt="image"
+              className=" absolute  w-[66px] h-[320px] left-0 rotate-180 top-0  "
+            />
+
             <p className="font-bold h6 ">
               อาจไม่ได้
               <br />
               เรียบง่าย
             </p>
-            <div className=" absolute  w-[66px] h-[320px] right-0 top-0 translate-x-0  ">
-              <Image src="/images/intro_serration.svg" layout="fill" objectFit="contain" />
-            </div>
+
+            <img
+              src={require("assets/images/intro_serration.svg")}
+              alt="image"
+              className=" absolute  w-[66px] h-[320px] right-0 top-0 translate-x-0  "
+            />
           </div>
           <div className=" w-[320px]  lg:w-[480px] h-[300px] lg:h-[720px] relative text-center mx-auto top-[-25px] z-10 lg:pointer-events-none">
             <div

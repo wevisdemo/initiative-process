@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { drawBalls2040 } from "./drawBalls2040";
 import { drawBalls2050 } from "./drawBalls2050";
 import { drawBalls2060 } from "./drawBalls2060";
@@ -57,7 +56,7 @@ export const IntroStepMobile = ({ current }) => {
         id="start_btn_mobile"
         onClick={() => start()}
       >
-        <Image src="/images/start.svg" layout="fill" objectFit="contain" />
+        <img src={require("assets/images/start.svg")} alt="image" />
       </div>
     </div>
   );

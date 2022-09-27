@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import { DiagramPart1 } from "../../DiagramPart1";
 import video from "../../../public/video.mp4";
 
@@ -28,7 +26,7 @@ export const DetailsCanvas_Part1 = () => {
 
               <div className="flex items-center mt-5 font-bold b1">
                 <div className={` relative w-[50px] h-[50px] md:w-[75px] md:h-[75px] mr-4 `}>
-                  <Image src="/images/bullet_3.svg" layout="fill" objectFit="contain" />
+                  <img src={require("assets/images/bullet_3.svg")} alt="image" />
                 </div>
                 อันดับที่ไม่ผ่านมากที่สุด
               </div>
@@ -39,12 +37,12 @@ export const DetailsCanvas_Part1 = () => {
           <div className="flex-1 hidden lg:block" />
           <div className="flex flex-col items-center justify-center flex-1 text-center b2 " id="detail_step_2">
             <div className={` relative w-[250px] h-[306px] md:w-[305px] md:h-[356px] bg-black rounded-full mr-4 `}>
-              <Image src="/images/rank01.svg" layout="fill" objectFit="contain" />
+              <img src={require("assets/images/rank01.svg")} alt="image" />
             </div>
             <div className="flex items-center mt-10 ">
               ขั้นตอนที่
               <div className={` relative w-[30px] h-[30px] ml-2 `}>
-                <Image src="/images/bullet_9_white.svg" layout="fill" objectFit="contain" />
+                <img src={require("assets/images/bullet_9_white.svg")} alt="image" />
               </div>
             </div>
             <p className="mt-1 font-bold ">ส่งให้นายกรัฐมนตรีให้คำรับรอง</p>
@@ -75,7 +73,7 @@ export const DetailsCanvas_Part1 = () => {
                 เรื่องร่างแก้รัฐธรรมนูญสืบทอดอำนาจ
               </p>
               <div className="my-5 md:w-[400px]  w-[300px] ">
-                <video src={video} controls muted poster="/images/video.png" />
+                <video src={video} controls muted poster={require("assets/images/video.png")} />
               </div>
               <p className=" text-scarlet">
                 “ไม่จำเป็นต้องสั่งใครทุกคนก็มีความคิด ความคิดดี หรือไม่ดี ถ้าระแวงเรื่องการสืบทอดอำนาจก็ไปแก้มา
@@ -90,12 +88,12 @@ export const DetailsCanvas_Part1 = () => {
           <div className="flex-1 hidden lg:block" />
           <div className="flex flex-col items-center justify-center flex-1 text-center b2 " id="detail_step_4">
             <div className={` relative w-[250px] h-[306px] md:w-[305px] md:h-[356px] bg-black rounded-full mr-4 `}>
-              <Image src="/images/rank02.svg" layout="fill" objectFit="contain" />
+              <img src={require("assets/images/rank02.svg")} alt="image" />
             </div>
             <div className="flex items-center mt-10 ">
               ขั้นตอนที่
               <div className={` relative w-[30px] h-[30px] ml-2 `}>
-                <Image src="/images/bullet_3_white.svg" layout="fill" objectFit="contain" />
+                <img src={require("assets/images/bullet_3_white.svg")} alt="image" />
               </div>
             </div>
             <p className="mt-1 font-bold ">ล่ารายชื่อให้ครบ 10,000 คน</p>
@@ -109,12 +107,12 @@ export const DetailsCanvas_Part1 = () => {
           <div className="flex-1 hidden lg:block" />
           <div className="flex flex-col items-center justify-center flex-1 text-center b2 " id="detail_step_5">
             <div className={` relative w-[250px] h-[306px] md:w-[305px] md:h-[356px] bg-black rounded-full mr-4 `}>
-              <Image src="/images/rank03.svg" layout="fill" objectFit="contain" />
+              <img src={require("assets/images/rank03.svg")} alt="image" />
             </div>
             <div className="flex items-center mt-10 ">
               ขั้นตอนที่
               <div className={` relative w-[30px] h-[30px] ml-2 `}>
-                <Image src="/images/bullet_1_white.svg" layout="fill" objectFit="contain" />
+                <img src={require("assets/images/bullet_1_white.svg")} alt="image" />
               </div>
             </div>
             <p className="mt-1 font-bold ">ล่ารายชื่อให้ครบ 10,000 คน</p>

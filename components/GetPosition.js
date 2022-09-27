@@ -1,5 +1,18 @@
 import { useScrollPosition } from "@n8tb1t/use-scroll-position";
 import { device } from "../components/util";
+import diagram_part1_all from "assets/images/diagram_part1_all.png";
+import diagram_part1_01 from "assets/images/diagram_part1_01.png";
+import diagram_part1_02 from "assets/images/diagram_part1_02.png";
+import diagram_part1_03 from "assets/images/diagram_part1_03.png";
+import diagram_part2_01 from "assets/images/diagram_part2_01.png";
+import diagram_part2_02 from "assets/images/diagram_part2_02.png";
+import diagram_part2_03 from "assets/images/diagram_part2_03.png";
+import diagram_part2_04 from "assets/images/diagram_part2_04.png";
+import diagram_part2_0401 from "assets/images/diagram_part2_0401.png";
+import diagram_part2_0402 from "assets/images/diagram_part2_0402.png";
+import diagram_part2_0403 from "assets/images/diagram_part2_0403.png";
+import diagram_part2_0404 from "assets/images/diagram_part2_0404.png";
+import diagram_part2_0405 from "assets/images/diagram_part2_0405.png";
 
 const GetPosition = (setStep_1, setStep_2, setStep_3, firstStep_3, setFirstStep_3, drawBalls, setDrawBalls) => {
   const getElem = (id) => {
@@ -76,82 +89,82 @@ const GetPosition = (setStep_1, setStep_2, setStep_3, firstStep_3, setFirstStep_
       getElem("hilight_1").style.opacity = 1;
       getElem("hilight_2").style.opacity = 1;
       getElem("hilight_3").style.opacity = 1;
-      circleCursorZoom.style.backgroundImage = "url('/images/diagram_part1_all.png')";
+      circleCursorZoom.style.backgroundImage = `url(${diagram_part1_all})`;
     }
     if (detail_step_2.y < detail_step_2.height / 2) {
       getElem("hilight_2").style.opacity = 0.25;
       getElem("hilight_3").style.opacity = 0.25;
-      circleCursorZoom.style.backgroundImage = "url('/images/diagram_part1_01.png')";
+      circleCursorZoom.style.backgroundImage = `url(${diagram_part1_01})`;
     }
     if (detail_step_3.y < detail_step_3.height / 2) {
       getElem("hilight_1").style.opacity = 1;
       getElem("hilight_2").style.opacity = 0.25;
       getElem("hilight_3").style.opacity = 0.25;
-      circleCursorZoom.style.backgroundImage = "url('/images/diagram_part1_01.png')";
+      circleCursorZoom.style.backgroundImage = `url(${diagram_part1_01})`;
     }
     if (detail_step_4.y < detail_step_4.height / 2) {
       getElem("hilight_1").style.opacity = 0.25;
       getElem("hilight_2").style.opacity = 1;
       getElem("hilight_3").style.opacity = 0.25;
-      circleCursorZoom.style.backgroundImage = "url('/images/diagram_part1_02.png')";
+      circleCursorZoom.style.backgroundImage = `url(${diagram_part1_02})`;
     }
     if (detail_step_5.y < detail_step_5.height / 2) {
       getElem("hilight_1").style.opacity = 0.25;
       getElem("hilight_2").style.opacity = 0.25;
       getElem("hilight_3").style.opacity = 1;
-      circleCursorZoom.style.backgroundImage = "url('/images/diagram_part1_03.png')";
+      circleCursorZoom.style.backgroundImage = `url(${diagram_part1_03})`;
     }
     if (detail_step_6.y < detail_step_6.height / 2) {
       getElem("DiagramPart2").style.opacity = 1;
       getElem("DiagramPart2Full").style.opacity = 0;
-      circleCursorZoom.style.backgroundImage = "url('/images/diagram_part2_01.png')";
+      circleCursorZoom.style.backgroundImage = `url(${diagram_part2_01})`;
     }
     if (detail_step_7.y < detail_step_7.height / 2) {
       getElem("DiagramPart2").style.opacity = 0;
       getElem("DiagramPart2Full").style.opacity = 1;
       getClasslist("diagram_part_2").forEach((el) => (el.style.opacity = 0));
       getClasslist("part_2_rank").forEach((el) => (el.style.opacity = 1));
-      circleCursorZoom.style.backgroundImage = "url('/images/diagram_part2_02.png')";
+      circleCursorZoom.style.backgroundImage = `url(${diagram_part2_02})`;
     }
     if (detail_step_8.y < detail_step_8.height / 2) {
       getClasslist("diagram_part_2").forEach((el) => (el.style.opacity = 0));
       getClasslist("part_2_circle").forEach((el) => (el.style.opacity = 1));
-      circleCursorZoom.style.backgroundImage = "url('/images/diagram_part2_03.png')";
+      circleCursorZoom.style.backgroundImage = `url(${diagram_part2_03})`;
     }
     if (detail_step_9.y < detail_step_9.height / 2) {
       getElem("DiagramPart2Full").style.opacity = 1;
       getElem("DiagramCompare").style.opacity = 0;
       getClasslist("diagram_part_2").forEach((el) => (el.style.opacity = 0));
       getClasslist("part_2_compare").forEach((el) => (el.style.opacity = 1));
-      circleCursorZoom.style.backgroundImage = "url('/images/diagram_part2_04.png')";
+      circleCursorZoom.style.backgroundImage = `url(${diagram_part2_04})`;
     }
     if (detail_step_10.y < detail_step_10.height / 2) {
       getElem("DiagramPart2Full").style.opacity = 0;
       getElem("DiagramCompare").style.opacity = 1;
       getClasslist("circle_compare").forEach((el) => (el.style.opacity = 0.25));
       getElem("circle_compare1").style.opacity = 1;
-      circleCursorZoom.style.backgroundImage = "url('/images/diagram_part2_0401.png')";
+      circleCursorZoom.style.backgroundImage = `url(${diagram_part2_0401})`;
     }
     if (detail_step_11.y < detail_step_11.height / 2) {
       getClasslist("circle_compare").forEach((el) => (el.style.opacity = 0.25));
       getElem("circle_compare3").style.opacity = 1;
-      circleCursorZoom.style.backgroundImage = "url('/images/diagram_part2_0402.png')";
+      circleCursorZoom.style.backgroundImage = `url(${diagram_part2_0402})`;
     }
     if (detail_step_12.y < detail_step_12.height / 2) {
       getClasslist("circle_compare").forEach((el) => (el.style.opacity = 0.25));
       getElem("circle_compare4").style.opacity = 1;
       getElem("circle_compare5").style.opacity = 1;
-      circleCursorZoom.style.backgroundImage = "url('/images/diagram_part2_0403.png')";
+      circleCursorZoom.style.backgroundImage = `url(${diagram_part2_0403})`;
     }
     if (detail_step_13.y < detail_step_13.height / 2) {
       getClasslist("circle_compare").forEach((el) => (el.style.opacity = 0.25));
       getElem("circle_compare6").style.opacity = 1;
-      circleCursorZoom.style.backgroundImage = "url('/images/diagram_part2_0404.png')";
+      circleCursorZoom.style.backgroundImage = `url(${diagram_part2_0404})`;
     }
     if (detail_step_14.y < detail_step_14.height / 2) {
       getClasslist("circle_compare").forEach((el) => (el.style.opacity = 0.25));
       getElem("circle_compare7").style.opacity = 1;
-      circleCursorZoom.style.backgroundImage = "url('/images/diagram_part2_0405.png')";
+      circleCursorZoom.style.backgroundImage = `url(${diagram_part2_0405})`;
     }
     //////////////////////////////////////////////////
 
@@ -391,11 +404,12 @@ const GetPosition = (setStep_1, setStep_2, setStep_3, firstStep_3, setFirstStep_
       if (
         (leg_section_1.y < 0 && leg_section_1.y > -leg_section_1.height + 500) ||
         (leg_section_2.y < 0 && leg_section_2.y > -leg_section_2.height) ||
-        (expand_image.y < 0 && expand_image.y > -expand_image.height / 2)
+        (expand_image.y < 40 && expand_image.y > -expand_image.height / 2)
       ) {
         getElem("pagination").style.opacity = 1;
       } else {
         getElem("pagination").style.opacity = 0;
+
         let seemore = document.getElementById("info_pagination");
         seemore.style.display = "none";
       }
@@ -407,7 +421,7 @@ const GetPosition = (setStep_1, setStep_2, setStep_3, firstStep_3, setFirstStep_
       if (
         (leg_section_1_mobile.y < 0 && leg_section_1_mobile.y > -leg_section_1_mobile.height) ||
         (leg_section_2_mobile.y < 0 && leg_section_2_mobile.y > -leg_section_2_mobile.height) ||
-        (expand_image.y < 0 && expand_image.y > -expand_image.height / 2)
+        (expand_image.y <= 20 && expand_image.y >= -expand_image.height / 2)
       ) {
         getElem("pagination").style.opacity = 1;
       } else {

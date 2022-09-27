@@ -5,7 +5,7 @@ export const leg_16 = (world) => {
   const w = 250;
   const elem_leg = document.getElementById("leg_16");
 
-  const y = elem_leg.offsetTop + elem_leg.getBoundingClientRect().height / 2;
+  const y = elem_leg.offsetTop + elem_leg.getBoundingClientRect().height / 2 - 30;
 
   const rect_1 = Bodies.rectangle(vwToPixels(58.5), y - 60, w, 30, {
     isStatic: true,

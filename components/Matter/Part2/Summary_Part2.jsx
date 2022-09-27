@@ -1,5 +1,5 @@
 import { color_circle } from "../../util";
-import Image from "next/image";
+
 export const Summary_Part2 = () => {
   const Ratio = () => {
     return (
@@ -37,7 +37,7 @@ export const Summary_Part2 = () => {
       <div className="flex space-y-2 lg:space-y-0  lg:space-x-[32px] justify-center flex-col lg:flex-row mt-10">
         <div className="flex b4">
           <div className=" relative w-[20px] h-[20px]  lg:w-[24px] lg:h-[24px] mr-2">
-            <Image src="/images/circle_white_type_1.svg" layout="fill" objectFit="contain" />
+            <img src={require("assets/images/circle_white_type_1.svg")} alt="image" />
           </div>
           <div className="flex items-center ">
             รธน.ปี 40 <br className="hidden lg:inline" />1 ฉบับ
@@ -45,7 +45,7 @@ export const Summary_Part2 = () => {
         </div>
         <div className="flex b4">
           <div className=" relative w-[20px] h-[20px]  lg:w-[24px] lg:h-[24px] mr-2">
-            <Image src="/images/circle_white_type_2.svg" layout="fill" objectFit="contain" />
+            <img src={require("assets/images/circle_white_type_2.svg")} alt="image" />
           </div>
           <div className="flex items-center ">
             รธน.ปี 50 <br className="hidden lg:inline" />8 ฉบับ
@@ -53,7 +53,7 @@ export const Summary_Part2 = () => {
         </div>
         <div className="flex b4 ">
           <div className=" relative w-[20px] h-[20px]  lg:w-[24px] lg:h-[24px] mr-2">
-            <Image src="/images/circle_white_type_3.svg" layout="fill" objectFit="contain" />
+            <img src={require("assets/images/circle_white_type_3.svg")} alt="image" />
           </div>
           <div className="flex items-center ">
             รธน.ปี 60 <br className="hidden lg:inline" />0 ฉบับ

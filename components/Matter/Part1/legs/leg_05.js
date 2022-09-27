@@ -6,11 +6,11 @@ export const leg_05 = (world) => {
   const w = 250;
   const elem_leg = document.getElementById("leg_05");
   const elem_leg_left = elem_leg.getBoundingClientRect().left + w - 43;
-  const y = elem_leg.offsetTop + vhToPixels(100) + elem_leg.getBoundingClientRect().height / 2;
+  const y = elem_leg.offsetTop + vhToPixels(100) + elem_leg.getBoundingClientRect().height / 2 - 5;
   const wrapper = document.getElementById("canvas_past_1");
   const margin = wrapper.getBoundingClientRect().x;
 
-  const rect_1 = Bodies.rectangle(vwToPixels(22), y - 5, w, 20, {
+  const rect_1 = Bodies.rectangle(vwToPixels(22.5), y - 15, w, 20, {
     isStatic: true,
     angle: Math.PI / 2 + Math.PI / 3.2,
     render: {

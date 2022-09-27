@@ -6,7 +6,6 @@ import WvNavButton from "@wevisdemo/ui/components/nav-button";
 import WvNavbar from "@wevisdemo/ui/components/navbar";
 import { Seemore_1, Seemore_2 } from "../components/Matter/Part2/Seemore";
 import { Pagination } from "../components/Pagination";
-import Image from "next/image";
 
 import PlausibleProvider from "next-plausible";
 const Home = () => {
@@ -64,7 +63,7 @@ const Home = () => {
                 className=" absolute  top-0 right-0  w-[15px] h-[15px] m-2 cursor-pointer "
                 onClick={() => closeWarning()}
               >
-                <Image src="/images/close_black.svg" layout="fill" objectFit="contain" />
+                <img src={require("assets/images/close_black.svg")} alt="image" />
               </div>
               แจ้งเตือน : การเคลื่อนไหวของลูกบอลอาจไม่เสถียรใน <br className=" lg:hidden" /> โหมดพลังงานต่ำ (low power
               mode)

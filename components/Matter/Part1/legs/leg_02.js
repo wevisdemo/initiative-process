@@ -4,7 +4,7 @@ import { Triangle } from "../../filters/Triangle";
 export const leg_02 = (world) => {
   const elem_leg = document.getElementById("leg_02");
   const elem_leg_width = elem_leg.getBoundingClientRect().width;
-  const y = elem_leg.offsetTop + vhToPixels(100) + elem_leg.getBoundingClientRect().height / 2;
+  const y = elem_leg.offsetTop + vhToPixels(100) + elem_leg.getBoundingClientRect().height / 2 - 25;
 
   const w = 220;
   const rect_1 = Bodies.rectangle(0, y - 25, w, 20, {

@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export const StepConsider = () => {
   const openSeemore = (id) => {
     const seemore = document.getElementById(id);
@@ -9,7 +7,7 @@ export const StepConsider = () => {
   return (
     <div className=" w-[280px] md:w-[440px]  mx-auto relative">
       <div className=" relative w-[40px] h-[40px] md:w-[60px] md:h-[60px] mb-4">
-        <Image src="/images/exclamation.svg" layout="fill" objectFit="contain" />
+        <img src={require("assets/images/exclamation.svg")} alt="image" />
       </div>
       <p className="b2">
         ในขั้นตอนการพิจารณากฎหมายที่ผ่านมา
@@ -38,7 +36,7 @@ export const StepConsider = () => {
       </div>
       <div className="flex mt-2 ">
         <div className={` relative w-[24px] h-[24px] `}>
-          <Image src="/images/click_able.svg" layout="fill" objectFit="contain" />
+          <img src={require("assets/images/click_able.svg")} alt="image" />
         </div>
         <p className=" b5">คลิกดูรายละเอียดเพิ่มเติม</p>
       </div>

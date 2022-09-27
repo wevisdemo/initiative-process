@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 
 export const DetailState = ({ top, left, img, des }) => {
   return (
@@ -8,7 +7,7 @@ export const DetailState = ({ top, left, img, des }) => {
       style={{ top: top, background: "rgba(55, 55, 70, 0.75)", left: left }}
     >
       <div className="  relative w-[30px] h-[30px]">
-        <Image src={img} layout="fill" objectFit="contain" />
+        <img src={img} alt="image" />
       </div>
 
       <p className="my-1 font-bold lg:my-3 text-start b4">รายละเอียดเพิ่มเติม</p>

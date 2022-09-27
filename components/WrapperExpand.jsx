@@ -1,4 +1,4 @@
-import { useRef, useState, useEffect } from "react";
+import { useRef, useState } from "react";
 import { ExpandYear } from "./ExpandYear";
 import { Section_1 } from "./Matter/Part1/Section_1";
 import { Section_2 } from "./Matter/Part2/Section_2";
@@ -12,7 +12,6 @@ import GetPosition from "./GetPosition";
 import { DetailsCanvas_Part1 } from "./Matter/Part1/DetailsCanvas_Part1";
 import { Summary_Part2 } from "./Matter/Part2/Summary_Part2";
 import { DetailsCanvas_Part2 } from "./Matter/Part2/DetailsCanvas_Part2";
-import { animateZoom } from "./animateZoom";
 import { Canvas_Mobile } from "./Matter/PartMobile/CanvasMobile";
 import { Section_Mobile } from "./Matter/PartMobile/Section_Mobile";
 import { IntroStepMobile } from "./Matter/PartMobile/IntroStepMobile";
@@ -53,7 +52,6 @@ export const WrapperExpand = () => {
   const [step_3, setStep_3] = useState(true);
   const [firstStep_3, setFirstStep_3] = useState(false);
   const [drawBalls, setDrawBalls] = useState(false);
-  const [state, setState] = useState({ x: 0, y: 0 });
 
   const current_01 = engine_01.current;
   const current_02 = engine_02.current;
@@ -62,17 +60,7 @@ export const WrapperExpand = () => {
 
   GetPosition(setStep_1, setStep_2, setStep_3, firstStep_3, setFirstStep_3, drawBalls, setDrawBalls);
 
-  const handleMouseMove = (e) => {
-    e.persist();
-    setState((state) => ({ ...state, x: e.clientX, y: e.clientY }));
-  };
-
-  useEffect(() => {
-    animateZoom(state.x, state.y);
-  });
-
   return (
-    // <div onMouseMove={handleMouseMove} >
     <div id="wrapper">
       <div className="relative lg:h-[605vh]  ">
         <ExpandYear />
@@ -161,49 +149,49 @@ export const WrapperExpand = () => {
               <DetailState
                 top="100px"
                 left="50%"
-                img="/images/bullet_0_white.svg"
+                img={require("assets/images/bullet_0_white.svg")}
                 des="ร่างพระราชบัญญัติผู้มีสิทธิเลือกตั้งเสนอ ไม่น้อยกว่า 20 คนและร่างรัฐธรรมนูญผู้มีสิทธิเลือกตั้งเสนอ ไม่น้อยกว่า 120 คนยื่นพร้อมโดยสามารถร้องขอให้สำนักเลขาธิการสภาผู้แทนราษฎรช่วยเหลือในการจัดทำร่างกฎหมายก่อนเสนอต่อประธานรัฐสภาหรือผู้ริเริ่มแก้ไขร่างได้ แต่ต้องแจ้งเป็นหนังสือต่อประธานรัฐสภาพร้อมเอกสารที่แก้ไขใหม่"
               />
               <DetailState
                 top="340px"
                 left="50%"
-                img="/images/bullet_1_white.svg"
+                img={require("assets/images/bullet_1_white.svg")}
                 des="ตรวจสอบเอกสารต่อไปนี้ <br/>1. ร่างพ.ร.บ. พร้อม<br/>- บันทึกหลักการและเหตุผล<br/>- บันทึกวิเคราะห์สรุปสาระสำคัญ<br/>2. รายชื่อกับสำเนาบัตรประชาชนของผู้ริเริ่ม"
               />
               <DetailState
                 top="540px"
                 left="50%"
-                img="/images/bullet_2_white.svg"
+                img={require("assets/images/bullet_2_white.svg")}
                 des="ถ้าหลักการเป็นไปตามหมวด 3/5  แต่เนื้อหาหรือรูปแบบไม่เป็นไปตามรูปแบบการเสนอ สามารถร้องขอให้สำนักเลขาธิการสภาผู้แทนราษฎรช่วยเหลือในการจัดทำร่างได้"
               />
               <DetailState
                 top="720px"
                 left="50%"
-                img="/images/bullet_3_white.svg"
+                img={require("assets/images/bullet_3_white.svg")}
                 des="ผู้ริเริ่มจัดให้มีการลงชื่อเสนอร่างพ.ร.บ. <br/>*ซึ่งเอกสารต้องลงลายมือชื่อผู้มีสิทธิเลือกตั้งทุกแผ่น พร้อมรายละเอียด<br/>- ชื่อตัว - ชื่อสกุล<br/>- หมายเลขประจำตัวประชาชน<br/>และต้องปรากฎข้อความ <br/>- ลงลายมือชื่อเพื่อเสนอร่างพ.ร.บ.ใด<br/>- สามารถตรวจสอบร่างพ.ร.บ. ได้ที่ใด"
               />
               <DetailState
                 top="980px"
                 left="50%"
-                img="/images/bullet_4_white.svg"
+                img={require("assets/images/bullet_4_white.svg")}
                 des="เมื่อรวบรวมรายชื่อผู้มีสิทธิเลือกตั้ง (ไม่น้อยกว่า 10,000 คน)<br/>- ยื่นหนังสือต่อประธานรัฐสภา หลังรวบรวมรายชื่อ<br/>- สำเนาร่างพ.ร.บ. พร้อมบันทึกหลักการเหตุผล และบันทึกวิเคราะห์สรุปสาระสำคัญ<br/>- เอกสารลายมือชื่อของผู้มีสิทธิเลือกตั้ง และสำเนาบัตรประชาชน<br/>- บัญชีรายชื่อผู้แทนของผู้เข้าชื่อเสนอร่างพ.ร.บ. ไม่เกิน 60 คน"
               />
               <DetailState
                 top="1270px"
                 left="50%"
-                img="/images/bullet_6_white.svg"
+                img={require("assets/images/bullet_6_white.svg")}
                 des="ตรวจข้อมูลเลขประจำตัวประชาชน 13 หลัก  "
               />
               <DetailState
                 top="1390px"
                 left="50%"
-                img="/images/bullet_7_white.svg"
+                img={require("assets/images/bullet_7_white.svg")}
                 des="- ประกาศรายชื่อทางสื่อเทคโนโลยีสารสนเทศของสำนักเลขาธิการสภาผู้แทนราษฎร<br/>- จัดทำบัญชีรายชื่อ ณ สำนักงานเลขาธิการสภาผู้แทนราษฎร<br/>- หนังสือแจ้งไปยังผู้มีรายชื่อเข้าชื่อเสนอกฎหมาย"
               />
               <DetailState
                 top="1590px"
                 left="50%"
-                img="/images/bullet_8_white.svg"
+                img={require("assets/images/bullet_8_white.svg")}
                 des="- ตรวจสอบรูปแบบของร่างพ.ร.บ.และบันทึกประกอบ<br/>- วิเคราะห์ว่าเป็นร่างการเงินหรือไม่<br/>- วิเคราะห์เกี่ยวกับเด็ก เยาวชน สตรี ผู้สูงอายุหรือคนพิการ หรือทุพพลภาพ"
               />
             </div>

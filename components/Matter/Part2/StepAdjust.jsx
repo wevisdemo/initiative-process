@@ -1,10 +1,8 @@
-import Image from "next/image";
-
 export const StepAdjust = () => {
   return (
     <div className="w-[280px] md:w-[400px]  mx-auto">
       <div className="relative md:w-[60px] w-[40px] h-[40px] md:h-[60px]  mb-5">
-        <Image src="/images/question.svg" layout="fill" objectFit="contain" />
+        <img src={require("assets/images/question.svg")} alt="image" />
       </div>
       <div className="font-bold b2">
         <p>การเข้าชื่อเสนอกฎหมาย </p>

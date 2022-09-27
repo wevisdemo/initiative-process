@@ -1,5 +1,4 @@
 import React from "react";
-import Image from "next/image";
 
 const close = (id) => {
   let seemore = document.getElementById(id);
@@ -21,7 +20,7 @@ export const Seemore_1 = () => {
           </div>
           <div>
             <div className=" relative w-[32px] h-[32px]  ml-[10px] cursor-pointer" onClick={() => close("seemore_1")}>
-              <Image src="/images/close.svg" layout="fill" objectFit="contain" />
+              <img src={require("assets/images/close.svg")} alt="image" />
             </div>
           </div>
         </div>
@@ -39,33 +38,33 @@ export const Seemore_2 = () => {
   const list = [
     {
       title: "<b>ร่างที่ 1</b> ร่างฝ่ายค้านเสนอ โดยแก้มาตรา 256 ให้มีส.ส.ร. จากการเลือกตั้ง 200 คน",
-      img: "/images/exclude_black.svg",
+      img: require("assets/images/exclude_black.svg"),
     },
     {
       title: "<b>ร่างที่ 2</b> ร่างรัฐบาลเสนอ โดยแก้มาตรา 256 ให้มี ส.ส.ร. 200 คน",
-      img: "/images/exclude_black.svg",
+      img: require("assets/images/exclude_black.svg"),
     },
     {
       title: "<b>ร่างที่ 3</b> ร่างฝ่ายค้านเสนอ โดยแก้มาตรา 270- 271 ยกเลิกอำนาจส.ว.เรื่องปฏิรูปประเทศ",
-      img: "/images/union_black.svg",
+      img: require("assets/images/union_black.svg"),
     },
     {
       title:
         "<b>ร่างที่ 4</b> ร่างฝ่ายค้านเสนอ โดยแก้มาตรา 272 และ มาตรา 159  ยกเลิกอำนาจ ส.ว. เลือกนากยกฯ และ ยกเลิกนายกฯ คนนอก",
-      img: "/images/union_black.svg",
+      img: require("assets/images/union_black.svg"),
     },
     {
       title: "<b>ร่างที่ 5</b> ร่างฝ่ายค้านเสนอ โดยแก้มาตรา 279 ยกเลิกคำสั่ง คสช. ให้ไม่ถูกกฎหมาย",
-      img: "/images/union_black.svg",
+      img: require("assets/images/union_black.svg"),
     },
     {
       title: "<b>ร่างที่ 6</b> ร่างฝ่ายค้านเสนอ โดยแก้มาตรา 91 , 92, 93, 94, 101 และ 105 กลับไปใช้บัตรเลือกตั้ง 2 ใบ",
-      img: "/images/union_black.svg",
+      img: require("assets/images/union_black.svg"),
     },
     {
       title:
         "<b>ร่างที่ 7</b> ภาคประชาชนเสนอ โดยแก้ไขรัฐธรรมนูญ 10 ประเด็น ถอนอำนาจคสช., ส.ว. มาจากการเลือกตั้งทั้งหมด",
-      img: "/images/union_black.svg",
+      img: require("assets/images/union_black.svg"),
     },
   ];
 
@@ -83,7 +82,7 @@ export const Seemore_2 = () => {
           </div>
           <div>
             <div className=" relative w-[32px] h-[32px]  ml-[10px]  cursor-pointer" onClick={() => close("seemore_2")}>
-              <Image src="/images/close.svg" layout="fill" objectFit="contain" />
+              <img src={require("assets/images/close.svg")} alt="image" />
             </div>
           </div>
         </div>
@@ -96,7 +95,7 @@ export const Seemore_2 = () => {
             <div className="flex " key={index}>
               <div className="mt-1 mr-3 ">
                 <div className=" relative w-[20px] h-[20px]">
-                  <Image src={l.img} layout="fill" objectFit="contain" />
+                  <img src={l.img} alt="image" />
                 </div>
               </div>
               <div className="text-black b5" dangerouslySetInnerHTML={{ __html: l.title }} />

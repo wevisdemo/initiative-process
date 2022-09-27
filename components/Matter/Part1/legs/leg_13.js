@@ -6,11 +6,11 @@ export const leg_13 = (world) => {
   const w = 250;
   const elem_leg = document.getElementById("leg_13");
   const elem_leg_left = elem_leg.getBoundingClientRect().left + w - 43;
-  const y = elem_leg.offsetTop + vhToPixels(100) + elem_leg.getBoundingClientRect().height / 2;
+  const y = elem_leg.offsetTop + vhToPixels(100) + elem_leg.getBoundingClientRect().height / 2 - 13;
   const wrapper = document.getElementById("canvas_past_1");
   const margin = wrapper.getBoundingClientRect().x;
 
-  const rect_1 = Bodies.rectangle(vwToPixels(53), y + 47, w, 20, {
+  const rect_1 = Bodies.rectangle(vwToPixels(53), y + 53, w, 20, {
     isStatic: true,
     angle: Math.PI - Math.PI / 45,
     render: {
@@ -24,14 +24,14 @@ export const leg_13 = (world) => {
       fillStyle: "transparent",
     },
   });
-  const rect_3 = Bodies.rectangle(vwToPixels(89), y - 13, w, 20, {
+  const rect_3 = Bodies.rectangle(vwToPixels(89), y - 5, w, 20, {
     isStatic: true,
     angle: -(Math.PI / 2 + Math.PI / 3),
     render: {
       fillStyle: "transparent",
     },
   });
-  const rect_4 = Bodies.rectangle(vwToPixels(103.5), y - 10, w, 20, {
+  const rect_4 = Bodies.rectangle(vwToPixels(103.5), y - 5, w, 20, {
     isStatic: true,
     angle: Math.PI / 2 + Math.PI / 3,
     render: {

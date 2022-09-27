@@ -5,7 +5,7 @@ export const leg_02 = (world) => {
   const elem_leg = document.getElementById("leg_02_mobile");
   const elem_leg_width = elem_leg.getBoundingClientRect().width;
   const wrapper_section = document.getElementById("leg_section_1_wrapper_mobile");
-  const ratio = elem_leg.getBoundingClientRect().height + 20;
+  const ratio = elem_leg.getBoundingClientRect().height;
   const y = elem_leg.offsetTop + wrapper_section.offsetTop + ratio;
 
   const w = 220;

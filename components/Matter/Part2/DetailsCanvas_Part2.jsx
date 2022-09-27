@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { DiagramCompare } from "../../DiagramCompare";
 import { DiagramPart2Full } from "../../DiagramPart2Full";
 import { DiagramPart2 } from "../../DiagramPart2";
@@ -73,13 +72,15 @@ export const DetailsCanvas_Part2 = () => {
                 กระบวนการที่ติดค้างอยู่มากที่สุด คือ
               </p>
               <div className={` relative w-[250px] h-[250px] md:w-[305px] md:h-[305px] mt-4 mx-auto `}>
-                <Image src="/images/rank_part2.svg" layout="fill" objectFit="contain" />
+                <img src={require("assets/images/rank_part2.svg")} alt="image" />
               </div>
               <div className="flex items-center justify-center mt-10 b2 ">
                 ขั้นตอนที่
-                <div className={` relative w-[30px] h-[30px] ml-2 `}>
-                  <Image src="/images/bullet_11_white.svg" layout="fill" objectFit="contain" />
-                </div>
+                <img
+                  src={require("assets/images/bullet_11_white.svg")}
+                  alt="image"
+                  className={` relative w-[30px] h-[30px] ml-2 `}
+                />
               </div>
               <div className="text-center ">
                 <p className="b2">ส.ส.วาระ 1 รับหลักการ</p>

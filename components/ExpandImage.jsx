@@ -1,5 +1,5 @@
 import { TransformComponent, TransformWrapper } from "@pronestor/react-zoom-pan-pinch";
-import Image from "next/image";
+
 import { ScrollTo } from "./util";
 export const ExpandImage = () => {
   const onClickScrollTo = (type) => {
@@ -27,7 +27,7 @@ export const ExpandImage = () => {
           onClick={() => onClickScrollTo("prev", "center")}
         >
           <div className={` relative w-[24px] h-[24px] rotate-180 `}>
-            <Image src="/images/chevron.svg" layout="fill" objectFit="contain" />
+            <img src={require("assets/images/chevron.svg")} alt="image" />
           </div>
           ย้อนกลับ
         </div>
@@ -42,7 +42,7 @@ export const ExpandImage = () => {
           </p>
           <div className="flex ">
             <div className={` relative w-[17px] h-[24px] mr-3`}>
-              <Image src="/images/click_scarlet.svg" layout="fill" objectFit="contain" />
+              <img src={require("assets/images/click_scarlet.svg")} alt="image" />
             </div>
             <p className="b3 text-scarlet">ลองสำรวจขั้นตอนทั้งหมด</p>
           </div>
@@ -65,9 +65,11 @@ export const ExpandImage = () => {
                 </div>
               </div>
               <TransformComponent>
-                <div className={` relative w-screen h-screen cursor-grab z-20`}>
-                  <Image src="/images/main_diagram.svg" layout="fill" objectFit="contain" />
-                </div>
+                <img
+                  src={require("assets/images/main_diagram.svg")}
+                  alt="image"
+                  className={` relative w-screen h-screen cursor-grab z-20`}
+                />
               </TransformComponent>
             </div>
           )}
@@ -78,7 +80,7 @@ export const ExpandImage = () => {
         >
           ไปต่อ
           <div className={` relative w-[24px] h-[24px] `}>
-            <Image src="/images/chevron.svg" layout="fill" objectFit="contain" />
+            <img src={require("assets/images/chevron.svg")} alt="image" />
           </div>
         </div>
       </div>

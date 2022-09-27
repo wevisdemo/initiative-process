@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+
 import { y_2540, y_2550, y_2560 } from "../public/data/part_1/constitution";
 import { color_circle } from "./util";
 import { PinBallToolTip } from "./PinBallToolTip";
@@ -43,9 +43,7 @@ export const ExpandYear = () => {
         <p className="font-black h3">{year}</p>
         <p className="opacity-75 b6">11 ต.ค. 40 - 23 ส.ค. 50</p>
         <div className="flex items-center mt-4 b4 mb-9">
-          <div className=" relative lg:w-[24px] w-[16px] h-[16px] lg:h-[24px] mr-2">
-            <Image src={image} layout="fill" objectFit="contain" />
-          </div>
+          <img src={image} alt="image" className=" relative lg:w-[24px] w-[16px] h-[16px] lg:h-[24px] mr-2" />
           ยื่นไป <span className="px-1 font-bold ">{data.length}</span> ฉบับ
         </div>
         <div className="flex items-end flex-1 h-full">
@@ -83,9 +81,12 @@ export const ExpandYear = () => {
         </p>
         <Ratio />
         <div className="flex items-center my-4 opacity-75 ">
-          <div className={` relative w-[24px] h-[24px] mr-1 `}>
-            <Image src="/images/click_able.svg" layout="fill" objectFit="contain" />
-          </div>
+          <img
+            src={require("assets/images/click_able.svg")}
+            alt="image"
+            className=" relative w-[24px] h-[24px] mr-1 "
+          />
+
           <p className=" b5">ชี้เพื่อดูรายละเอียดของกฎหมายแต่ละฉบับ</p>
         </div>
       </div>
@@ -103,11 +104,11 @@ export const ExpandYear = () => {
 
       <div className="flex  mt-3 h-full flex-col space-y-10 lg:space-y-0 lg:flex-row max-w-[280px] mx-auto lg:max-w-none ">
         {/* year 2540 */}
-        <YearDetail data={y_2540} year="2540" image="/images/circle_white_type_1.svg" />
+        <YearDetail data={y_2540} year="2540" image={require("assets/images/circle_white_type_1.svg")} />
         {/* year 2550 */}
-        <YearDetail data={y_2550} year="2550" image="/images/circle_white_type_2.svg" />
+        <YearDetail data={y_2550} year="2550" image={require("assets/images/circle_white_type_2.svg")} />
         {/* year 2560 */}
-        <YearDetail data={y_2560} year="2560" image="/images/circle_white_type_3.svg" />
+        <YearDetail data={y_2560} year="2560" image={require("assets/images/circle_white_type_3.svg")} />
       </div>
     </div>
   );

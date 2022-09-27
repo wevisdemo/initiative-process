@@ -5,11 +5,11 @@ export const leg_22 = (world) => {
   const w = 250;
   const elem_leg = document.getElementById("leg_22");
   const elem_leg_left = elem_leg.getBoundingClientRect().left - 105;
-  const y = elem_leg.offsetTop + elem_leg.getBoundingClientRect().height / 2;
+  const y = elem_leg.offsetTop + elem_leg.getBoundingClientRect().height / 2 - 15;
   const wrapper = document.getElementById("canvas_past_2");
   const margin = wrapper.getBoundingClientRect().x;
 
-  const rect_left = Bodies.rectangle(vwToPixels(25), y, w, 20, {
+  const rect_left = Bodies.rectangle(vwToPixels(25), y + 5, w, 20, {
     isStatic: true,
     angle: Math.PI - Math.PI / 5.2,
     render: {

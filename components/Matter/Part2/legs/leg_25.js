@@ -5,7 +5,7 @@ export const leg_25 = (world) => {
   const w = 250;
   const elem_leg = document.getElementById("leg_25");
   const elem_leg_left = elem_leg.getBoundingClientRect().left - 105;
-  const y = elem_leg.offsetTop + elem_leg.getBoundingClientRect().height / 2;
+  const y = elem_leg.offsetTop + elem_leg.getBoundingClientRect().height / 2 - 65;
   const wrapper = document.getElementById("canvas_past_2");
   const margin = wrapper.getBoundingClientRect().x;
 

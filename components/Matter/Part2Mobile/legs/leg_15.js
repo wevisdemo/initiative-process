@@ -6,7 +6,7 @@ export const leg_15 = (world) => {
   const w = 220;
   const elem_leg = document.getElementById("leg_15_mobile");
   const elem_leg_left = elem_leg.offsetLeft;
-  const y = elem_leg.offsetTop + elem_leg.getBoundingClientRect().height + 20;
+  const y = elem_leg.offsetTop + elem_leg.getBoundingClientRect().height;
 
   const margin = elem_leg.getBoundingClientRect().width;
 

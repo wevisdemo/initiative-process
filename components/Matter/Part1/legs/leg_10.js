@@ -6,7 +6,7 @@ export const leg_10 = (world) => {
   const w = 250;
   const elem_leg = document.getElementById("leg_10");
   const elem_leg_left = elem_leg.getBoundingClientRect().left - 55;
-  const y = elem_leg.offsetTop + vhToPixels(100) + elem_leg.getBoundingClientRect().height / 2;
+  const y = elem_leg.offsetTop + vhToPixels(100) + elem_leg.getBoundingClientRect().height / 2 - 15;
   const wrapper = document.getElementById("canvas_past_1");
   const margin = wrapper.getBoundingClientRect().x;
 
@@ -24,7 +24,7 @@ export const leg_10 = (world) => {
       fillStyle: "transparent",
     },
   });
-  const rect_3 = Bodies.rectangle(vwToPixels(50), y + 25, w, 20, {
+  const rect_3 = Bodies.rectangle(vwToPixels(48), y + 45, w, 20, {
     isStatic: true,
     angle: Math.PI / 2 + Math.PI / 3,
     render: {

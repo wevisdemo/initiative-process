@@ -1,6 +1,6 @@
-import yicheep from "../images/yicheep.jpg";
-import parit from "../images/parit.jpg";
-import supaporn from "../images/supaporn.jpg";
+import yicheep from "assets/images/yicheep.jpg";
+import parit from "assets/images/parit.jpg";
+import supaporn from "assets/images/supaporn.jpg";
 export const interview = [
   {
     name: "ยิ่งชีพ อัชฌานนท์ ",

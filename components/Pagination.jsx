@@ -1,5 +1,5 @@
 import { ScrollTo, device } from "./util";
-import Image from "next/image";
+
 import { color_circle } from "./util";
 import { useState } from "react";
 export const Pagination = () => {
@@ -102,7 +102,7 @@ export const Pagination = () => {
           onClick={() => openInfo()}
           onMouseLeave={() => closeInfo()}
         >
-          <Image src="/images/info.svg" layout="fill" objectFit="contain" />
+          <img src={require("assets/images/info.svg")} alt="image" />
         </div>
         {data.map((d) => (
           <button
@@ -123,12 +123,12 @@ export const Pagination = () => {
         >
           {!isOpen && (
             <div className="  absolute w-[12px] h-[12px] rotate-90  ">
-              <Image src="/images/dot_manu.png" layout="fill" objectFit="contain" />
+              <img src={require("assets/images/dot_manu.png")} alt="image" />
             </div>
           )}
           {isOpen && (
             <div className="  absolute w-[20px] h-[20px]  translate-y-[-4%]">
-              <Image src="/images/close_white.svg" layout="fill" objectFit="contain" />
+              <img src={require("assets/images/close_white.svg")} alt="image" />
             </div>
           )}
         </div>
@@ -139,7 +139,7 @@ export const Pagination = () => {
       >
         <div id="close_info" className="absolute top-0 right-0 m-8 ">
           <div className="  w-[32px] h-[32px]  lg:hidden   cursor-pointer" onClick={() => closeInfo()}>
-            <Image src="/images/close_white.svg" layout="fill" objectFit="contain" />
+            <img src={require("assets/images/close_white.svg")} alt="image" />
           </div>
         </div>
         <p className="mb-3 font-bold b2">วิธีดูสัญลักษณ์</p>
@@ -166,19 +166,19 @@ export const Pagination = () => {
         <div className="flex space-x-[12px] flex-row ">
           <div className="flex items-center b6">
             <div className="relative mr-2 circle_ratio">
-              <Image src="/images/circle_white_type_1.svg" layout="fill" objectFit="contain" />
+              <img src={require("assets/images/circle_white_type_1.svg")} alt="image" />
             </div>
             2540
           </div>
           <div className="flex items-center b6">
             <div className="relative mr-2 circle_ratio">
-              <Image src="/images/circle_white_type_2.svg" layout="fill" objectFit="contain" />
+              <img src={require("assets/images/circle_white_type_2.svg")} alt="image" />
             </div>
             2550
           </div>
           <div className="flex items-center b6">
             <div className="relative mr-2 circle_ratio">
-              <Image src="/images/circle_white_type_3.svg" layout="fill" objectFit="contain" />
+              <img src={require("assets/images/circle_white_type_3.svg")} alt="image" />
             </div>
             2560
           </div>

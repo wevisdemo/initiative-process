@@ -1,6 +1,5 @@
-import unexpand from "../public/images/unexpand.svg";
-import expand from "../public/images/expand.svg";
-import Image from "next/image";
+import unexpand from "assets/images/unexpand.svg";
+import expand from "assets/images/expand.svg";
 
 export const sample = require("../public/data/sample.json");
 export const ExpandStep = ({ step, isStep_1, setStep_1, isStep_2, setStep_2, isStep_3, setStep_3 }) => {
@@ -34,11 +33,7 @@ export const ExpandStep = ({ step, isStep_1, setStep_1, isStep_2, setStep_2, isS
                     className=" relative lg:w-[24px] w-[14px] h-[14px] lg:h-[24px] mr-2 cursor-pointer"
                     onClick={() => expanding(isStep_1, setStep_1)}
                   >
-                    {isStep_1 ? (
-                      <Image src={unexpand} layout="fill" objectFit="contain" />
-                    ) : (
-                      <Image src={expand} layout="fill" objectFit="contain" />
-                    )}
+                    {isStep_1 ? <img src={unexpand} alt="image" /> : <img src={expand} alt="image" />}
                   </div>
                 </div>
               </div>
@@ -79,11 +74,7 @@ export const ExpandStep = ({ step, isStep_1, setStep_1, isStep_2, setStep_2, isS
                     className=" relative lg:w-[24px] w-[14px] h-[14px] lg:h-[24px] mr-2 cursor-pointer"
                     onClick={() => expanding(isStep_2, setStep_2)}
                   >
-                    {isStep_2 ? (
-                      <Image src={unexpand} layout="fill" objectFit="contain" />
-                    ) : (
-                      <Image src={expand} layout="fill" objectFit="contain" />
-                    )}
+                    {isStep_2 ? <img src={unexpand} alt="image" /> : <img src={expand} alt="image" />}
                   </div>
                 </div>
               </div>
@@ -124,11 +115,7 @@ export const ExpandStep = ({ step, isStep_1, setStep_1, isStep_2, setStep_2, isS
                     className=" relative lg:w-[24px] w-[14px] h-[14px] lg:h-[24px] mr-2 cursor-pointer"
                     onClick={() => expanding(isStep_3, setStep_3)}
                   >
-                    {isStep_3 ? (
-                      <Image src={unexpand} layout="fill" objectFit="contain" />
-                    ) : (
-                      <Image src={expand} layout="fill" objectFit="contain" />
-                    )}
+                    {isStep_3 ? <img src={unexpand} alt="image" /> : <img src={expand} alt="image" />}
                   </div>
                 </div>
               </div>
@@ -166,11 +153,7 @@ export const ExpandStep = ({ step, isStep_1, setStep_1, isStep_2, setStep_2, isS
                     className=" relative lg:w-[24px] w-[14px] h-[14px] lg:h-[24px] mr-2 cursor-pointer"
                     onClick={() => expanding(isStep_1, setStep_1)}
                   >
-                    {isStep_1 ? (
-                      <Image src={unexpand} layout="fill" objectFit="contain" />
-                    ) : (
-                      <Image src={expand} layout="fill" objectFit="contain" />
-                    )}
+                    {isStep_1 ? <img src={unexpand} alt="image" /> : <img src={expand} alt="image" />}
                   </div>
                 </div>
               )}
@@ -180,11 +163,7 @@ export const ExpandStep = ({ step, isStep_1, setStep_1, isStep_2, setStep_2, isS
                     className=" relative lg:w-[24px] w-[14px] h-[14px] lg:h-[24px] mr-2 cursor-pointer"
                     onClick={() => expanding(isStep_2, setStep_2)}
                   >
-                    {isStep_2 ? (
-                      <Image src={unexpand} layout="fill" objectFit="contain" />
-                    ) : (
-                      <Image src={expand} layout="fill" objectFit="contain" />
-                    )}
+                    {isStep_2 ? <img src={unexpand} alt="image" /> : <img src={expand} alt="image" />}
                   </div>
                 </div>
               )}
@@ -194,11 +173,7 @@ export const ExpandStep = ({ step, isStep_1, setStep_1, isStep_2, setStep_2, isS
                     className=" relative lg:w-[24px] w-[14px] h-[14px] lg:h-[24px] mr-2 cursor-pointer"
                     onClick={() => expanding(isStep_3, setStep_3)}
                   >
-                    {isStep_3 ? (
-                      <Image src={unexpand} layout="fill" objectFit="contain" />
-                    ) : (
-                      <Image src={expand} layout="fill" objectFit="contain" />
-                    )}
+                    {isStep_3 ? <img src={unexpand} alt="image" /> : <img src={expand} alt="image" />}
                   </div>
                 </div>
               )}

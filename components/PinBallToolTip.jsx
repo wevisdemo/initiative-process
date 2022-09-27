@@ -1,5 +1,5 @@
 import { circle_type, color_circle } from "./util";
-import Image from "next/image";
+
 import { device } from "./util";
 export const PinBallToolTip = ({ data }) => {
   const openTooltip = (d) => {
@@ -17,9 +17,9 @@ export const PinBallToolTip = ({ data }) => {
     onHover.style.display = "none";
   };
   const type_ball = (year) => {
-    if (year === 2540) return "/images/circle_white_type_1.svg";
-    if (year === 2550) return "/images/circle_white_type_2.svg";
-    if (year === 2560) return "/images/circle_white_type_3.svg";
+    if (year === 2540) return require("assets/images/circle_white_type_1.svg");
+    if (year === 2550) return require("assets/images/circle_white_type_2.svg");
+    if (year === 2560) return require("assets/images/circle_white_type_3.svg");
   };
 
   const ToolTip = ({ d }) => {
@@ -32,7 +32,7 @@ export const PinBallToolTip = ({ data }) => {
           {d["ลำดับกระบวนการ"] === 20 && (
             <div className="flex items-center mb-2 ">
               <div className=" relative w-[16px] h-[16px]  mr-2">
-                <Image src="/images/correct.svg" layout="fill" objectFit="contain" />
+                <img src={require("assets/images/correct.svg")} alt="image" />
               </div>
               <p>1 ใน 9 ฉบับที่ผ่าน</p>
             </div>
@@ -59,7 +59,7 @@ export const PinBallToolTip = ({ data }) => {
             <span className=" mr-[5px] flex items-center">
               {" "}
               <div className=" relative w-[16px] h-[16px]  mr-2">
-                <Image src={type_ball(d["รธน."])} layout="fill" objectFit="contain" />
+                <img src={type_ball(d["รธน."])} alt="image" />
               </div>
               {d["รธน."]}
             </span>
@@ -83,7 +83,7 @@ export const PinBallToolTip = ({ data }) => {
             {d["ลำดับกระบวนการ"] === 20 && (
               <div className=" absolute lg:w-[34px] w-[24px] h-[24px] lg:h-[34px] border-2 border-white rounded-full top-[50%] left-[50%] translate-x-[-50%] translate-y-[-50%]" />
             )}
-            <Image src={circle_type(d["ประเภท"], d["รธน."])} layout="fill" objectFit="contain" />
+            <img src={circle_type(d["ประเภท"], d["รธน."])} alt="image" />
           </button>
           <ToolTip d={d} />
         </div>

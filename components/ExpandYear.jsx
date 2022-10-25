@@ -35,13 +35,18 @@ export const ExpandYear = () => {
       </div>
     );
   };
+  const yearInfo = (year) => {
+    if (year == 2540) return "11 ต.ค. 40 - 23 ส.ค. 50";
+    if (year == 2550) return "24 ส.ค. 50 - 21 ก.ค. 57";
+    if (year == 2560) return "6 เม.ย. 60 - ปัจจุบัน";
+  };
 
   const YearDetail = ({ data, year, image }) => {
     return (
       <div className="flex flex-col items-center lg:flex-1 border border-t-0 px-[15px] h-[400px] lg:h-auto lg:px-[20px] pb-5 border-white">
         <p className="b1">รัฐธรรมนูญ</p>
         <p className="font-black h3">{year}</p>
-        <p className="opacity-75 b6">11 ต.ค. 40 - 23 ส.ค. 50</p>
+        <p className="opacity-75 b6">{yearInfo(year)}</p>
         <div className="flex items-center mt-4 b4 mb-9">
           <img src={image} alt="image" className=" relative lg:w-[24px] w-[16px] h-[16px] lg:h-[24px] mr-2" />
           ยื่นไป <span className="px-1 font-bold ">{data.length}</span> ฉบับ

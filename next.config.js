@@ -5,8 +5,8 @@ const withImages = require("next-images");
 const nextConfig = withImages(
   withTM(
     withVideos({
-      // basePath: "/initiativelaw",
-      // assetPrefix: "/initiativelaw",
+      basePath: "/initiativelaw",
+      assetPrefix: "/initiativelaw",
       fileExtensions: ["jpg", "jpeg", "png", "gif", "svg"],
       reactStrictMode: false,
       swcMinify: true,
